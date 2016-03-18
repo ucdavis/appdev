@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div id="slider" class="nivoSlider">
+    <img src="/media/slide1.jpg" title="#htmlcaption1" />
+    <img src="/media/slide2.jpg" title="#htmlcaption2" />
+    <img src="/media/slide3.jpg" title="#htmlcaption3" />
+</div>
+    <div id="htmlcaption1" class="nivo-html-caption">
+        <h2>Are you a beet?</h2>
+        <p>Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red.</p>
+    </div>
+    <div id="htmlcaption2" class="nivo-html-caption">
+        <h2 class="bg-wine-grape">Red hot Chili Peppers</h2>
+        <p>This is your world, whatever makes you happy you can put in it.</p>
+    </div>
+    <div id="htmlcaption3" class="nivo-html-caption">
+        <h2 class="bg-sunny-grass">Prussian blue</h2>
+        <p>
+            You can create the world you want to see and be a part of
+        </p>
+    </div>
+<div class="news_landing">
+    <div class="news_landing_contents">
+        <h1 class="sectionheader">News</h1>
+        <div class="news_landing_current">
+            {% for post in site.categories.news limit:3 %}
+            <div class="news_landing_piece">
+                {% if post.image %}
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img class="img_article_thumb" src="{{ post.image }}"></a>{% endif %}
+                <h2 class="feed-title">
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                <p class="feed-description">{{ post.description }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="news_landing_more">
+            <h3>Newsletter</h3>
+            <p>Stay updated by signing up for our newsletter</p>
+            <a href="" class="btn btn-newsletter">Sign up</a>
+            <br>
+            <p><a href="/news">View more articles here</a></p>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div class="main_contents">
+    </div>
+</div>

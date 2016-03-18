@@ -1,0 +1,274 @@
+//
+@font-face {
+    font-family: 'klinic_light';
+    src: url('/media/fonts/klinic_light.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/media/fonts/klinic_light.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'klinic_medium';
+    src: url('/media/fonts/klinic_medium.woff') format('woff'), /* Pretty Modern Browsers */
+    url('/media/fonts/klinic_medium.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+// fonts
+$sans-serif: "proxima-nova",
+arial,
+sans-serif; // light 300, reg 400, medium 500, semibold 600
+$serif: 'klinic_medium',
+Georgia,
+serif; // light 300, book 400, regular 500
+// pretty colors 
+$primary-color: #1A3E68;
+$secondary-color: #CFA21A;
+$primary-font: #333433; // p,li color in main content
+$secondary-font: #5a585c; // p,li color in portlet/sidebar
+$tertiary-font: #A6A6A6; // summary, discreet
+
+$bg-color: rgb(247,247,247); // background
+$borders: #C8C7CC; // border color
+
+$nav-active: #fff;
+
+$a-link: #016FC4;
+$a-hover: #DDB307;
+
+$blue: #016FC4;
+$gold: #DDB307;
+
+$mint-green: #028474;
+// UC Davis Colors
+// Supplemental bright color palette for UC Davis
+$unitrans-red: #ba0c2f;
+$western-redbud: #c6007e;
+$california-poppy: #ed8800;
+$golden-lupine: #ffcd00;
+$sunny-grass: #78be20;
+$sky-blue: #00b5e2;
+$recpool-blue: #008eaa;
+$wine-grape: #642667;
+// Supplemental neutral color palette for UC Davis
+$mu-brick: #c26e60;
+$harthall-stucco: #e6a65d;
+$sage-green: #9caf88;
+$evergreen: #00573f;
+$wintersky-gray: #5b7f95;
+$cenwalk-gray: #b1b3b3;
+$cork-oak: #aca39a;
+$shingle-brown: #4f2c1d;
+// mixins
+@mixin breakpoint($point) {
+    @if $point==hdres {
+        @media (max-width:1600px){
+            @content ;
+        }
+    }
+    @if $point==desktop {
+        @media (max-width: 1250px) {
+            @content ;
+        }
+    }
+    @else if $point==laptop {
+        @media (max-width: 1000px) {
+            @content ;
+        }
+    }
+    @else if $point==rufus {
+        @media (max-width: 850px) {
+            @content ;
+        }
+    }
+    @else if $point==tablet {
+        @media (max-width: 750px) {
+            @content ;
+        }
+    }
+    @else if $point==mobileonly {
+        @media (max-width: 640px) {
+            @content ;
+        }
+    }
+    @else if $point==smallmobile {
+        @media (max-width: 450px) {
+            @content ;
+        }
+    }
+}
+
+@mixin transitiontime {
+    transition-delay: 0s;
+    transition-duration: 0.75s;
+    transition-property: all;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0s;
+    -webkit-transition-duration: 0.75s;
+    -webkit-transition-property: all;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-delay: 0s;
+    -moz-transition-duration: 0.75s;
+    -moz-transition-property: all;
+    -moz-transition-timing-function: ease;
+}
+
+
+@mixin transition($values: 0.3s ease-in) {
+    transition: $values;
+    -webkit-transition: $values;
+    -webkit-transform: translateZ(0); // Fix animation in Safari
+}
+
+@mixin container {
+    width: 80%;
+    margin: 0 auto;
+    min-width: 300px;
+    @include breakpoint(rufus) {
+      width:85%;
+    }
+    @include breakpoint(mobileonly) {
+        width: 90%;
+    }
+}
+
+// Custom random function
+// To allow a minimum value
+// ------------------------------------------------------------
+// @param $min: minimum value
+// @param $max: maximum value
+// ------------------------------------------------------------
+// @return random number
+@function rand($min,
+$max) {
+    @return random($max - $min) + $min;
+}
+
+// Private function for custom stops
+// ------------------------------------------------------------
+// @param $colors: list of color + associated stop
+//     ex: (red 10%, blue 50%, green 65%)
+// ------------------------------------------------------------
+// @return list to be used as a gradient
+@function _stripes-custom-stops($colors) {
+    $gradients: ();
+    @for $i from 1 to length($colors) {
+        @if length(nth($colors,
+        $i)) > 1 {
+            $color: nth(nth($colors, $i), 1);
+            $stop: nth(nth($colors, $i), 2);
+            $gradients: append($gradients, $color $stop, comma);
+            @if $i < length($colors) {
+                $gradients: append($gradients, nth(nth($colors, $i + 1), 1) $stop);
+            }
+        }
+        @else {
+            @warn '`#{nth($colors, $i)}` skipped because it is only one item long while it should be 2: (color, color-stop).';
+        }
+    }
+    @return $gradients;
+}
+
+// Private function for random stops
+// ------------------------------------------------------------
+// @param $colors: list of color
+//     ex: (red, blue, green)
+// ------------------------------------------------------------
+// @return two dimensional list
+@function _stripes-random-stops($colors) {
+    @if length(nth($colors,
+    1)) > 1 {
+        @return _stripes-custom-stops($colors);
+    }
+    $n: length($colors);
+    $gradients: ();
+    $variation: 10;
+    $median: 100 / $n;
+    @for $i from 1 to $n {
+        $stop: $median * $i;
+        $random: rand($stop - $variation, $stop + $variation) * 1%;
+        $gradients: append($gradients, nth($colors, $i) $random, comma);
+        @if $i < length($colors) {
+            $gradients: append($gradients, nth(nth($colors, $i + 1), 1) $random);
+        }
+    }
+    @return $gradients;
+}
+
+// Private function for equal stops
+// ------------------------------------------------------------
+// @param $colors: list of color
+//     ex: (red, blue, green)
+// ------------------------------------------------------------
+// @return two dimensional list
+@function _stripes-equal-stops($colors) {
+    $gradients: ();
+    $stops: 100% / length($colors);
+    // Loop through colors
+    @for $i from 1 to length($colors) {
+        $gradients: append($gradients, nth($colors, $i) $i * $stops, comma);
+        @if $i < length($colors) {
+            $gradients: append($gradients, nth($colors, $i + 1) $i * $stops);
+        }
+    }
+    // Return gradient
+    @return $gradients;
+}
+
+// Function turning a list of colors (and if specified stops)
+// into a stripes gradient
+// ------------------------------------------------------------
+// @param $colors: list of color or color + color stop
+//     ex: (red blue green) 
+//     ex: (red 10%, blue 50%, green 65%)
+// @param $direction: gradient direction in keyword or degrees
+// @param $random: should color-stops be randomly generated
+// ------------------------------------------------------------
+// @return gradient
+@function stripes($colors,
+$direction: 90deg,
+$random: false) {
+    // If lonely color
+    @if length($colors)==1 {
+        @return $colors;
+    }
+    // Else
+    $type: if($random,
+    'random',
+    if(length(nth($colors,
+    1)) > 1,
+    'custom',
+    'equal'));
+    @return linear-gradient($direction,
+    call('_stripes-#{$type}-stops',
+    $colors));
+}
+
+html {
+    position: relative;
+    height: 100%;
+    &:before,
+    &:after {
+        position: absolute;
+        content: '';
+        height: 5px;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+    &:after {
+        top: auto;
+        bottom: 0;
+    }
+    // &:before {
+    //   $equal-stops: #DDB307 #004B85 #016FC4;
+    //   // Equal stops
+    //   // background: stripes($equal-stops, $direction);
+    //   // Random stops
+    //   background: stripes($custom-stops, 90deg, $random: false); 
+    // }
+    &:before {
+        $custom-stops: #DDB307 69%, #004B85 78%, #016FC4 100%;
+        // Custom stops
+        background: stripes($custom-stops, 90deg);
+    }
+}
+
+

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="main">
+    <div class="main_contents">
+        <aside>
+            <h3>Event Info</h3>
+            <ul class="event-info no-bullet">
+                <li><b>Date:</b> {{ page.event-date }}</li>
+                <li><b>Time:</b> {{ page.event-time }}</li>
+                <li><b>Location:</b> {{ page.event-location }}</li>
+                <li><b>Contact:</b> <a href="mailto:{{ page.event-email }}">{{ page.event-contact }}</a></li>
+                {% if page.event-button %}
+                <br>
+                <li><a class="btn btn-blue" href="{{ page.event-button }}">Register</a></li>
+                {% endif %}
+            </ul>
+        </aside>
+        <article>
+            <h1 class="document_heade">{{ page.title }}</h1>
+            <h1 class="post-title">{{ page.publish }}</h1>
+            <h5 class="feed-date">Published {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
+            <p class="feed-summary">{{ page.description }}</p>
+            <p>{{ content }}</p>
+        </article>
+    </div>
+</div>

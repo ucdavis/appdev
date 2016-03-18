@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<div class="main">
+    <div class="main_contents">
+        <aside>
+            <h3>Jekyll Starter Events template</h3>
+            <p>Adding new quotes to the generator nearly daily. Shareable quote images coming in a few days.</p>
+        </aside>
+        <article>
+            
+            <h1>Jekyll Starter Events template</h1>
+            <p class="page_description">Stay up to date with our latest events</p>
+            <a class="archive" href="/news/archive">
+                <p>See the Archive</p> 
+            </a>
+          
+            <ul class="feed-list event-list-main">
+                {% for post in site.categories.events %}
+                <li>
+                <div class="event-date">
+                <div class="event-date-wrapper">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                         <span class="event-month">{{ post.event-month }}</span>
+                        <span class="event-day">{{ post.event-day }}</span>
+                    </a>
+                </div>
+                    
+                       
+                    
+                </div>
+                <div class="event-main">
+                    <h2 class="feed-title">
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <p class="feed-description">{{ post.description }}</p>
+                </div>
+                    
+                </li>
+                {% endfor %}
+            </ul>
+            <!-- <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p> -->
+        </article>
+    </div>
+</div>

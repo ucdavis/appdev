@@ -1,0 +1,234 @@
+.nav_wrapper {
+    background-color: $bg-color;
+    padding-bottom: 0px;
+    border-bottom: 1px solid $borders;
+    clear: both;
+}
+
+nav {
+    @include container;
+    ul.submenu {
+        @include transition;
+        background-color:$bg-color;
+        padding:1%;
+        padding-left:8px;
+        padding-right:8px;
+        list-style-type: none;
+    }
+}
+
+#nav {
+    // width: 65%;
+    // position: absolute;
+    // top:20px;
+    // left:30%;
+    // background-color:orange;
+    > ul {
+        margin: 0px;
+        margin-left: -12px;
+    }
+}
+
+#nav li {
+    position: relative;
+    a {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        display: block;
+        color: $secondary-font;
+        &:hover {
+            color: $secondary-color;
+        }
+        // &:active {
+        //     background-color: #c00 !important;
+        // }
+    }
+}
+
+
+/* first level */
+
+#nav > {
+    a {
+        display: none;
+    }
+    ul {
+        // height: 3.5em;
+        /* 60 */
+        // background-color: #fff;
+        > li {
+            // width: 25%;
+            // height: 100%;
+            // float: left;
+            display: inline-block;
+            &:last-child {
+                margin-right: -5px;
+            }
+            &:hover {
+                    background-color:$nav-active;
+                }
+            > a {
+                line-height: 2.5em;
+                text-align: left;
+                font-size:1.6rem;
+                padding: 4px 20px;
+                &.active {
+                    color:$gold;
+                    background-color:$nav-active;
+                }
+
+            }
+        }
+    }
+}
+
+/* second level */
+
+#nav li ul {
+    // background-color: darken(blue,4);
+    background-color: $nav-active;
+    display: none;
+    position: absolute;
+    top: 100%;
+    a {
+        color: $secondary-font;
+        &:hover {
+            color: $secondary-color;
+            // background-color:#f0f0f0;
+        }
+    }
+}
+
+#nav li:hover ul {
+    display: block;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+#nav li:not(:first-child):hover ul {
+    left: -1px;
+}
+
+#nav li ul a {
+    font-size: 1.4rem;
+    /* 20 */
+    // border-top: 1px solid darken(blue, 1);
+    padding: 0.75em;
+    /* 15 (20) */
+}
+
+#nav li ul li a:hover,
+#nav li ul:not(:hover) li.active a {}
+
+@media all and (max-width: 1250px) {
+    #nav {
+        li {
+            a {
+                font-size: 1.4rem;
+            }
+        }
+    }
+    #nav > ul > li {
+        margin-right: 2%;
+    }
+}
+
+@media only screen and ( max-width: 1000px)
+/* 1000 */
+
+{
+    #nav {
+        width: 100%;
+        position: static;
+        margin: 0;
+        text-align: center;
+    }
+    #nav > ul > li {
+        margin-right: 5%;
+    }
+    .search_form {
+        top: 168px;
+    }
+}
+
+@media only screen and ( max-width: 640px)
+/* 640 */
+
+{
+    nav ul.submenu {
+        background-color:rgba(255,255,255,.8);
+        padding:1%;
+        list-style-type: none;
+        padding-bottom:0px !important;
+        padding-top:0px !important;
+        li {
+            text-align: left;
+            padding-left: 15px;
+        }
+    }
+    nav a.active {
+        border-bottom: none !important;
+    }
+    .nav_open,
+    .nav_close {
+        width: 40px;
+        height: 33px;
+        line-height: 40px;
+        font-size: 20px;
+        background-color: $blue;
+        color: #fff;
+        margin-left: 5%;
+        margin-top: 3px;
+        margin-bottom: 6px;
+        i {
+            font-size: 24px;
+            padding-left: 10px;
+        }
+        i.fa-times {
+            padding-left: 11px;
+        }
+    }
+    #nav > a {
+        text-align: left;
+        position: relative;
+    }
+    #nav > a:after {
+        top: 60%;
+    }
+    #nav:not(:target) > a:first-of-type,
+    #nav:target > a:last-of-type {
+        display: block;
+    }
+    /* first level */
+    #nav > ul {
+        height: auto;
+        display: none;
+    }
+    #nav:target > ul {
+        display: block;
+    }
+    #nav > ul > li {
+        width: 100%;
+        float: none;
+        background-color: #fff;
+    }
+    #nav > ul > li > a {
+        height: auto;
+        text-align: left;
+        padding: 0 0.833em;
+        font-size: 1.6rem;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        /* 20 (24) */
+    }
+    #nav > ul > li:not(:last-child) > a {}
+    /* second level */
+    #nav li ul {
+        position: static;
+        padding: 1.25em;
+        /* 20 */
+        padding-top: 0;
+    }
+}

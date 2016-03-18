@@ -1,0 +1,14 @@
+# Site settings
+title: Jekyll Starter
+email: cydoval@mac.com
+description: > # this means to ignore newlines until "baseurl:"
+  This is a Jekyll Starter template developed by cydoval.com.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://jekyll-starter.ucdavis.edu" # the base hostname & protocol for your site
+
+permalink: pretty
+
+paginate: 3
+
+# Build settings
+markdown: kramdown

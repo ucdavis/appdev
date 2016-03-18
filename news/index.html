@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<div class="banner banner_fish">
+            <div class="banner_contents">
+                <h2>Styleguide</h2>
+                <p>
+                    I'm sort of a softy, I couldn't shoot Bambi except with a camera.
+                </p>
+            </div>
+        </div>
+<div class="main">
+    <div class="main_contents">
+        
+        <aside>
+            <h3>Jekyll Starter News template</h3>
+            <p>Adding new quotes to the generator nearly daily. Shareable quote images coming in a few days.</p>
+        </aside>
+        <article>
+            
+            <h1>Jekyll Starter News template</h1>
+            <p class="page_description">A collection of interesting tidebits</p>
+            <a class="archive" href="/news/archive">
+                <p>See the Archive</p> 
+            </a>
+            <ul class="feed-list news-list-main">
+                {% for post in site.categories.news %}
+                <li>
+                    {% if post.image %}<a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img class="img_article_thumb" src="{{ post.image }}"></a>{% endif %}
+                    <h2 class="feed-title">
+                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                    </h2>
+                    <h5 class="feed-date">Published {{ post.date | date: "%b %-d, %Y" }}{% if post.author %} by {{ post.author }}{% endif %}{% if post.meta %} • {{ post.meta }}{% endif %}</h5>
+                    <p class="feed-description">{{ post.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+            
+            <!-- <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p> -->
+        </article>
+    </div>
+</div>

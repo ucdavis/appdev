@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<main>
+    <div class="main_contents">
+        <aside>
+            <h3>Archive</h3>
+            <p>Complete Archive</p>
+        </aside>
+        <article>
+            
+            <h1>Jekyll Starter News template</h1>
+            <p class="document_description">A collection of interesting tidebits</p>
+            <ul class="feed-list">
+                {% for post in site.categories.news %}
+                <li>
+                    {% if post.image %}<img class="img_article_thumb" src="{{ post.image }}">{% endif %}
+                    <h2 class="feed-title">
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+                    <h5 class="feed-date">{{ post.date | date: "%b %-d, %Y" }}</h5>
+                    <p class="feed-description">{{ post.description }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+
+            <!-- <p class="rss-subscribe">subscribe <a href="{{ " /feed.xml " | prepend: site.baseurl }}">via RSS</a></p> -->
+        </article>
+    </div>
+</main>

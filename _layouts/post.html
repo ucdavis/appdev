@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<main>
+    <div class="main_contents">
+        <aside>
+            <h3>Lagunitas</h3>
+            <p>Adding new quotes to the generator nearly daily. Shareable quote images coming in a few days.</p>
+        </aside>
+        <article>
+            <h1 class="document_heade">{{ page.title }}</h1>
+            <h1 class="post-title">{{ page.publish }}</h1>
+            <h2 class="document_description">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h2>
+           	<p>{{ content }}</p>
+        </article>
+    </div>
+</main>

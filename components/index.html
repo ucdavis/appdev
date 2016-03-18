@@ -1,0 +1,117 @@
+---
+layout: default
+title: Components
+---
+
+<div class="banner">
+    <div class="banner_contents">
+        <h2>Components</h2>
+    </div>
+</div>
+<div class="main">
+    <div class="main_contents">
+        <aside>
+            <h3>Site components</h3>
+            <ul>
+                <li><a href="#nivo">Slider</a></li>
+                <li>
+                    <a href="#bgvideo">Video</a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+                <li>
+                    <a href=""></a>
+                </li>
+            </ul>
+        </aside>
+        <article>
+            <div class="section_divider">
+                <h1 class="document_header">
+            <a name="nivo"></a>
+            Nivo Slider</h1>
+                <p class="document_description">Add a Nivo Slider to your awesome jekyll site</p>
+                <div class="row">
+                    <div class="twelve columns">
+                        <div id="slider" class="nivoSlider">
+                            <img src="/media/slide1.jpg" title="#htmlcaption1" />
+                            <img src="/media/slide2.jpg" title="#htmlcaption2" />
+                            <img src="/media/slide3.jpg" title="#htmlcaption3" />
+                        </div>
+                        <div id="htmlcaption1" class="nivo-html-caption">
+                            <h2>Are you a beet?</h2>
+                            <p>Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red.</p>
+                        </div>
+                        <div id="htmlcaption2" class="nivo-html-caption">
+                            <h2 class="bg-wine-grape">Red hot Chili Peppers</h2>
+                            <p>This is your world, whatever makes you happy you can put in it.</p>
+                        </div>
+                        <div id="htmlcaption3" class="nivo-html-caption">
+                            <h2 class="bg-sunny-grass">Prussian blue</h2>
+                            <p>
+                                You can create the world you want to see and be a part of
+                            </p>
+                        </div>
+                        <p>images</p> {% highlight html %}
+                        <div id="slider" class="nivoSlider">
+                            <img src="/media/slide1.jpg" title="#htmlcaption1" />
+                            <img src="/media/slide2.jpg" title="#htmlcaption2" />
+                            <img src="/media/slide3.jpg" title="#htmlcaption3" />
+                        </div>
+                        {% endhighlight %}
+                        <p>Captions</p> {% highlight html %}
+                        <div id="htmlcaption1" class="nivo-html-caption">
+                            <h2>Are you a beet?</h2>
+                            <p>Titanium white, Thalo green, Prussian blue, Van Dyke brown, Alizarin crimson, Sap green, Cad yellow, and Permanent red.</p>
+                        </div>
+                        <div id="htmlcaption2" class="nivo-html-caption">
+                            <h2 class="bg-wine-grape">Red hot Chili Peppers</h2>
+                            <p>This is your world, whatever makes you happy you can put in it.</p>
+                        </div>
+                        <div id="htmlcaption3" class="nivo-html-caption">
+                            <h2 class="bg-sunny-grass">Prussian blue</h2>
+                            <p>
+                                You can create the world you want to see and be a part of
+                            </p>
+                        </div>
+                        {% endhighlight %}
+                    </div>
+                </div>
+            </div>
+            <div class="section_divider">
+                <h1 class="document_header">
+                    <a name="bgvideo"></a>
+                    Background Video
+                    </h1>
+                <p class="document_description">Add a video background to your awesome jekyll site</p>
+                <div class="video_wrapper">
+                    <div class="video">
+                        <video height="400" muted="true" autoplay="true" loop="true" poster="/media/video/philpash.jpg">
+                            <source src="/media/video/philpash.webm" type="video/webm">
+                            <source src="/media/video/philpash.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video_words">
+                        <h1>Whose world will you&nbsp;change?</h1>
+                        <h3>A gift to UC Davis can make a world of&nbsp;difference.</h3>
+                    </div>
+                </div>
+                <p>Video Code</p>
+                {% highlight html %}
+                    <div class="video_wrapper">
+                        <div class="video">
+                            <video height="400" muted="true" autoplay="true" loop="true" poster="#">
+                                <source src="#" type="video/webm">
+                                <source src="#" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="video_words">
+                            <h1>Whose world will you&nbsp;change?</h1>
+                            <h3>A gift to UC Davis can make a world of&nbsp;difference.</h3>
+                        </div>
+                    </div>
+                {% endhighlight %}
+                </div>
+        </article>
+        </div>
+</div>
