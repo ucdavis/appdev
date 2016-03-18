@@ -7,10 +7,9 @@ layout: default
         <aside>
             <h3>Event Info</h3>
             <ul class="event-info no-bullet">
-                <li><b>Date:</b> {{ page.event-date }}</li>
+                <li><b>Date:</b> {{ page.date  | date: '%B %d, %Y' }}</li>
                 <li><b>Time:</b> {{ page.event-time }}</li>
                 <li><b>Location:</b> {{ page.event-location }}</li>
-                <li><b>Contact:</b> <a href="mailto:{{ page.event-email }}">{{ page.event-contact }}</a></li>
                 {% if page.event-button %}
                 <br>
                 <li><a class="btn btn-blue" href="{{ page.event-button }}">Register</a></li>

@@ -1,11 +1,13 @@
 ---
-layout: article
-title:  "Bob Ross, adored by the nation"
-description: "These little son of a guns hide in your brush and you just have to push them out. Tree trunks grow however makes them happy."
-author: "Cal Doval"
-date:   2015-11-28 16:25:17
-category: "news"
-image: /media/placeholder4.jpg
+layout: event
+title:  "AppDev SIG Introductory Meeting"
+description: "Welcome to the new Application Development SIG on campus w/ tech discussion and a review of developer survey results"
+author: "Scott Kirkland"
+date:   2016-03-01
+event-time: 11:00AM - 12:00PM
+event-location: "2005 Plant Sciences"
+tags: "AppDev"
+category: "events"
 ---
 
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
@@ -21,4 +23,3 @@ end
 print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
-

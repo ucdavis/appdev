@@ -9,6 +9,6 @@ url: "http://jekyll-starter.ucdavis.edu" # the base hostname & protocol for your
 permalink: pretty
 
 paginate: 3
-
+future: true #show future content, like upcoming meetings
 # Build settings
 markdown: kramdown
