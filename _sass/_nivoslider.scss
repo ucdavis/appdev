@@ -9,13 +9,17 @@
 
 
 /* The Nivo Slider styles */
-
+.texture {
+    position:relative;
+    z-index:9999;
+    bottom: -370px;
+}
 .nivoSlider {
     position: relative;
     width: 100%;
     height: auto;
     overflow: hidden;
-    border-bottom: 3px solid $blue;
+    z-index:-1;
 }
 
 .nivoSlider img {
@@ -163,6 +167,7 @@
 
 .nivo-controlNav {
     text-align: center;
+    display:none;
     padding: 15px 0;
     text-align: right;
     margin-top: -23px;

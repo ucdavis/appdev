@@ -1,18 +1,17 @@
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 header {
-    border-bottom: 1px solid $borders;
     height: auto;
-    padding-top: 1.5%;
     padding-bottom: 0.5%;
-    background-color: #ffffff;
+    padding-top:0.5%;
+    background-color: #fff;
     .header_contents {
         @include container;
         .logo_wrapper {
-            width: 50%;
+            width: 75%;
             display: inline-block;
         }
         .search_wrapper {
-            width: 49%;
+            width: 24%;
             text-align:right;
             display: inline-block;
         }
@@ -22,40 +21,41 @@ header {
 .main {
     .main_contents {
         @include container;
-        // background-color:#fff;
-        // border:1px solid $borders;
-        // border-radius:2px;
-        // padding: 1% 2%;
+        background-color:#fff;
+        border:1px solid $borders;
+        border-radius:2px;
+        padding: 30px 30px;
         margin-top: 2%;
+        margin-bottom:2%;
     }
 }
 
 aside {
-    width: 25%;
+    width: 22%;
     display: inline-block;
     vertical-align: top;
     padding-right: 2%;
-    margin-top: 1%;
-    margin-right: 2%;
+    .aside_col {
+        > h3 {
+            margin-top:0px;
+        }
+    }
 }
 
 article {
-    width: 67%;
+    width: 70%;
     display: inline-block;
     vertical-align: top;
-    margin-left: 1%;
-    padding-left: 1%;
+    padding-left:50px;
+    border-left:1px solid $borders;
+}
+.feed-item {
+    margin:30px 0px;
 }
 
-
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding-top:60px;
-    padding-bottom:60px;
-    height: 180px;
-    display:block;
+    margin-top: 4%;
+    margin-bottom: 4%;
     .footer_contents {
         @include container;
         .foot_top {
@@ -65,7 +65,9 @@ footer {
         }
     }
 }
-
+.slider_wrapper {
+    position:relative;
+}
 
 /**
  * Code formatting

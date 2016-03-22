@@ -1,12 +1,10 @@
 <header>
     <div class="header_contents">
         <div class="logo_wrapper">
-            <a href="{{site.baseurl}}/"><img class="caeslogo" src="{{site.baseurl}}/media/caes_logo.svg" alt=""></a>
+            <a href="/"><h1><img class="logo" src="{{site.baseurl}}/media/cru_logo.svg" alt="">Computing Resources Unit</h1></a>
         </div>
-        <div style="display:none" class="search_wrapper">
-                <form>
-                    <input class="search_input" type="text" value="">
-                </form>
+        <div class="search_wrapper">
+            <a href="https://www.caes.ucdavis.edu/"><img class="caes_logo" src="{{site.baseurl}}/media/caes_logo.svg" alt=""></a>
         </div>
     </div>
 </header>
@@ -16,10 +14,23 @@
         <a class="nav_close" href="#" title="Hide navigation"><i class="fa fa-times"></i></a>
         <ul id="nav_upperlevel">
             <li>
-                <a href="{{site.baseurl}}/events">Meetings</a>
+                <a href="{{site.baseurl}}/documentation" aria-haspopup="true">Documentation</a>
+                <ul class="submenu">
+                    <li><a href="{{site.baseurl}}/documentation/app_dev">App Development</a></li>
+                    <li><a href="{{site.baseurl}}/documentation/help_desk">Help Desk</a></li>
+                    <li><a href="{{site.baseurl}}/documentation/web_dev">Web Development</a></li>
+                    <li><a href="{{site.baseurl}}/documentation/policies">Policies</a></li>
+                </ul>
             </li>
             <li>
-                <a href="{{site.baseurl}}/news">News</a>
+                <a href="{{site.baseurl}}/team">Team</a>
+            </li>
+            <li>
+                <a href="{{site.baseurl}}/services">Services</a>
+            </li>
+            <li><a href="{{site.baseurl}}/portfolio">Portfolio</a></li>
+            <li>
+                <a href="{{site.baseurl}}/status">Status</a>
             </li>
         </ul>
     </nav>

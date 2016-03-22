@@ -1,7 +1,20 @@
+hr {
+    border-color:$borders;
+}
 .section_divider {
     margin-bottom: 10%;
 }
-
+.alert {
+    background-color:#D2F8AB;
+    border-radius:1px;
+    border:1px solid #78BE20;
+    padding:15px 15px;
+    p {
+        color:#60A011;
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+}
 // ul {
 //     li {
 //         &.bullet-divider:after {
@@ -12,6 +25,15 @@
 //     }
 // }
 //images 
+img {
+    &.logo {
+        margin-right:16px;
+        margin-bottom:-12px;
+    }
+    &.caes_logo {
+        margin-bottom:-12px;
+    }
+}
 .image-wrapper {
     width: auto;
     margin-top: 7px;
@@ -32,6 +54,9 @@
     }
     &.full-width {
         max-width: 800px;
+    }
+    &.centered {
+        text-align: center;
     }
 }
 .img_article_thumb {
@@ -100,6 +125,15 @@
 
 .bg-california-poppy {
     background-color: $california-poppy !important;
+}
+.california-poppy {
+    color: $california-poppy !important;
+}
+.sunny-grass {
+    color: $sunny-grass !important;
+}
+.recpool-blue {
+    color: $recpool-blue !important;
 }
 
 // Video

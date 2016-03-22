@@ -1,18 +1,87 @@
-.banner {
-    background-color: $primary-color;
-    padding: 2% 0;
-    &.banner_fish {
-        background-image: url(/media/fish_banner.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        h2,
-        p {
-            text-shadow: 1px 1px 2px rgba(28, 28, 28, 1);
+.aside_col {
+    ul {
+        li {
+            a {
+                color:$primary-font;
+                &:hover {
+                    color:$secondary-color;
+                }
+            }
         }
     }
-    .banner_contents {
-        @include container;
+}
+.home_button-wrapper {
+    .home_button-card {
+        width:24%;
+        display:inline-block;
+        vertical-align: top;
+        text-align:center;
+        margin-top:35px;
+            a {
+                color:$primary-font;
+                font-size:1.8rem;
+                font-weight: 600;
+                &:hover {
+                    color:$primary-color;
+                }
+            }
     }
+}
+.faculty {
+    margin:0 auto;
+    width:600px;
+    margin-top:30px;
+    .faculty-card {
+        margin:40px 0px;
+        padding-left:20%;
+        .faculty-image {
+            display:inline-block;
+            width:10%;
+            vertical-align: top;
+            margin-right:2%;
+            img {
+                margin-top:8px;
+            }
+        }
+        .faculty-info {
+            display:inline-block;
+            width:86%;
+            vertical-align: top;
+            h3 {
+                margin-bottom: 0px;
+            }
+            p {
+                margin-top:0px;
+                margin-bottom:1px;
+            }
+            a {
+                margin-top:3px;
+                font-size:1.6rem;
+                font-family: $sans-serif;
+            }
+        }
+    }
+}
+.banner {
+    
+    @include container;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebab39+0,c14b6a+100 */
+    background: #ebab39;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ebab39 0%, #c14b6a 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #ebab39 0%, #c14b6a 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #ebab39 0%, #c14b6a 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-top:15px;
+    .banner_wrapper {
+        background-image: url(/media/geometric.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        height: 330px;
+    }
+    border-radius:2px;
 }
 
 .news_landing {
@@ -29,10 +98,10 @@
             vertical-align: top;
             width: 75%;
             @include breakpoint(mobileonly) {
-            	width:66%
+                width: 66%
             }
-            @include breakpoint(smallmobile){
-            	width:100%;
+            @include breakpoint(smallmobile) {
+                width: 100%;
             }
         }
         .news_landing_more {
@@ -43,11 +112,11 @@
             display: inline-block;
             vertical-align: top;
             @include breakpoint(mobileonly) {
-            	width:30%
+                width: 30%
             }
-            @include breakpoint(smallmobile){
-            	width:100%;
-            	border-left:none;
+            @include breakpoint(smallmobile) {
+                width: 100%;
+                border-left: none;
             }
         }
         .news_landing_piece {
@@ -56,16 +125,16 @@
             margin-right: 5%;
             vertical-align: top;
             @include breakpoint(mobileonly) {
-                width:100%;
+                width: 100%;
                 img.img_article_thumb {
-                	width:90%;
+                    width: 90%;
                 }
             }
-            @include breakpoint(smallmobile){
-            	margin-bottom:20px;
+            @include breakpoint(smallmobile) {
+                margin-bottom: 20px;
                 img.img_article_thumb {
-                	width:90%;
-                	margin-bottom:0px;
+                    width: 90%;
+                    margin-bottom: 0px;
                 }
             }
             img.img_article_thumb {
@@ -105,7 +174,7 @@ ul.events-list-main {
     vertical-align: top;
     width: 13%;
     margin-right: 10px;
-    font-weight:600;
+    font-weight: 600;
     .event-date-wrapper {
         width: 90px;
         &:hover span.event-month {

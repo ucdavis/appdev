@@ -1,20 +1,12 @@
 .nav_wrapper {
-    background-color: $bg-color;
     padding-bottom: 0px;
-    border-bottom: 1px solid $borders;
     clear: both;
+    border-bottom:1px solid $borders;
+    background-color:#fff;
 }
 
 nav {
     @include container;
-    ul.submenu {
-        @include transition;
-        background-color:$bg-color;
-        padding:1%;
-        padding-left:8px;
-        padding-right:8px;
-        list-style-type: none;
-    }
 }
 
 #nav {
@@ -33,16 +25,12 @@ nav {
     position: relative;
     a {
         font-size: 1.4rem;
-        text-transform: uppercase;
         font-weight: 500;
         display: block;
         color: $secondary-font;
         &:hover {
             color: $secondary-color;
         }
-        // &:active {
-        //     background-color: #c00 !important;
-        // }
     }
 }
 
@@ -58,52 +46,65 @@ nav {
         /* 60 */
         // background-color: #fff;
         > li {
-            // width: 25%;
-            // height: 100%;
-            // float: left;
             display: inline-block;
+            margin-right:5px;
             &:last-child {
                 margin-right: -5px;
             }
-            &:hover {
-                    background-color:$nav-active;
-                }
             > a {
                 line-height: 2.5em;
                 text-align: left;
-                font-size:1.6rem;
+                text-transform: uppercase;
+                font-size: 1.4rem;
                 padding: 4px 20px;
+                // border: 1px solid transparent;
                 &.active {
-                    color:$gold;
-                    background-color:$nav-active;
+                    color: $gold;
+                    // border-left: 1px solid $borders;
+                    // border-right: 1px solid $borders;
+                    // border-bottom: 1px solid $borders;
+                    // background-color: $nav-active;
                 }
-
             }
         }
     }
 }
 
-/* second level */
 
-#nav li ul {
-    // background-color: darken(blue,4);
+/* second level Submenu */
+
+ul.submenu {
+    @include transition;
     background-color: $nav-active;
+    list-style-type: none;
+    border: 1px solid $borders;
+    padding: 0px 8px;
     display: none;
     position: absolute;
     top: 100%;
+    margin-left: -1px;
     a {
+        font-size: 1.4rem;
         color: $secondary-font;
         &:hover {
             color: $secondary-color;
             // background-color:#f0f0f0;
         }
     }
+    li {
+        border-bottom: 1px solid $borders;
+        &:last-child {
+            border-bottom: none;
+        }
+        &:first-child a {}
+    }
 }
+
+#nav li ul {}
 
 #nav li:hover ul {
     display: block;
     left: 0;
-    right: 0;
     z-index: 9999;
 }
 
@@ -158,11 +159,11 @@ nav {
 
 {
     nav ul.submenu {
-        background-color:rgba(255,255,255,.8);
-        padding:1%;
+        background-color: rgba(255, 255, 255, .8);
+        padding: 1%;
         list-style-type: none;
-        padding-bottom:0px !important;
-        padding-top:0px !important;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
         li {
             text-align: left;
             padding-left: 15px;
@@ -212,7 +213,7 @@ nav {
     #nav > ul > li {
         width: 100%;
         float: none;
-        background-color: #fff;
+        // background-color: #fff;
     }
     #nav > ul > li > a {
         height: auto;

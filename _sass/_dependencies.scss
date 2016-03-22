@@ -1,31 +1,17 @@
-//
-@font-face {
-    font-family: 'klinic_light';
-    src: url('/media/fonts/klinic_light.woff') format('woff'), /* Pretty Modern Browsers */
-    url('/media/fonts/klinic_light.ttf') format('truetype'), /* Safari, Android, iOS */
-}
-
-@font-face {
-    font-family: 'klinic_medium';
-    src: url('/media/fonts/klinic_medium.woff') format('woff'), /* Pretty Modern Browsers */
-    url('/media/fonts/klinic_medium.ttf') format('truetype'), /* Safari, Android, iOS */
-}
 
 // fonts
-$sans-serif: "proxima-nova",
-arial,
-sans-serif; // light 300, reg 400, medium 500, semibold 600
-$serif: 'klinic_medium',
+$sans-serif: "proxima-nova", arial, sans-serif; // light 300, reg 400, medium 500, semibold 600
+$serif: "proxima-nova",
 Georgia,
 serif; // light 300, book 400, regular 500
 // pretty colors 
-$primary-color: #1A3E68;
-$secondary-color: #CFA21A;
-$primary-font: #333433; // p,li color in main content
-$secondary-font: #5a585c; // p,li color in portlet/sidebar
-$tertiary-font: #A6A6A6; // summary, discreet
+$primary-color: #002855;
+$secondary-color: #C99700;
+$primary-font: #444444; // p,li color in main content
+$secondary-font: #999999; // p,li color in portlet/sidebar
+$tertiary-font: #bbbbbb; // summary, discreet
 
-$bg-color: rgb(247,247,247); // background
+$bg-color: #F9F9F9; // background
 $borders: #C8C7CC; // border color
 
 $nav-active: #fff;
@@ -118,6 +104,7 @@ $shingle-brown: #4f2c1d;
 }
 
 @mixin container {
+    max-width: 1400px;
     width: 80%;
     margin: 0 auto;
     min-width: 300px;
@@ -128,7 +115,6 @@ $shingle-brown: #4f2c1d;
         width: 90%;
     }
 }
-
 // Custom random function
 // To allow a minimum value
 // ------------------------------------------------------------
@@ -270,5 +256,6 @@ html {
         background: stripes($custom-stops, 90deg);
     }
 }
+
 
 

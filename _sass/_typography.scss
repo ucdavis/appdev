@@ -60,7 +60,39 @@ ol {
         list-style-type: none;
     }
 }
+ul.portfolio_ul {
+    li {
+        list-style-type: none;
+        margin-top:35px;
+        &:first-child {
+            margin-top:0px;
+        }
+        h3 {
+            margin-bottom:0px;
+            font-weight:600;
+        }
+        p {
+            margin-top:0px;
+            margin-bottom:5px;
+        }
+    }
+}
+article ul li ul {
+    margin-left:20px;
+    li {
+        list-style: disc;
+    }
+}
+// ul.faculty-list {
+//     li {
+//         p {
+            
+//         }
+//         a{
 
+//         }
+//     }
+// }
 ul.event-info {
     li {
         b {
@@ -108,10 +140,31 @@ p {
     font-size: 1.6rem;
     font-family: $sans-serif;
     color: $primary-font;
-    &.page_description {
+    &.feed-description {
+        margin-top:0px;
+    }
+    &.tag-display {
+        margin-bottom:0px;
+        text-transform:uppercase;
+        font-size:1.4rem;
+        &.web {
+            color:$california-poppy;
+        }
+        &.app {
+            color:$recpool-blue;
+        }
+        &.helpdesk {
+            color:$sunny-grass;
+        }
+    }
+    &.lead {
         border-bottom: 1px solid $borders;
-        margin-bottom: 4%;
-        padding-bottom: 2%;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        margin-top:10px;
+        font-size:1.8rem;
+        color:$secondary-font;
+        font-weight:300;
     }
     .banner & {
         color: #fff;
@@ -122,20 +175,6 @@ p {
         color: $tertiary-font;
         margin-bottom: 10px;
         display: inline;
-    }
-    &.feed-description {
-        margin-top: 0px;
-        .news_landing & {
-            font-size: 1.4rem;
-        }
-    }
-    &.feed-summary {
-        color: $secondary-font;
-        font-size: 1.8rem;
-        border-bottom: 1px solid $borders;
-        margin-bottom: 2%;
-        padding-bottom: 2%;
-        margin-top: 0px;
     }
 }
 
@@ -168,40 +207,45 @@ h1,
         font-weight: 300;
         margin-bottom: 20px;
     }
+    header & {
+        font-size:2.4rem;
+        font-weight:600;
+        color:$primary-color;
+        display:inline-block;
+    }
 }
 
 h2,
 .h2 {
-    font-size: 2.2rem;
-    font-weight: 400;
-    .banner & {
-        color: #fff;
-        font-weight: 200;
-    }
-    &.form_title {
-        font-size: 2rem;
-        margin-top: 0px;
-        margin-bottom: 20px;
-        color: $mint-green;
-    }
+    font-size: 2.4rem;
+    font-weight: 600;
     &.feed-title {
-        margin-bottom: 0px;
-        font-size: 3.2rem;
-        .news_landing & {
-            font-size: 2.4rem;
-        }
+        margin-bottom:0px;
+        font-size:2rem;
         a {
-            color: $primary-font;
+            color:$primary-font;
             &:hover {
-                color: $primary-color;
+                color:$secondary-color;
             }
         }
     }
 }
 
-h3,
-.h3 {
+h3 {
     font-size: 2rem;
+    font-weight:600;
+    .aside_col & {
+        font-size:1.4rem;
+        color:$tertiary-font;
+        font-weight:600;
+        letter-spacing: .60px;
+        text-transform:uppercase;
+
+    }
+    ul & {
+        font-size:1.8rem;
+        font-weight:400;
+    }
 }
 
 h4,
@@ -210,14 +254,6 @@ h4,
 }
 
 h5 {
-    &.feed-date {
-        font-size: 1.5rem;
-        // text-transform: uppercase;
-        color: $tertiary-font;
-        font-family: $sans-serif;
-        margin-top: 0px;
-        margin-bottom: 8px;
-    }
 }
 
 blockquote {
