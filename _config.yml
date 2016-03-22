@@ -2,7 +2,7 @@
 title: UC Davis AppDev
 email: appdev@ucdavis.edu
 description: > # this means to ignore newlines until "baseurl:"
-  This is a Jekyll Starter template developed by cydoval.com.
+  UC Davis Application Development User Group Homepage.
 baseurl: "/appdev" # the subpath of your site, e.g. /blog/
 url: "http://ucdavis.github.io/" # the base hostname & protocol for your site
 
