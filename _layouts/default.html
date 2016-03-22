@@ -2,14 +2,11 @@
 <html>
 
   {% include head.html %}
-	{% if page.url == "/404.html" %}
-        <meta http-equiv="refresh" content="3; url=/">
-   	{% endif %}
   <body>
 
     {% include header.html %}
 
-    
+
         {{ content }}
 
 
@@ -37,8 +34,8 @@
     });
   </script>
   <!-- Searchpopup -->
-  <script src="/js/classie.js"></script>
-  <script src="/js/uisearch.js"></script>
+  <script src="{{site.baseurl}}/js/classie.js"></script>
+  <script src="{{site.baseurl}}/js/uisearch.js"></script>
   <script>
     new UISearch( document.getElementById( 'sb-search' ) );
   </script>

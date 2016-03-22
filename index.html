@@ -2,49 +2,46 @@
 layout: default
 ---
 
-<div id="slider" class="nivoSlider">
-    <img src="{{site.baseurl}}/media/slide1.jpg" title="#htmlcaption1" />
+<div class="banner">
+	<div class="banner_wrapper">
+	</div>
 </div>
-    <div id="htmlcaption1" class="nivo-html-caption">
-        <h2>Meets the second tuesday of every month</h2>
-        <p>Come discuss the latest in Application Development happenings.</p>
-    </div>
-    <div class="news_landing">
-        <div class="news_landing_contents">
-            <h1 class="sectionheader">Meetings</h1>
-            <div class="news_landing_current">
-                {% for post in site.categories.events limit:3 %}
-                <div class="news_landing_piece">
-                    {% if post.image %}
-                    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img class="img_article_thumb" src="{{ post.image }}"></a>{% endif %}
-                    <h2 class="feed-title">
-                          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        </h2>
-                    <p class="feed-description">{{ post.description }}</p>
-                </div>
-                {% endfor %}
-            </div>
-        </div>
-    </div>
 
-<!-- <div class="news_landing">
-    <div class="news_landing_contents">
-        <h1 class="sectionheader">News</h1>
-        <div class="news_landing_current">
-            {% for post in site.categories.news limit:3 %}
-            <div class="news_landing_piece">
-                {% if post.image %}
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img class="img_article_thumb" src="{{ post.image }}"></a>{% endif %}
-                <h2 class="feed-title">
-                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                <p class="feed-description">{{ post.description }}</p>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</div> -->
 <div class="main">
     <div class="main_contents">
+			<div class="home_button-wrapper">
+				{% for post in site.categories.events limit:4 %}
+				<div class="home_button-card">
+					<a href="{{ post.url | prepend: site.baseurl }}"><img src="{{site.baseurl}}/media/help_desk.svg" alt="key">
+					<h3>{{post.date | date: '%B %d, %Y'}}</h3>
+					<p>{{post.title}}</p>
+				</a>
+				</div>
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+	<div class="main">
+    <div class="main_contents">
+
+			<div class="home_button-wrapper">
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/remote.svg" alt="key">
+					<p>TODO</p></a>
+				</div>
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/account.svg" alt="key">
+					<p>TODO</p></a>
+				</div>
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/outofoffice.svg" alt="key">
+					<p>TODO</p></a>
+				</div>
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/web_app.svg" alt="key">
+					<p>TODO</p></a>
+				</div>
+				</div>
+			</div>
     </div>
 </div>

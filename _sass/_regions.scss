@@ -63,7 +63,7 @@
     }
 }
 .banner {
-    
+
     @include container;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebab39+0,c14b6a+100 */
     background: #ebab39;
@@ -76,7 +76,7 @@
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     margin-top:15px;
     .banner_wrapper {
-        background-image: url(/media/geometric.svg);
+        background-image: url(../media/geometric.svg);
         background-position: right;
         background-repeat: no-repeat;
         height: 330px;
