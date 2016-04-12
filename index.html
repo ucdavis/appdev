@@ -7,7 +7,30 @@ layout: default
 	</div>
 </div>
 
-<div class="main">
+	<div class="main">
+    <div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em;"> <!-- TODO: move to CSS class -->
+			<div class="home_button-wrapper">
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/remote.svg" alt="key">
+					<p>Who We Are</p></a>
+				</div>
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/account.svg" alt="key">
+					<p>Best Practices</p></a>
+				</div>
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/outofoffice.svg" alt="key">
+					<p>Projects</p></a>
+				</div>
+				<div class="home_button-card">
+					<a href="#"><img src="{{site.baseurl}}/media/web_app.svg" alt="key">
+					<p>Contact</p></a>
+				</div>
+				</div>
+			</div>
+  </div> <!-- .main -->
+
+  <div class="main">
     <div class="main_contents">
 			<div class="home_button-wrapper">
 				{% for post in site.categories.events limit:4 %}
@@ -20,28 +43,6 @@ layout: default
 				{% endfor %}
 			</div>
 		</div>
-	</div>
-	<div class="main">
-    <div class="main_contents">
+	</div> <!-- .main -->
 
-			<div class="home_button-wrapper">
-				<div class="home_button-card">
-					<a href="#"><img src="{{site.baseurl}}/media/remote.svg" alt="key">
-					<p>TODO</p></a>
-				</div>
-				<div class="home_button-card">
-					<a href="#"><img src="{{site.baseurl}}/media/account.svg" alt="key">
-					<p>TODO</p></a>
-				</div>
-				<div class="home_button-card">
-					<a href="#"><img src="{{site.baseurl}}/media/outofoffice.svg" alt="key">
-					<p>TODO</p></a>
-				</div>
-				<div class="home_button-card">
-					<a href="#"><img src="{{site.baseurl}}/media/web_app.svg" alt="key">
-					<p>TODO</p></a>
-				</div>
-				</div>
-			</div>
-    </div>
 </div>
