@@ -1,25 +1,78 @@
 ---
 layout: event
-title:  "Docker and containers in the cloud"
-description: "Neutra microdosing post-ironic heirloom, skateboard fingerstache distillery keytar try-hard chambray fanny pack small batch hammock literally yuccie."
-author: "Scott Kirkland"
+title:  "Docker, GAAD and Accessibility, Stack Overflow Survey vs. UCD Survey"
+description: "The second meeting featured three topics: Docker (Matthew Favetti), GAAD and Accessibility (Joshua Hori), and a Comparision of the Stack Overflow Survey and UCD Survey (John Knoll)."
+author: "Scott Kirkland, Christopher Thielen"
 date:   2016-04-12
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"
-tags: "AppDev, Docker, Containers"
+tags: "Docker, Containers, Accessibility, Survey"
 category: "events"
 ---
 
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Below are compiled notes of the meeting:
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+Re-Welcome & Miscellaneous
+-
+Christopher Thielen began presentation:
 
-Jekyll also offers powerful support for code snippets:
+- Welcome to all newcomers.
+- Meetings **moved to second Tuesday of the month** (next meeting will be May 10, 2016).
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+Application Security SIG
+-
+Jevan Grey introduced the [Application Security SIG](https://security.ucdavis.edu/appsecurity_SIG.html) and discussed its importance.
+
+- Meetings are the third Tuesday of the month, 10-11am in 1310 Surge III (The Grove).
+
+Continuing  Miscellaneous
+-
+Christopher Thielen put out a call for content area specialists as one form of community building. Anyone who is an expert (or close enough!) or knows one should nominate the individual. Interested areas include Java, C#, Python, Drupal, Javascript, ColdFusion, and more.
+
+The *App Dev Mission Statement* was re-introduced:
+
+ > The UC Davis Application Developer’s SIG provides a regular space and communication channel for campus developers to come together and learn new technologies, new techniques, understand software trends, and encourage collaboration. Our goal is to increase developer engagement, offer training opportunities, and improve overall software quality.
+
+Developers are encouraged to join the community at:
+
+ - appdev@ucdavis.edu
+ - #appdev on [ucdavis.slack.com](ucdavis.slack.com)
+ 
+Introduction to Docker
+-
+Matthew Favetti gave a presentation and demonstration of Docker.
+
+TODO: His slides
+TODO: The GitHub repo
+
+GAAD and Accessibility
+-
+Joshua Hori discussed GAAD and accessibility concerns. Developers are encouraged to join in on GAAD and improve campus website accessibility. Some examples include:
+
+ - Using screen readers to better understand the importance of clean markup
+ - Ensuring a website can be navigated using only the keyboard
+ - Addressing concerns with drag & drop interfaces
+
+Stack Overflow Survey vs. UCD Survey
+-
+John Knoll presented a summary of the recent Stack Overflow Developer Survey and discussed how it compares with our own survey from the last meeting.
+
+Next Meeting
+-
+Topic suggestions are welcome. Possible topics:
+
+ - NodeJS
+ - AngularJS 2.0 and Typescript
+ - Web layouts with PatternLab
+
+Quote of the Meeting
+-
+From Tom Cargill, Bell Labs:
+
+ > The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+
+Miscellaneous
+=
+There were **32 individuals in attendance**.
+
+A list was not taken.
