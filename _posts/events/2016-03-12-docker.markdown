@@ -14,6 +14,8 @@ Below are compiled notes of the meeting:
 
 Re-Welcome & Miscellaneous
 -
+Slides (guest presenters have additional slides linked below): [PPTX]({{ site.baseurl }}/media/meetings/2/App Dev Meeting 2.pptx), [PDF]({{ site.baseurl }}/media/meetings/2/App Dev Meeting 2.pdf)
+
 Christopher Thielen began presentation:
 
 - Welcome to all newcomers.
@@ -40,6 +42,8 @@ Developers are encouraged to join the community at:
  
 Introduction to Docker
 -
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/2/Docker Presentation.pptx), [PDF]({{ site.baseurl }}/media/meetings/2/Docker Presentation.pdf)
+
 Matthew Favetti gave a presentation and demonstration of Docker.
 
 TODO: His slides
@@ -47,6 +51,8 @@ TODO: The GitHub repo
 
 GAAD and Accessibility
 -
+Slides: *None*
+
 Joshua Hori discussed GAAD and accessibility concerns. Developers are encouraged to join in on GAAD and improve campus website accessibility. Some examples include:
 
  - Using screen readers to better understand the importance of clean markup
@@ -55,6 +61,8 @@ Joshua Hori discussed GAAD and accessibility concerns. Developers are encouraged
 
 Stack Overflow Survey vs. UCD Survey
 -
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/2/Stackoverflow Survey.pptx), [PDF]({{ site.baseurl }}/media/meetings/2/Stackoverflow Survey.pdf)
+
 John Knoll presented a summary of the recent Stack Overflow Developer Survey and discussed how it compares with our own survey from the last meeting.
 
 Next Meeting
