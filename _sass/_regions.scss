@@ -68,20 +68,20 @@
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ebab39+0,c14b6a+100 */
     background: #ebab39;
     /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #ebab39 0%, #c14b6a 100%);
+    background: -moz-linear-gradient(-45deg, #003963 0%, #096ca3 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #ebab39 0%, #c14b6a 100%);
+    background: -webkit-linear-gradient(-45deg, #003963 0%, #096ca3 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #ebab39 0%, #c14b6a 100%);
+    background: linear-gradient(135deg, #003963 0%, #096ca3 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     margin-top:15px;
     .banner_wrapper {
         background-image: url(../media/geometric.svg);
         background-position: right;
         background-repeat: no-repeat;
-        height: 330px;
+        height: 130px;
     }
-    border-radius:2px;
+    border-radius: 2px;
 }
 
 .news_landing {
