@@ -38,16 +38,15 @@ The *App Dev Mission Statement* was re-introduced:
 Developers are encouraged to join the community at:
 
  - appdev@ucdavis.edu
- - #appdev on [ucdavis.slack.com](ucdavis.slack.com)
+ - #appdev on [ucdavis.slack.com](https://ucdavis.slack.com)
  
 Introduction to Docker
 -
 Slides: [PPTX]({{ site.baseurl }}/media/meetings/2/Docker Presentation.pptx), [PDF]({{ site.baseurl }}/media/meetings/2/Docker Presentation.pdf)
 
-Matthew Favetti gave a presentation and demonstration of Docker.
+Repository: [github.com/mfavetti/dockerdemo](https://github.com/mfavetti/dockerdemo)
 
-TODO: His slides
-TODO: The GitHub repo
+Matthew Favetti gave a presentation and demonstration of Docker.
 
 GAAD and Accessibility
 -

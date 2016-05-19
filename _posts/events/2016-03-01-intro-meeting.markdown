@@ -23,7 +23,7 @@ Christopher Thielen began presentation:
     > The UC Davis Application Developer’s SIG provides a regular space and communication channel for campus developers to come together and learn new technologies, new techniques, understand software trends, and encourage collaboration. Our goal is to increase developer engagement, offer training opportunities, and improve overall software quality.
 
 - UCD is federated by design: need a civic-style approach. Multi-pronged: these meetings (technology- and project-presentation focused), Slack channel, mailing list, developers.ucdavis.edu.
-- [developers.ucdavis.edu](developers.ucdavis.edu) is a one-stop shop for developer resources at UCD. Not authoritative but links to IET, etc. resources. Think Wikipedia.
+- [developers.ucdavis.edu](https://developers.ucdavis.edu) is a one-stop shop for developer resources at UCD. Not authoritative but links to IET, etc. resources. Think Wikipedia.
 
 2016 Application Developer Survey
 -
@@ -70,11 +70,11 @@ Open Discussion
 
 Group discussed documentation problems as well as the desire for an “api.ucdavis.edu”.
 
-[swagger.io](swagger.io) was mentioned as a popular API protocol.
+[swagger.io](https://swagger.io) was mentioned as a popular API protocol.
 
 Note about security for developers.ucdavis.edu if it is to include useful but possibly sensitive information such as Banner queries. Group discussed the possible security issues in a simple CAS-only requirement for accessing developers.ucdavis.edu; not everyone with a CAS account is a ‘good’ actor due to compromised accounts or old accounts kept alive due to e-mail forwarding. Discussions revolved around whether or not a whitelist on top of the CAS requirement would be appropriate.
 
-Group was encouraged to join [ucdavis.slack.com](ucdavis.slack.com) #appdev. Free.
+Group was encouraged to join [ucdavis.slack.com](https://ucdavis.slack.com) #appdev. Free.
 
 Meetings may be moved to second or fourth Tuesday to avoid conflicts.
 
