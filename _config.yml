@@ -3,12 +3,12 @@ title: UC Davis AppDev
 email: appdev@ucdavis.edu
 description: > # this means to ignore newlines until "baseurl:"
   UC Davis Application Development User Group Homepage.
-baseurl: "/appdev" # the subpath of your site, e.g. /blog/
-url: "http://ucdavis.github.io/" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://developers.ucdavis.edu/" # the base hostname & protocol for your site
 
 permalink: pretty
 
 #paginate: 3
 future: true #show future content, like upcoming meetings
 # Build settings
-markdown: kramdown
+#markdown: kramdown
