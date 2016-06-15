@@ -8,23 +8,25 @@ Below is a list of App Dev SIG members who have volunteered to be Subject Matter
 
 It is recommended one use [whois.ucdavis.edu](http://whois.ucdavis.edu) to determine contact information.
 
-Javascript
--
+# Languages
+
+## Javascript
 - John Knoll
 - Obada Kadri (Angular JS)
 
-C#
--
+## C#
 - John Knoll
 
-Java
--
+## Java
 - Christopher Thielen
 
-PHP
--
+## PHP
 - Erik Olson (Symfony, Twig, Doctrine)
 
-Ruby
--
+## Ruby
 - Christopher Thielen
+
+# Topics
+
+## Unit Testing
+- Jason Sylvestre
