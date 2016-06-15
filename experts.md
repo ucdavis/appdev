@@ -11,7 +11,7 @@ It is recommended one use [whois.ucdavis.edu](http://whois.ucdavis.edu) to deter
 Javascript
 -
 - John Knoll
-- Christopher Thielen
+- Obada Kadri (Angular JS)
 
 C#
 -
