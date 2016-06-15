@@ -14,7 +14,7 @@ It is recommended one use [whois.ucdavis.edu](http://whois.ucdavis.edu) to deter
 - John Knoll
 - Obada Kadri (Angular JS)
 
-## C#
+## C\#
 - John Knoll
 
 ## Java
