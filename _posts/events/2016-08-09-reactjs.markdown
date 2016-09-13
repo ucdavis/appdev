@@ -10,4 +10,18 @@ tags: "React, ReactJS, ES6, Linting"
 category: "events"
 ---
 
-Be there or be an unreferenced component ;(
+Below are compiled notes of the meeting:
+
+Announcements
+-
+- Remember to join #appdev on slack.ucdavis.edu.
+- Tentative next meeting: AD Sync, Meet & Greet with new Vice Chancellor of BI Greg Siino.
+- Programming Challenges may be a fun idea to post for each meeting. Earn brownie points. Accepting ideas.
+
+ReactJS & ES6
+-
+Slides: [PDF]({{ site.baseurl }}/media/meetings/4/ReactJS-appdev.pdf)
+
+Repository: [github.com/srkirkland/reactjs-training](https://github.com/srkirkland/reactjs-training)
+
+Scott Kirkland gave a presentation on ReactJS, ES6, and JS linting.
