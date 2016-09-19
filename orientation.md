@@ -59,16 +59,17 @@ About page.
 
 Though not everything on campus is centralized, there are a few key systems in use:
 
- * **Banner**: a 'SIS' (student information system) implementation, used by this and
+ * **[Banner](https://sis.ucdavis.edu/)**: a 'SIS' (student information system) implementation, used by this and
  other campuses both inside and outside the UC organization. It stores class schedules,
  instructor workloads, and grades. It is provided by a company called Ellucian and
- operates on top of the Oracle RDMS.
+ operates on top of the Oracle RDMS.  
+ For direct database query access, [fill out this form](https://sis.ucdavis.edu/access/secure/D048BannerAccessRequest.pdf).
 
- * **LDAP**: located at ldap.ucdavis.edu, LDAP is one of the central repositories of
+ * **[LDAP](http://middleware.ucdavis.edu/ldap.php)**: located at ldap.ucdavis.edu, LDAP is one of the central repositories of
  student, staff, and faculty information. It contains names, contact information, and
  appointment (who works where) information.
 
- * **PPS**: the current payroll system at UCD. Access is fairly restricted for
+ * **[PPS](http://afs.ucdavis.edu/systems/pps/index.html)**: the current payroll system at UCD. Access is fairly restricted for
  obvious reasons. PPS contains information about an individual's appointments (note: it is
  possible that an employee is paid from more than one funding source and may have
  multiple appointments).
@@ -78,9 +79,11 @@ Though not everything on campus is centralized, there are a few key systems in u
  other systems to compose a single view on contact information, appointments, and
  other commonly needed information about a person.
 
- * **CAS**: an open source authentication system, CAS allows for multi-site access
+ * **[CAS](https://ucdavis.jira.com/wiki/display/IETP/UC+Davis+CAS+Service)**: an open source authentication system, CAS allows for multi-site access
  and a central repository for providing user accounts. *Most secure websites on campus
  use CAS and do not manage logins by themselves.*
+
+ * **[Shibboleth](https://ucdavis.jira.com/wiki/display/IETP/Shibboleth+for+SSO+at+UC+Davis)**: Shibboleth uses the widely deployed and industry standard SAML protocol, and its strengths lie in secure, federated authentication and authorization, maintaining privacy when necessary. Generally, if colleagues outside UC Davis use your website, or might in the future, then you should consider using Shibboleth for your application's authentication.
 
  * **Campus Data Warehouse**: an Oracle repository of information including
  census snapshots for courses (enrollment and wait list counts, etc.)
