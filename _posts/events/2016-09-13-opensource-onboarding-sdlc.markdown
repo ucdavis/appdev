@@ -21,6 +21,7 @@ Announcements
 Federal Open Source Policy & UC Davis
 -
 Scott Kirkland lead a discussion concerning the new Federal Open Source policy and how it might apply to UC Davis. Some notes below:
+
 - No personal opposition but legal and administrative concerns remain.
 - UC CIO Tom Andriola expressed interest at UCCSC 2016 in open sourcing work done at UC campuses.
 - Brian Donnelly mentioned that a specific copyright line should be used in UC projects: "Copyright © 20nn-nn The Regents of the University of California, Davis campus. All Rights Reserved."
