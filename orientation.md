@@ -65,14 +65,17 @@ Though not everything on campus is centralized, there are a few key systems in u
  operates on top of the Oracle RDMS.  
  For direct database query access, [fill out this form](https://sis.ucdavis.edu/access/secure/D048BannerAccessRequest.pdf).
 
- * **[LDAP](http://middleware.ucdavis.edu/ldap.php)**: located at ldap.ucdavis.edu, LDAP is one of the central repositories of
- student, staff, and faculty information. It contains names, contact information, and
- appointment (who works where) information.
-
  * **[PPS](http://afs.ucdavis.edu/systems/pps/index.html)**: the current payroll system at UCD. Access is fairly restricted for
  obvious reasons. PPS contains information about an individual's appointments (note: it is
  possible that an employee is paid from more than one funding source and may have
  multiple appointments).
+
+ * **[KFS](http://afs.ucdavis.edu/systems/kuali/)**: As the current financial system at UCD, basically any time money is moved to, from, or around campus, KFS is involved. KFS stands for Kuali Financial System and you will occasionally hear it referred to as just "Kuali." Another common term you'll still see is "FIS" which is still being used widely to refer to the same thing.  
+ [Visit the KFS direct access page](http://afs.ucdavis.edu/systems/fis/direct-access.html) for good information on gaining access as well as setting up a database connection.
+
+ * **[LDAP](http://middleware.ucdavis.edu/ldap.php)**: located at ldap.ucdavis.edu, LDAP is one of the central repositories of
+ student, staff, and faculty information. It contains names, contact information, and
+ appointment (who works where) information.
 
  * **IAM**: a relatively new system (as of 2015) aimed at providing a single source
  of information about individuals on campus. It connects with PPS, Banner, and
