@@ -57,7 +57,7 @@ About page.
 
 ## Data Systems on Campus
 
-Though not everything on campus is centralized, there are a few key systems in use:
+Though not everything on campus is centralized, there are a few key systems in use. You'll find full schema information for many of them at [datadictionary.ucdavis.edu](http://datadictionary.ucdavis.edu/).
 
  * **[Banner](https://sis.ucdavis.edu/)**: a 'SIS' (student information system) implementation, used by this and
  other campuses both inside and outside the UC organization. It stores class schedules,
