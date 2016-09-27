@@ -28,5 +28,11 @@ It is recommended one use [whois.ucdavis.edu](http://whois.ucdavis.edu) to deter
 
 # Topics
 
+## Banner (Student Information System)
+- Kevin Murakoshi
+
+## Amazon Web Services
+- Kevin Murakoshi
+
 ## Unit Testing
 - Jason Sylvestre
