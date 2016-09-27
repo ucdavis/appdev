@@ -2,47 +2,72 @@
 layout: default
 ---
 
-<div class="banner">
-	<div class="banner_wrapper">
+<div class="main">
+	<div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em;">
+		<div style="float: left; padding-top: 3.0em; padding-right: 2em;">
+			<img src="{{site.baseurl}}/media/account.svg">
+		</div>
+		<div style="float: left;">
+			<p>
+				<b>Next Meeting</b><br />
+				Vice Chancellor of BI Greg Siino, Active Directory<br />
+				<small><i>October 11th, 2016</i> (second Tuesday of the month)</small>
+			</p>
+		</div>
+		<div style="clear: both;"></div>
 	</div>
+</div> <!-- .main -->
+
+<div class="main">
+	<div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em;">
+		<p>
+			<b>If you write code for UC Davis</b> full-time, part-time, on-contract, or even as an unofficial part of your job, this website may be of help to you.
+		</p>
+		<p>
+			This is the site of the UCD Application Developer’s SIG (Special Interest Group), a self-organized community group of UCD staff aiming to share knowledge and build community.
+		</p>
+		<p>
+			We have a publicly available <a href="{{site.baseurl}}/orientation">Getting Started guide</a> which contains useful information for developing at UC Davis. We also <a href="{{site.baseurl}}/experts">maintain a list of Subject Matter Experts</a> in various technologies. Please feel free to contact them should you need assistance.
+		</p>
+		<p>
+			We hold open, public meetings on the second Tuesday of every month where volunteers present new technologies, explain campus technology changes, and more. Please attend if it sounds interesting to you. <a href="{{site.baseurl}}/events">The notes from each meeting</a> are available here as well.
+		</p>
+		<!-- <div class="home_button-wrapper">
+			<div class="home_button-card">
+				<a href="{{site.baseurl}}/about"><img src="{{site.baseurl}}/media/remote.svg" alt="key">
+				<p>Who We Are</p></a>
+			</div>
+			<div class="home_button-card">
+				<a href="{{site.baseurl}}/events"><img src="{{site.baseurl}}/media/account.svg" alt="key">
+				<p>Next Meeting:<br />Vice Chancellor of BI Greg Siino, Active Directory<br />October 11th, 2016<br /><small>(second Tuesday of the month)</small></p></a>
+			</div>
+			<div class="home_button-card">
+				<a href="{{site.baseurl}}/experts"><img src="{{site.baseurl}}/media/outofoffice.svg" alt="key">
+				<p>Subject Matter Experts</p></a>
+			</div>
+			<div class="home_button-card">
+				<a href="{{site.baseurl}}/contact"><img src="{{site.baseurl}}/media/web_app.svg" alt="key">
+				<p>Contact</p></a>
+			</div>
+		</div> -->
+	</div>
+</div> <!-- .main -->
+
+<div class="banner">
+	<div class="banner_wrapper"></div>
 </div>
 
-	<div class="main">
-    <div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em;">
-			<div class="home_button-wrapper">
-				<div class="home_button-card">
-					<a href="{{site.baseurl}}/about"><img src="{{site.baseurl}}/media/remote.svg" alt="key">
-					<p>Who We Are</p></a>
-				</div>
-				<div class="home_button-card">
-					<a href="{{site.baseurl}}/events"><img src="{{site.baseurl}}/media/account.svg" alt="key">
-					<p>Next Meeting:<br />Vice Chancellor of BI Greg Siino, Active Directory<br />October 11th, 2016<br /><small>(second Tuesday of the month)</small></p></a>
-				</div>
-				<div class="home_button-card">
-					<a href="{{site.baseurl}}/experts"><img src="{{site.baseurl}}/media/outofoffice.svg" alt="key">
-					<p>Subject Matter Experts</p></a>
-				</div>
-				<div class="home_button-card">
-					<a href="{{site.baseurl}}/contact"><img src="{{site.baseurl}}/media/web_app.svg" alt="key">
-					<p>Contact</p></a>
-				</div>
+<!-- <div class="main">
+  <div class="main_contents">
+		<div class="home_button-wrapper">
+			{% for post in site.categories.events limit:4 %}
+			<div class="home_button-card">
+				<a href="{{ post.url | prepend: site.baseurl }}"><img src="{{site.baseurl}}/media/help_desk.svg" alt="key">
+				<h3>{{post.date | date: '%B %d, %Y'}}</h3>
+				<p>{{post.title}}</p>
+			</a>
 			</div>
+			{% endfor %}
 		</div>
-  </div> <!-- .main -->
-
-  <div class="main">
-    <div class="main_contents">
-			<div class="home_button-wrapper">
-				{% for post in site.categories.events limit:4 %}
-				<div class="home_button-card">
-					<a href="{{ post.url | prepend: site.baseurl }}"><img src="{{site.baseurl}}/media/help_desk.svg" alt="key">
-					<h3>{{post.date | date: '%B %d, %Y'}}</h3>
-					<p>{{post.title}}</p>
-				</a>
-				</div>
-				{% endfor %}
-			</div>
-		</div>
-	</div> <!-- .main -->
-
-</div>
+	</div>
+</div> -->
