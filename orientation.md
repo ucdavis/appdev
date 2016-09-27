@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Developer Orientation
+title: Getting Started
 permalink: /orientation/
 ---
 
