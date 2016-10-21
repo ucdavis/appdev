@@ -10,4 +10,20 @@ tags: "Greg Siino, Business Intelligence, Active Directory, uConnect"
 category: "events"
 ---
 
-Notes will be made available after the meeting.
+Below are compiled notes of the meeting:
+
+Vice Chancellor of Business Intelligence Greg Siino Presents Vision
+-
+UC Davis' new Vice Chancellor of Business Intelligence Greg Siino presented what he hopes to accomplish here at UC Davis.
+
+Slides: Not yet available
+
+Banner Team Announcement
+-
+Banner will be moving its hosting and with that comes a number of important changes for developers. Please see the slides.
+
+Slides: [PDF]({{ site.baseurl }}/media/meetings/6/Banner Hosting Presentation.pdf)
+
+Miscellaneous
+-
+Dean Bunn's Active Directory integration presentation will be presented at a later date.
