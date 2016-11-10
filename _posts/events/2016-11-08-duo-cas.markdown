@@ -1,7 +1,7 @@
 ---
 layout: event
-title:  "Duo with CAS, TBD"
-description: "Travis Schmidt will be showing the new Duo integration for CAS. Other topics TBD."
+title:  "Duo with CAS"
+description: "Travis Schmidt will be showing the new Duo integration for CAS."
 author: "Christopher Thielen"
 date:   2016-11-08
 event-time: 11:00AM - 12:00PM
@@ -10,4 +10,20 @@ tags: "Duo, CAS"
 category: "events"
 ---
 
-Notes will be made available after the meeting.
+Below are compiled notes of the meeting:
+
+Announcements
+-
+- Remember to join #appdev on slack.ucdavis.edu, appdev@ucdavis.edu mailing list, etc.
+
+Duo with CAS
+-
+Slides: [PDF]({{ site.baseurl }}/media/meetings/7/duo-with-cas.pdf)
+
+Travis Schmidt gave a presentation on using Duo with CAS as well as announcements on future infrastructure.
+
+See also: [Duo Multi-factor Authentication](http://itcatalog.ucdavis.edu/service/duo-multi-factor-authentication)
+
+Miscellaneous
+=
+There were **13 individuals in attendance**.
