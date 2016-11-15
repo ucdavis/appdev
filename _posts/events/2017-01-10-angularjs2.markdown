@@ -1,6 +1,6 @@
 ---
 layout: event
-title:  "Building Applications with AngularJS 2.0"
+title:  "Angular 2 and Full Stack Typescript"
 description: "Eli Richmond will be discussing how to develop applications using AngularJS 2.0."
 author: "Christopher Thielen"
 date:   2017-01-10
