@@ -10,4 +10,19 @@ tags: "Angular JS 2"
 category: "events"
 ---
 
-Notes will be made available after the meeting.
+Below are compiled notes of the meeting:
+
+Announcements
+-
+- Remember to join #appdev on slack.ucdavis.edu, appdev@ucdavis.edu mailing list, etc.
+- Ask for audio/visual equipment (James Cubbage will bring the equipment next meeting).
+
+Angular 2 and Full Stack Typescript
+-
+Slides: [PDF]({{ site.baseurl }}/media/meetings/8/angular2.pdf) [PPTX]({{ site.baseurl }}/media/meetings/8/angular2.pptx)
+
+Eli Richmond, Joshua Eilers, and David Scott gave a presentation on Angular 2, full stack Typescript, and Docker on AWS.
+
+Miscellaneous
+=
+There were **18 individuals in attendance**.
