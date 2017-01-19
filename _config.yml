@@ -12,3 +12,6 @@ permalink: pretty
 future: true #show future content, like upcoming meetings
 # Build settings
 #markdown: kramdown
+
+collections:
+- projects

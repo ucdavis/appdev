@@ -139,6 +139,7 @@ p {
     letter-spacing: .025rem;
     font-size: 1.6rem;
     font-family: $sans-serif;
+    text-rendering: optimizeLegibility;
     color: $primary-font;
     &.feed-description {
         margin-top:0px;
