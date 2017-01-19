@@ -29,6 +29,9 @@ The purpose of this list is multi-factored:
 			Description
 		</th>
 		<th>
+			Technologies
+		</th>
+		<th>
 			URL
 		</th>
 		<th>
@@ -44,6 +47,7 @@ The purpose of this list is multi-factored:
 				<td>{{ project.name }}</td>
 				<td>{{ project.team }}</td>
 				<td>{{ project.description }}</td>
+				<td>{{ project.technologies }}</td>
 				<td>{{ project.public_url }}</td>
 				<td>{{ project.repo_url }}</td>
 				<td>{{ project.contact }}</td>

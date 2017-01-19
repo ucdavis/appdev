@@ -5,4 +5,5 @@ description: "Create smart groups automatically from LDAP/IAM data and sync memb
 public_url: "https://roles.dss.ucdavis.edu/"
 repo_url: "https://github.com/dssit/roles-management"
 contact: "Christopher Thielen"
+technologies: "Ruby on Rails"
 ---

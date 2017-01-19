@@ -5,4 +5,5 @@ description: "Interactive map kiosk software, borrowing from the School of Law's
 public_url: "https://wayfinding.dss.ucdavis.edu/"
 repo_url: "https://github.com/dssit/dss-wayfinding"
 contact: "Christopher Thielen"
+technologies: "Ruby on Rails"
 ---
