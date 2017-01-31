@@ -4,7 +4,7 @@ title: Who We Are
 permalink: /about/
 ---
 
-The UC Davis Application Developer's Special Interest Group (SIG) is a self-organized community group of UCD staff aiming to share knowledge and build community.
+The UC Davis Application Developer's Special Interest Group (SIG) is a self-organized community group of UCD staff, faculty, students, and researchers aiming to share knowledge and build community.
 
 We hold meetings on the second Tuesday of every month and post the notes on this site.
 
