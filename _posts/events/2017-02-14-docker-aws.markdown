@@ -1,12 +1,12 @@
 ---
 layout: event
-title:  "Open Source Policy at UCD, Docker in AWS ECS"
-description: "Innovation Access will answer the question 'Can I open source my work at UCD?'. David Scott will show how to manage Docker containers in AWS ECS."
+title:  "Docker in AWS ECS"
+description: "David Scott will show how to manage Docker containers in AWS ECS."
 author: "Christopher Thielen"
 date:   2017-02-14
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"
-tags: "uConnect"
+tags: "Docker,AWS"
 category: "events"
 ---
 
