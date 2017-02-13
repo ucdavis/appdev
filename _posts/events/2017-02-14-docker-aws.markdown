@@ -16,9 +16,9 @@ Notes will be posted after the meeting.
 -
 - Remember to join #appdev on slack.ucdavis.edu, appdev@ucdavis.edu mailing list, etc.
 - Project listing
+- Subject Matter Expert call.
 - Ask for audio/visual equipment (James Cubbage will bring the equipment next meeting).
 - Solicited feedback on last year's survey. We will be performing another one in March.
-- Subject Matter Expert call.
 
 Angular 2 and Full Stack Typescript
 -

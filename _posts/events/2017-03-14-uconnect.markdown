@@ -1,6 +1,6 @@
 ---
 layout: event
-title:  "Developing with uConnect, TBD"
+title:  "Developing with uConnect, CAS Service Registry"
 description: "Dean Bunn will be discussing developing with the uConnect Active Directory system. Travis Schmidt will be discussing upcoming changes to the CAS Service Registry."
 author: "Christopher Thielen"
 date:   2017-03-14
