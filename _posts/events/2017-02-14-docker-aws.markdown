@@ -10,22 +10,20 @@ tags: "Docker,AWS"
 category: "events"
 ---
 
-Notes will be posted after the meeting.
-
-<!--Announcements
+Announcements
 -
 - Remember to join #appdev on slack.ucdavis.edu, appdev@ucdavis.edu mailing list, etc.
-- Project listing
-- Subject Matter Expert call.
-- Ask for audio/visual equipment (James Cubbage will bring the equipment next meeting).
-- Solicited feedback on last year's survey. We will be performing another one in March.
+- Request for feedback on last year's survey. We will be performing another one in March. See the <a href="{{site.baseurl}}/survey">Survey</a> page for last year's survey.
+- Announcement of upcoming meeting topics. See the <a href="{{site.baseurl}}/events">Meetings</a> page for more information.
 
-Angular 2 and Full Stack Typescript
+Docker in AWS ECS
 -
-Slides: [PDF]({{ site.baseurl }}/media/meetings/8/angular2.pdf) [PPTX]({{ site.baseurl }}/media/meetings/8/angular2.pptx)
+Slides: [PDF]({{ site.baseurl }}/media/meetings/9/Docker in AWS ECS.pdf) [PPTX]({{ site.baseurl }}/media/meetings/9/Docker in AWS ECS.pptx)
 
-Eli Richmond, Joshua Eilers, and David Scott gave a presentation on Angular 2, full stack Typescript, and Docker on AWS.
+David Scott presented Terraform, an infrastructure-as-code tool used by his team to manage their Docker containers in Amazon Web Services.
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_2t8tetmk&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_34fb1fmv" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0"></iframe>
 
 Miscellaneous
 =
-There were **18 individuals in attendance**.-->
+There were **16 individuals in attendance**.
