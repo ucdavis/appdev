@@ -10,22 +10,24 @@ tags: "survey, sentiment analysis, AI, python, twitter"
 category: "events"
 ---
 
-Notes will be posted after the meeting.
-
-<!--Announcements
+Announcements
 -
-- Remember to join #appdev on slack.ucdavis.edu, appdev@ucdavis.edu mailing list, etc.
-- Project listing
-- Ask for audio/visual equipment (James Cubbage will bring the equipment next meeting).
-- Solicited feedback on last year's survey. We will be performing another one in March.
-- Subject Matter Expert call.
+No announcements this meeting.
 
-Angular 2 and Full Stack Typescript
+2017 Developer Survey Results
 -
-Slides: [PDF]({{ site.baseurl }}/media/meetings/8/angular2.pdf) [PPTX]({{ site.baseurl }}/media/meetings/8/angular2.pptx)
+Christopher Thielen presented selected results and cross-tabulations from the second annual developer survey.
 
-Eli Richmond, Joshua Eilers, and David Scott gave a presentation on Angular 2, full stack Typescript, and Docker on AWS.
+Slides: [PDF]({{ site.baseurl }}/media/meetings/12/2017 Survey Select Results.pdf) [PPTX]({{ site.baseurl }}/media/meetings/12/2017 Survey Select Results.pptx)
+
+Sentiment Analysis with Python and Twitter
+-
+Rob Martinsen gave a demonstration on sentiment analysis with Python and Twitter.
+
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/12/SacPy-TwitterDataMining.pptx)
+Source Code: [ZIP]({{ site.baseurl }}/media/meetings/12/sacpy_twitter_presentation.zip)
+GitHub: [Git](https://github.com/rmartinsen/sacpy_twitter_presentation)
 
 Miscellaneous
 =
-There were **18 individuals in attendance**.-->
+There were **12 individuals in attendance**.
