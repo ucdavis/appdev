@@ -1,7 +1,7 @@
 ---
 layout: event
 title:  "Single-Sign-On Azure Proxy, UC Path"
-description: "Thomas Pomroy discusses the SSO Azure App Auth proxy, Everett Wilson will present on UC Path."
+description: "Thomas Pomroy (uConnect Services Manager, IET) discusses the SSO Azure App Auth proxy, Everett Wilson (Technical Lead, A&FS: Systems Development) will present on UC Path."
 author: "Christopher Thielen"
 date:   2017-09-12
 event-time: 11:00AM - 12:00PM
