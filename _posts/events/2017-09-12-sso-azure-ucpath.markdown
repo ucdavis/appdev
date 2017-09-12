@@ -10,4 +10,27 @@ tags: "uc path, azure, sso"
 category: "events"
 ---
 
-Notes will be posted after the meeting.
+Announcements
+-
+UCCSC will be at UC Davis next year. App Dev presenters should apply for the Engineering Track; it's not much harder than presenting at the SIG.
+
+Azure AD Application Proxy
+-
+Tom Pomroy and _ presented a new authentication option: Azure AD Application Proxy. It is a new service from Microsoft/Office 365 allowing for multi-factor authorization against Active Directory groups. It includes a reverse web proxy.
+
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/13/AzureADAppProxy.pptm.pptx)
+
+UC Path
+-
+Everett Wilson presented the what and why of UC Path including some conceptual changes that may be of interest to developers. ucpathproject.ucop.edu
+
+Slides: Coming Soon!
+
+Miscellaneous
+=
+There were **22 individuals in attendance**.
+
+<div style="margin: auto auto; width: 75%; text-align: center;">
+  <a href="{{ site.baseurl }}/media/meetings/13/photo.jpg"><img src="{{ site.baseurl }}/media/meetings/13/photo_s.jpg" alt="Azure AD Application Proxy presentation" /></a><br />
+  <span style="font-size: 1.2em; font-style: italic; font-family: sans-serif;">Azure AD Application Proxy presentation</span>
+</div>
