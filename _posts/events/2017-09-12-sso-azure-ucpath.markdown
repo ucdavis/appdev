@@ -18,7 +18,7 @@ Azure AD Application Proxy
 -
 Tom Pomroy and _ presented a new authentication option: Azure AD Application Proxy. It is a new service from Microsoft/Office 365 allowing for multi-factor authorization against Active Directory groups. It includes a reverse web proxy.
 
-Slides: [PPTX]({{ site.baseurl }}/media/meetings/13/AzureADAppProxy.pptm.pptx)
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/13/AzureADAppProxy.pptm)
 
 UC Path
 -
