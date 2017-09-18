@@ -18,13 +18,13 @@ Azure AD Application Proxy
 -
 Tom Pomroy and Rick Leos presented a new authentication option: Azure AD Application Proxy. It is a new service from Microsoft/Office 365 allowing for multi-factor authorization against Active Directory groups. It includes a reverse web proxy.
 
-Slides: [PPTX]({{ site.baseurl }}/media/meetings/13/AzureADAppProxy.pptm)
+Slides: [PPTM]({{ site.baseurl }}/media/meetings/13/AzureADAppProxy.pptm)
 
 UC Path
 -
 Everett Wilson presented the what and why of UC Path including some conceptual changes that may be of interest to developers. More information at [ucpathproject.ucop.edu](http://ucpathproject.ucop.edu)
 
-Slides: Coming Soon!
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/13/UCPath.pptx)
 
 Miscellaneous
 =
