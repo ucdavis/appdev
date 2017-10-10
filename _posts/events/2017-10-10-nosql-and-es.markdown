@@ -115,6 +115,8 @@ curl -X POST \
 }'
 {% endhighlight %}
 
+Note: The graphical CURL tool used was [Postman](https://www.getpostman.com/).
+
 Slides: [PDF]({{ site.baseurl }}/media/meetings/14/nosql_es.pdf) [PPTX]({{ site.baseurl }}/media/meetings/14/nosql_es.pptx)
 
 Open Source Policy Guideline Update
