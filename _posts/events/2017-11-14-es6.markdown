@@ -22,3 +22,13 @@ Video:
   <source src="{{ site.baseurl }}/media/meetings/15/App Dev SIG 2017-11-14.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
+
+Resources
+-
+ * [Spectacle Presentation Library](https://github.com/FormidableLabs/spectacle/)
+ * [The Star Wars API](https://swapi.co/)
+ * [Quokka Javascript Playground](https://quokkajs.com/)
+
+Miscellaneous
+=
+There were **15 individuals in the room** and an additional **7 individuals attending online** for a total of **22 attendees**.
