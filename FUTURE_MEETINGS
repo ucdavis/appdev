@@ -4,6 +4,10 @@ Neo4j + graphing databases (Christopher T)
 Docker
 Authentication, what is OAuth, OpenID, claims, SAML, CAS, how do each work with campus apps, mobile apps, embedded apps, etc
 Advanced React with Redux
+Typescript
+Database crash course (solid tips, e.g. "Be good at SQL", different index types and how to optimize queries and views vs. UDFs)
 
-IAM Web Service
+IAM Web Service (as a minor item)
 
+• Eli’s group is doing some AWS automation stuff which might be interesting
+• Testing the front-end?  React at least has some cool front-end mocks and test libs we could go through.
