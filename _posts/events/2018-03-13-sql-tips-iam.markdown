@@ -13,21 +13,21 @@ category: "events"
 SQL Tips and Tricks
 -
 
-TBD
+Ken Taylor presented tips and tricks in SQL with a focus on Microsoft SQL Server.
 
-Slides: TBD
-
-Video: TBD
+Slides: Coming soon
 
 IAM Web Service
 -
 
-TBD
+Christopher Thielen presented the campus IAM Web Service as a replacement for any LDAP-based data sources.
 
-Slides: TBD
+Slides: [PDF]({{ site.baseurl }}/media/meetings/17/iam_web_service.pdf) [PPTX]({{ site.baseurl }}/media/meetings/17/iam_web_service.pptx)
 
-Video: TBD
+Video:
+
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_5y26dczt&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_qoyfbgl2" width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen frameborder="0" title="Kaltura Player"></iframe>
 
 Miscellaneous
 =
-There were **19 individuals in the room** and an additional **8 individuals attending online** for a total of **27 attendees**.
+There were **14 individuals in the room** and an additional **20 individuals attending online** for a total of **34 attendees**.
