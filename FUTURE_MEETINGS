@@ -7,7 +7,7 @@ Advanced React with Redux
 Typescript
 Database crash course (solid tips, e.g. "Be good at SQL", different index types and how to optimize queries and views vs. UDFs)
 
-IAM Web Service (as a minor item)
+Mythical Man Month review
 
 • Eli’s group is doing some AWS automation stuff which might be interesting
 • Testing the front-end?  React at least has some cool front-end mocks and test libs we could go through.
