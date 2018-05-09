@@ -13,7 +13,9 @@ category: "events"
 D3JS
 -
 
-TBD
+John Knoll discussed the Javascript visualization library D3JS.
+
+Code: [ZIP]({{ site.baseurl }}/media/meetings/18/d3js_code.zip)
 
 Graph Databases
 -
