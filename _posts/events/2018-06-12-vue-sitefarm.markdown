@@ -13,14 +13,12 @@ category: "events"
 VueJS & SiteFarm JSON API
 -
 
-TBD
+Mark Miller gave a primer on VueJS, using VueJS with SiteFarm, and discussed the SiteFarm API.
 
 Slides: [PDF]({{ site.baseurl }}/media/meetings/19/VueSitefarm.pdf)
 
-Miscellaneous
-=
-TBD
+Video: Coming later today.
 
 Miscellaneous
 =
-There were **13 individuals in the room** and an additional **8 individuals attending online** for a total of **21 attendees**.
+There were **29 individuals in the room** and an additional **9 individuals attending online** for a total of **38 attendees**.
