@@ -10,16 +10,17 @@ tags: "vuejs, sitefarm, json"
 category: "events"
 ---
 
-VueJS
+VueJS & SiteFarm JSON API
 -
 
 TBD
 
-SiteFarm JSON API
--
-
-TBD
+Slides: [PDF]({{ site.baseurl }}/media/meetings/19/VueSitefarm.pdf)
 
 Miscellaneous
 =
 TBD
+
+Miscellaneous
+=
+There were **13 individuals in the room** and an additional **8 individuals attending online** for a total of **21 attendees**.
