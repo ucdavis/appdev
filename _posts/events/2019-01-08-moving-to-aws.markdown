@@ -10,4 +10,10 @@ tags: "aws,docker,linux"
 category: "events"
 ---
 
-TBD
+To the Cloud! (A Personal Journey)
+-
+
+Christopher Thielen presented his journey to using containers with Amazon Web Services.
+
+Slides: [PDF]({{ site.baseurl }}/media/meetings/21/appdev-1-8-19.pdf) 
+[PPTX]({{ site.baseurl }}/media/meetings/21/appdev-1-8-19.pptx)
