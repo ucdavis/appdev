@@ -14,10 +14,17 @@ category: "events"
 
 Travis Schmidt delivers an update on the latest changes to CAS.
 
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/24/cas6.pptx) [PDF]({{ site.baseurl }}/media/meetings/24/cas6.pdf)
+
 ## Secure Application Development with IS-3
 
 Christopher Thielen delivers a primer on Secure Application Development with IS-3.
 
+Slides: [PPTX]({{ site.baseurl }}/media/meetings/24/is3.pptx) [PDF]({{ site.baseurl }}/media/meetings/24/is3.pdf)
+
+Video:
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_yh9xrm4g&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;&wid=0_elzjhy6o" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" frameborder="0" title="Kaltura Player"></iframe>
+
 Miscellaneous
 =
-There were **? individuals in the room** and an additional **? individuals attending online** for a total of **? attendees**.
+There were **7 individuals in the room** and an additional **29 individuals attending online** for a total of **36 attendees**.
