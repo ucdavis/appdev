@@ -1,0 +1,21 @@
+---
+layout: event
+title:  "Understanding Common Authentication Schemes"
+description: "Learn how several critical authentication schemes used throughout the university system work in practice."
+author: "Christopher Thielen"
+date:   2019-10-08
+event-time: 11:00AM - 12:00PM
+event-location: "TBD"
+tags: ""
+category: "events"
+---
+
+## Understanding Common Authentication Schemes
+
+Learn how several critical authentication schemes used throughout the university system work in practice. You'll learn:
+
+* How Shibboleth and SAML work together, and where InCommon fits into the picture.
+* About CAS, Duo, and more.
+* And of course, you'll learn about OAuth/OIDC, the most commonly used scheme in our industry (other than perhaps BASIC username/passwords).
+
+We'll view practical examples of how each work, and discuss their strengths and weaknesses. We'll get into claims and information consent, which is a critical component of complete authentication and authorization systems.
