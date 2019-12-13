@@ -1,7 +1,7 @@
 ---
 layout: page
 title: .NET Platform Recommendations
-permalink: /guides/aspnet
+permalink: /guides/dotnet
 ---
 
 Welcome! The purpose of this document is to give some general guidelines and recommendations for developing on the .NET Platform at UC Davis.
@@ -28,7 +28,7 @@ More information on the GitHub service, including how to get started, is availab
 
 # License
 
-We recommend that applications built at UC Davis be released under an [open source license](https://developers.ucdavis.edu/opensource/) whenever possible.  Following the spirit of [the UCOP Open Access Policy](https://osc.universityofcalifornia.edu/open-access-at-uc/open-access-policy/), in which all research articles authored by faculty are made available to the public, we believe the software we create should also be available to the public.  Additionally, many of the tools listed below are free to open source projects.
+We recommend that applications built at UC Davis be released under an [open source license](https://developers.ucdavis.edu/opensource/) whenever possible.  Following the spirit of [the UCOP Open Access Policy](https://osc.universityofcalifornia.edu/open-access-at-uc/open-access-policy/), in which all research articles authored by faculty are made available to the public, we believe the software we create should also be available to the public.
 
 # Hosting
 
@@ -58,7 +58,9 @@ Authentication at UC Davis is mainly based around using the [CAS Authentication 
 
 ## Using CAS
 
-The recommended library for using CAS is [https://github.com/IUCrimson/AspNet.Security.CAS](https://github.com/IUCrimson/AspNet.Security.CAS).  In development use [https://ssodev.ucdavis.edu/cas/](https://ssodev.ucdavis.edu/cas/) as your server base url, and in product it'll be [https://cas.ucdavis.edu/cas](https://cas.ucdavis.edu/cas).  Don't forget to register your application with [http://casmgr.ucdavis.edu/](http://casmgr.ucdavis.edu/) before you deploy to production.
+The recommended library for using CAS is [https://github.com/IUCrimson/AspNet.Security.CAS](https://github.com/IUCrimson/AspNet.Security.CAS).  In development use [https://ssodev.ucdavis.edu/cas/](https://ssodev.ucdavis.edu/cas/) as your server base url, and in production it'll be [https://cas.ucdavis.edu/cas](https://cas.ucdavis.edu/cas).  Don't forget to register your application with [http://casmgr.ucdavis.edu/](http://casmgr.ucdavis.edu/) before you deploy to production.
+
+(Coming soon, OpenID Connect login through CAS)
 
 ## Password or Social Logins
 
@@ -72,7 +74,9 @@ If you want to use JavaScript or TypeScript to provide a rich client-side experi
 
 There are many different ways to test your code, and with ASP.NET Core it's simple to write some [unit tests](https://docs.microsoft.com/en-us/dotnet/core/testing/) and/or [integration tests](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests).  Try writing a few unit tests to cover an important part of your code first and then expand from there once you get the hang of it.  Integration tests are often very useful since they test the way components work together, like to make sure your code won't save an invalid object (ex: a person with no name).
 
-Any of the three officially supported libraries, MSTest, XUnit and NUnit should work just fine for most cases, but **we recommend xUnit** because it's easy to use and well supported.
+Any of the three officially supported libraries, MSTest, [xUnit](https://xunit.net/) and [NUnit](https://nunit.org/) should work just fine for most cases. 
+
+We recommend xUnit because it's easy to use and well supported.
 
 # Logging
 
