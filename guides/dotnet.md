@@ -4,6 +4,8 @@ title: .NET Platform Recommendations
 permalink: /guides/dotnet
 ---
 
+# DRAFT DRAFT DRAFT.  THIS IS ONLY A DRAFT.
+
 Welcome! The purpose of this document is to give some general guidelines and recommendations for developing on the .NET Platform at UC Davis.
 
 # Table of Contents
@@ -13,6 +15,7 @@ Welcome! The purpose of this document is to give some general guidelines and rec
 * [Hosting](#hosting)
 * [.NET Framework](#net-framework)
 * [Web Applications](#web-applications)
+* [Editors](#editors)
 * [Authentication](#authentication)
 * [JavaScript Integration](#javascript-integration)
 * [Testing](#testing)
@@ -51,6 +54,10 @@ Both .NET 4.x and .NET Core are enterprise-grade, fully supported platforms for 
 [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) is a cross-platform, high-performance, [open-source](https://github.com/aspnet/home) framework for building modern, cloud-based, Internet-connected applications.
 
 We recommend that web applications & APIs are built using ASP.NET Core MVC.  ASP.NET Core MVC is mature, [full of useful features](https://docs.microsoft.com/en-us/aspnet/core#build-web-apis-and-web-ui-using-aspnet-core-mvc), and supported on the .NET Core framework.
+
+# Editors
+
+We recommend either [Visual Studio](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/) for .NET development. 
 
 # Authentication
 
