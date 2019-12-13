@@ -4,7 +4,20 @@ title: .NET Platform Recommendations
 permalink: /guides/aspnet
 ---
 
-Curabitur accumsan facilisis libero hendrerit finibus. Aenean condimentum volutpat lacus a maximus. Curabitur elementum pharetra tortor, ac aliquam est tempor tempus. Duis nec efficitur orci.
+Welcome! The purpose of this document is to give some general guidelines and recommendations for developing on the .NET Platform at UC Davis.
+
+# Table of Contents
+
+* [Source Control](#source-control)
+* [License](#license)
+* [Hosting](#hosting)
+* [.NET Framework](#net-framework)
+* [Web Applications](#web-applications)
+* [Authentication](#authentication)
+* [JavaScript Integration](#javascript-integration)
+* [Testing](#testing)
+* [Logging](#logging)
+* [Continuous Integration](#continuous-integration)
 
 # Source Control
 
@@ -17,15 +30,27 @@ More information on the GitHub service, including how to get started, is availab
 
 We recommend that applications built at UC Davis be released under an [open source license](https://developers.ucdavis.edu/opensource/) whenever possible.  Following the spirit of [the UCOP Open Access Policy](https://osc.universityofcalifornia.edu/open-access-at-uc/open-access-policy/), in which all research articles authored by faculty are made available to the public, we believe the software we create should also be available to the public.  Additionally, many of the tools listed below are free to open source projects.
 
+# Hosting
+
+The two most popular cloud hosting environments at UC Davis are [Amazon Web Services](https://aws.amazon.com/) and [Microsoft Azure](https://azure.microsoft.com/en-us/).  Both are great environments to host ASP.NET Core applications and both are supported through campus and UCOP level agreements.
+
+UCD Specific links follow for [Amazon Web Services cloud service information](https://cloud.ucdavis.edu/services/amazon-web-services-aws) and [Microsoft Azure cloud service information](https://cloud.ucdavis.edu/services/microsoft-azure).
+
 # .NET Framework
 
-Both ASP.NET 4.x and ASP.NET Core are enterprise-grade, fully supported platforms for building modern applications.  [Both are great choices](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/choose-aspnet-framework) for building applications at UC Davis.
+Both .NET 4.x and .NET Core are enterprise-grade, fully supported platforms for building modern applications.  [Both are great choices](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/choose-aspnet-framework) for building applications at UC Davis.
 
-**For building new applications ASP.NET Core is recommended** for several reasons:
+**For building new applications .NET Core is recommended** for several reasons:
 
 1. [.NET 5 (the next major release)](https://devblogs.microsoft.com/dotnet/introducing-net-5/) will be the single framework going forward.  It will be built on .NET Core and will leave behind some features of .NET 4.x (like Web Forms, WCF, WWF, etc)
-1. ASP.NET Core works on Windows, macOS, or Linux, which gives the widest array of options for application deployment.
-1. ASP.NET Core is has much [higher performance](https://github.com/aspnet/benchmarks) and less overhead, which is very useful when doing cloud deployments.
+1. .NET Core works on Windows, macOS, or Linux, which gives the widest array of options for application deployment.
+1. .NET Core is has much [higher performance](https://github.com/aspnet/benchmarks) and less overhead, which is very useful when doing cloud deployments.
+
+# Web Applications
+
+[ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) is a cross-platform, high-performance, [open-source](https://github.com/aspnet/home) framework for building modern, cloud-based, Internet-connected applications.
+
+We recommend that web applications & APIs are built using ASP.NET Core MVC.  ASP.NET Core MVC is mature, [full of useful features](https://docs.microsoft.com/en-us/aspnet/core#build-web-apis-and-web-ui-using-aspnet-core-mvc), and supported on the .NET Core framework.
 
 # Authentication
 
@@ -63,4 +88,6 @@ Using a Continuous Integration (CI) system is a great way to constantly and cons
 
 We recommend using [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) because it is cloud hosted, can run tons of languages on any platform, and integrates seemlessly with GitHub.  It even has a Continuous Deployment component which can deploy code to AWS, Azure, GCP, or locally.  Azure Pipelines is free for open source projects and is included with Visual Studio Subscriptions (MSDN).
 
-# Static Analysis?
+# Static Analysis
+
+TBD
