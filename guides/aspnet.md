@@ -15,7 +15,7 @@ More information on the GitHub service, including how to get started, is availab
 
 # License
 
-We recommend that applications built at UC Davis be released under an [open source license](https://developers.ucdavis.edu/opensource/) whenever possible.  Following the spirit of [the UCOP Open Access Policy](https://osc.universityofcalifornia.edu/open-access-at-uc/open-access-policy/), in which all research articles authored by faculty are made available to the public, we believe the software we create should also be available to the public.   
+We recommend that applications built at UC Davis be released under an [open source license](https://developers.ucdavis.edu/opensource/) whenever possible.  Following the spirit of [the UCOP Open Access Policy](https://osc.universityofcalifornia.edu/open-access-at-uc/open-access-policy/), in which all research articles authored by faculty are made available to the public, we believe the software we create should also be available to the public.  Additionally, many of the tools listed below are free to open source projects.
 
 # .NET Framework
 
@@ -62,3 +62,5 @@ We recommend using [Serilog](https://github.com/serilog/serilog-aspnetcore) for 
 Using a Continuous Integration (CI) system is a great way to constantly and consistently test and build your code.  Popular CI systems at UC Davis include [Jenkins](https://jenkins.io/) and [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/).
 
 We recommend using [Azure Pipelines](https://azure.microsoft.com/en-us/services/devops/pipelines/) because it is cloud hosted, can run tons of languages on any platform, and integrates seemlessly with GitHub.  It even has a Continuous Deployment component which can deploy code to AWS, Azure, GCP, or locally.  Azure Pipelines is free for open source projects and is included with Visual Studio Subscriptions (MSDN).
+
+# Static Analysis?
