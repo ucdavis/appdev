@@ -14,7 +14,7 @@ Welcome! The purpose of this document is to give some general guidelines and rec
 * [License](#license)
 * [Hosting](#hosting)
 * [.NET Framework](#net-framework)
-* [Web Applications](#web-applications)
+* [Web Applications & APIs](#web-applications-and-apis)
 * [Editors](#editors)
 * [Authentication](#authentication)
 * [JavaScript Integration](#javascript-integration)
@@ -49,11 +49,15 @@ Both .NET 4.x and .NET Core are enterprise-grade, fully supported platforms for 
 1. .NET Core works on Windows, macOS, or Linux, which gives the widest array of options for application deployment.
 1. .NET Core is has much [higher performance](https://github.com/aspnet/benchmarks) and less overhead, which is very useful when doing cloud deployments.
 
-# Web Applications
+# Web Applications and APIs
 
 [ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/) is a cross-platform, high-performance, [open-source](https://github.com/aspnet/home) framework for building modern, cloud-based, Internet-connected applications.
 
-We recommend that web applications & APIs are built using ASP.NET Core MVC.  ASP.NET Core MVC is mature, [full of useful features](https://docs.microsoft.com/en-us/aspnet/core#build-web-apis-and-web-ui-using-aspnet-core-mvc), and supported on the .NET Core framework.
+We recommend that web applications & APIs are built using ASP.NET Core MVC.  
+
+ASP.NET Core MVC is mature, [full of useful features](https://docs.microsoft.com/en-us/aspnet/core#build-web-apis-and-web-ui-using-aspnet-core-mvc), and supported on the .NET Core framework.  
+
+APIs should be documented following the [Swagger OpenAPI Specification](https://swagger.io/resources/open-api/).  ASP.NET Core has the excellent [Swashbuckle library](https://github.com/domaindrivendev/Swashbuckle.AspNetCore) and well as [helpful documentation](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle) to get you started.
 
 # Editors
 
