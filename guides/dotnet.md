@@ -105,4 +105,6 @@ We recommend using [Azure Pipelines](https://azure.microsoft.com/en-us/services/
 
 # Static Analysis
 
-TBD
+For open source projects on GitHub, [LGTM by Semmle](https://lgtm.com/) offers an amazing static analysis tool which is entirely free.  LGTM supports C# and JavaScript projects, along with several other languages.
+
+Closed source projects static analysis TBD pending campus software purchase.
