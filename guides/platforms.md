@@ -10,9 +10,9 @@ Welcome! The purpose of this document is to give link to general guidelines and 
 
 [Microsoft .NET Framework](/guides/dotnet)
 
-TODO: NODEJS
+[Java Spring Framework](/guides/javaspring)
 
-TODO: Java
+TODO: NODEJS
 
 TODO: Python
 
