@@ -10,6 +10,8 @@ tags: ""
 category: "events"
 ---
 
+Introductory Slides: [PDF]({{ site.baseurl }}/media/meetings/27/intro_slides.pdf)
+
 ## CAS Upgrades
 
 Travis Schmidt presents recent upgrades to UC Davis CAS.
