@@ -2,41 +2,17 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
-        {{ content }}
+    <div class="page-wrap">
+      {% include header.html %}
+      {{ content }}
+    </div>
     {% include footer.html %}
   </body>
+  
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+    <script src="/js/cssbrowserselector.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-  <script src="{{site.baseurl}}/js/uisearch.js"></script>
-  <script type="text/javascript">
-    // Modal
-    $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').focus()
-    });
-
-    // Slider
-    $(window).load(function() {
-      $('#slider').nivoSlider();
-    });
-
-    // Active nav
-    $(function() {
-       if (location.pathname.split("/")[1]) {
-           $('nav a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-       }
-    });
-
-    //new UISearch( document.getElementById( 'sb-search' ) );
-
-    $(".breadcrumb li").last().addClass('active');
-
-    $(document).ready(function(){
-      $('.gallery').featherlightGallery();
-    });
-  </script>
-
-  <!-- Searchpopup -->
-  <script src="{{site.baseurl}}/js/classie.js"></script>
-  <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
 </html>

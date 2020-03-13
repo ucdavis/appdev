@@ -1,42 +1,40 @@
 <header>
-    <div class="header_contents">
-        <div class="logo_wrapper">
-            <a href="{{site.baseurl}}/"><h1><img class="logo" src="{{site.baseurl}}/media/appdev_logo.png" alt="" style="width: 41px; height: 41px;">Application Developer's Group</h1></a>
-        </div>
-        <div class="search_wrapper">
-            <a href="https://www.ucdavis.edu/"><img class="caes_logo" src="{{site.baseurl}}/media/ucd_logo.png" alt=""></a>
-        </div>
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="logo_wrapper">
+        <a class="d-flex justify-content-between" href="{{site.baseurl}}/"><img class="logo" src="{{site.baseurl}}/media/ucdavis-white.svg"><img class="logo" style="padding: 0 0.8rem;" src="{{site.baseurl}}/media/developer-squares.svg"><h1>Application Developer's Group</h1></a>
     </div>
-</header>
-<div class="nav_wrapper">
-    <nav id="nav" role="navigation">
-        <a class="nav_open" href="#nav" title="Show navigation"><i class="fa fa-bars"></i></a>
-        <a class="nav_close" href="#" title="Hide navigation"><i class="fa fa-times"></i></a>
-        <ul id="nav_upperlevel">
-            <li>
-                <a href="#" aria-haspopup="true">Guides</a>
-                <ul class="submenu">
-                    <li><a href="{{site.baseurl}}/orientation">Getting&nbsp;Started</a></li>
-                    <li><a href="{{site.baseurl}}/experts">Subject&nbsp;Matter&nbsp;Experts</a></li>
-                    <li><a href="{{site.baseurl}}/opensource">Open&nbsp;Source</a></li>
-                </ul>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}/events">Meetings</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}/projects">Projects</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}/survey">Survey</a>
-            </li>
-            <li>
-                <a href="#" aria-haspopup="true">About</a>
-                <ul class="submenu">
-                    <li><a href="{{site.baseurl}}/about">About&nbsp;the&nbsp;Group</a></li>
-                    <li><a href="{{site.baseurl}}/contact">Contact</a></li>
-                </ul>
-            </li>
+    <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Guidelines
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{site.baseurl}}/orientation">Getting Started</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/experts">Subject Matter Experts</a>
+              <a class="dropdown-item" href="{{site.baseurl}}/opensource">Open Source</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{site.baseurl}}/events">Meetings</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{site.baseurl}}/events">Projects</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="{{site.baseurl}}/events">Surveys</a>
+          </li>
         </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success" type="submit">Search</button>
+        </form>
+      </div>
     </nav>
-</div>
+  </div>
+</header>
