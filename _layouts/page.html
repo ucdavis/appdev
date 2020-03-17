@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class="container">
+<div class="container content-wrapper">
+  {% include breadcrumbs.html %}
     <div class="row">
       <div class="col-sm-8">
             <p class="event-date">{{ page.date | date_to_long_string }}</p>
@@ -14,26 +15,21 @@ layout: default
       </div>
       <div class="col-sm-4">
         {% if page.slides %}
-        <h3>Slides</h3>
         <p><a class="inverse-btn" href="/media/meetings{{page.slides}}">
-          Download deck
+          <i class="fas fa-download"></i>Download slides
         </a></p>
         {% endif %}
         <h3>Presenters</h3>
          {% include author.html %}
-        <h3>Event Info</h3>
-        <ul class="event-info no-bullet">
-            <li><b>Date:</b> {{ page.date  | date: '%B %d, %Y' }}</li>
-            <li><b>Time:</b> {{ page.event-time }}</li>
-            <li><b>Location:</b> {{ page.event-location }}</li>
-            {% if page.event-button %}
-            <br>
-            <li><a class="btn btn-blue" href="{{ page.event-button }}">Register</a></li>
-            {% endif %}
-        </ul>
+         <h3>Recent events</h3>
+         <ul class="no-list-style">
+           {% for post in site.posts limit:3 %}
+            <li><a class="documentation-snippet" class="no-color" href="{{ site.baseurl }}{{ post.url }}">
+            {{post.title}}
+            </a></li>
+          {% endfor %}
+         </ul>
+
       </div>
     </div>
 </div>
-{% for author in site.authors %}
-    <p>{{ author[1].name }} -- {{ author[1].email }}</p>
-{% endfor %}

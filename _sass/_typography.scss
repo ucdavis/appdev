@@ -47,12 +47,6 @@ p {
   font-size:1.6rem;
   font-family: $sans-reg;
   color:$primary-font;
-  footer & {
-    color:rgba(255,255,255,.95);
-    font-size:1.4rem;
-    font-family: $sans-bold;
-    margin-bottom:0;
-  }
   &.discreet {
     font-size:1.4rem;
     color:$secondary-font;
