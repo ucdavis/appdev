@@ -25,7 +25,33 @@
     background-color: lighten($primary-color, 5);
   }
 }
-
+.inverse-btn {
+  white-space: nowrap;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  background: #ffffff;
+  border-radius: 2px;
+  font-size: 1.6rem;
+  letter-spacing: 0.025em;
+  color: $primary-color !important;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  box-shadow: $box-shadow;
+  border: none;
+  font-family: $sans-bold;
+  &:active,
+  &:focus {
+    background-color: darken(#ffffff, 5);
+  }
+  &:hover {
+    color: $primary-color !important;
+    transform: translateY(-1px);
+    background-color: lighten(#ffffff, 5);
+    text-decoration: none;
+  }
+}
 .primary-color {
   color:$primary-color;
 }

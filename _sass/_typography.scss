@@ -81,9 +81,22 @@ h2 {
 h3 {
   font-size: 2rem;
 }
-.lede {
+.event-date {
   color:$primary-color;
-  font-weight: 100;
+  font-size:1.6rem;
+  text-transform: uppercase;
+  font-family: $sans-bold;
+  margin-bottom:4px;
+}
+.event-location {
+  color:$secondary-font;
   font-size:1.8rem;
+  text-transform: uppercase;
+    font-weight: 100;
+}
+.lede {
+  color:$secondary-font;
+  font-weight: 100;
+  font-size:2rem;
   line-height: 3rem;
 }

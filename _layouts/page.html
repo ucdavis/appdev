@@ -4,14 +4,21 @@ layout: default
 <div class="container">
     <div class="row">
       <div class="col-sm-8">
-            <h1 class="document_heade">{{ page.title }}</h1>
-            <h1 class="post-title">{{ page.publish }}</h1>
-            <h5 class="feed-date">Published {{ page.date | date: "%b %-d, %Y" }}{% if page.author %} by {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</h5>
-            <p class="feed-summary">{{ page.description }}</p>
+            <p class="event-date">{{ page.date | date_to_long_string }}</p>
+            <p class="event-location">{{ page.event-location }} • {{ page.event-time }}</p>
+            <h1>{{ page.title }}</h1>
+            <p class="lede">{{ page.description }}</p>
+            <hr>
             <p>{{ content }}</p>
 
       </div>
       <div class="col-sm-4">
+        {% if page.slides %}
+        <h3>Slides</h3>
+        <p><a class="inverse-btn" href="/media/meetings{{page.slides}}">
+          Download deck
+        </a></p>
+        {% endif %}
         <h3>Presenters</h3>
          {% include author.html %}
         <h3>Event Info</h3>
