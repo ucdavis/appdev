@@ -28,12 +28,30 @@ header {
 }
 #breadcrumbs {
   margin-bottom:24px;
+  font-size:1.4rem;
+  color:transparentize($primary-color,0.25);
+  a {
+    color:$tertiary-font;
+    &:hover {
+      color:$primary-color;
+    }
+  }
+}
+.sidebar {
+  margin-top:5%;
+  .sidebar-section {
+    margin-bottom:16%;
+  }
 }
 .content-wrapper {
   margin-top:40px;
+  iframe {
+    width:100%;
+  }
 }
 footer {
   margin-top:1.6rem;
   flex-shrink: 0;
   margin-bottom:2rem;
+  margin-top:4%;
 }

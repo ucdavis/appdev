@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
-<div class="main">
-    <div class="main_contents">
-        <aside>
-            <h3>Meetings</h3>
-            <p>Meetings are typically in 2005 PES from 11-noon on the date listed.</p>
-        </aside>
-        <article>
-
+<div class="container content-wrapper">
+    <div class="row no-gutters">
+      {% for post in site.categories.events limit:1 %}
+      <div class="col card event-main">
+        <p class="event-date">{{ post.date | date_to_long_string }}</p>
+        <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
+        <h1>{{ post.title }}</h1>
+        <p class="lede">{{ post.description }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="row">
             <h1>AppDev Meetings</h1>
-            <p class="page_description">Stay up to date with our latest meetings</p>
 
             <ul class="feed-list event-list-main">
                 {% for post in site.categories.events %}
@@ -41,6 +44,5 @@ layout: default
                 </li>
                 {% endfor %}
             </ul>
-        </article>
     </div>
 </div>
