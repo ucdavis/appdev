@@ -1,48 +1,61 @@
 ---
 layout: default
 ---
-<div class="container content-wrapper">
+<div class="content-wrapper">
+  <div class="container">
+    {% include breadcrumbs.html %}
+  </div>
+  <div class="container">
     <div class="row no-gutters">
       {% for post in site.categories.events limit:1 %}
       <div class="col card event-main">
-        <p class="event-date">{{ post.date | date_to_long_string }}</p>
-        <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
-        <h1>{{ post.title }}</h1>
-        <p class="lede">{{ post.description }}</p>
+        <div class="d-flex justify-content-between">
+          <div class="col-8">
+            <p class="event-date">{{ post.date | date_to_long_string }}</p>
+            <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
+            <h1>{{ post.title }}</h1>
+            <p class="lede">{{ post.description }}</p>
+          </div>
+          <div class="col-3 event-cta">
+            <p><a href="">
+              <i class="fas fa-calendar-plus"></i> <br>
+              Add to Calendar
+            </a></p>
+          </div>
+        </div>
+
       </div>
       {% endfor %}
     </div>
-    <div class="row">
-            <h1>AppDev Meetings</h1>
-
-            <ul class="feed-list event-list-main">
-                {% for post in site.categories.events %}
-                <li>
-                <div class="event-date">
-                <div class="event-date-wrapper">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                         <span class="event-month">{{ post.date | date: '%B' }}</span>
-                        <span class="event-day">
-                          {% assign d = post.date | date: "%-d" %}
-                          {% case d %}
-                            {% when '1' or '21' or '31' %}{{ d }}st
-                            {% when '2' or '22' %}{{ d }}nd
-                            {% when '3' or '23' %}{{ d }}rd
-                            {% else %}{{ d }}th
-                            {% endcase %}
-                        </span>
-                    </a>
-                </div>
-                </div>
-                <div class="event-main">
-                    <h2 class="feed-title">
-                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                    <p class="feed-description">{{ post.description }}</p>
-                </div>
-
-                </li>
-                {% endfor %}
-            </ul>
     </div>
+<div class="event-bg-wrapper">
+  <div class="container">
+
+            <h1>Past Meetings</h1>
+
+        <div class="row no-gutters">
+            {% for post in site.categories.events %}
+
+                <div class="col-md-4 d-flex align-items-stretch">
+                    <div class="card expired-event">
+                      <p class="event-date">{{ post.date | date_to_long_string }}</p>
+                      <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
+                      <h2>{{ post.title }}</h2>
+                      <p>{{ post.description }}</p>
+                    </div>
+                </div>
+
+
+
+
+
+            {% endfor %}
+          </div>
+
+
+    </div>
+  </div>
+</div>
+
+
 </div>

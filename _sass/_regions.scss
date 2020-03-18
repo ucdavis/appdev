@@ -1,0 +1,14 @@
+// Event Landing
+.event-bg-wrapper {
+  background-image: url("/media/event-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:48px;
+}
+.event-cta {
+  border-left:1px solid $borders;
+  align-items: center;
+}
+.expired-event {
+    margin:8px;
+}
