@@ -1,4 +1,4 @@
-{% assign author = site[page.author] %}
+{% assign author = site.data.authors[include.author] %}
 {% if author %}
   <span>
     Written by {{ author.name }}
