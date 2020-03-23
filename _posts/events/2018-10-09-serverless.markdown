@@ -10,7 +10,7 @@ tags: "serverless"
 category: "events"
 ---
 
-Introduction Slides: Slides: [PDF]({{ site.baseurl }}/media/meetings/20/App Dev Meeting 10:2018.pdf) [PPTX]({{ site.baseurl }}/media/meetings/20/App Dev Meeting 10:2018.pptx)
+Introduction Slides: Slides: [PDF]({{ site.baseurl }}/media/meetings/20/AppDevMeeting102018.pdf) [PPTX]({{ site.baseurl }}/media/meetings/20/AppDevMeeting102018.pptx)
 
 Serverless Architecture
 -
