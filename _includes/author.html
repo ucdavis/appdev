@@ -1,6 +1,8 @@
-{% assign author = site.data.authors[page.author] %}
-{% if author %}
-  <span>
-    Written by {{ author.name }}
-  </span>
-{% endif %}
+{% assign authors = page.author %}
+<span>
+  Written by 
+  {%- for a in authors -%}
+  {% assign author = site.data.authors[a] %}
+  {{ author.name }}
+  {%- endfor -%}
+</span>
