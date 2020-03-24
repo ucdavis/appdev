@@ -1,8 +1,14 @@
 {% assign authors = page.author %}
-<span>
-  Written by 
+<ul class="authorlist no-list-style">
   {%- for a in authors -%}
   {% assign author = site.data.authors[a] %}
-  {{ author.name }}
+
+
+
+  <li>
+    <img src="{{ author.image }}" alt="">{{ author.name }}
+  </li>
   {%- endfor -%}
+</ul>
+
 </span>

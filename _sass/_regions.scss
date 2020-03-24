@@ -12,3 +12,28 @@
 .expired-event {
     margin:8px;
 }
+.event-more-link {
+  align-self: flex-end;
+  margin-top:auto;
+  margin-bottom:0px;
+  a {
+    color:$secondary-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.authorlist {
+  li {
+    font-family: $sans-bold;
+    font-size:1.8rem;
+  }
+  img {
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+    border:1px solid $primary-font;
+    margin-right:4px;
+  }
+}
