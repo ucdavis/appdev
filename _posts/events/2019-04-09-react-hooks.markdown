@@ -2,7 +2,8 @@
 layout: event
 title:  "ReactJS Hooks"
 description: "Scott Kirkland on React Hooks and the future of ReactJS"
-author: "Scott Kirkland"
+author:
+    - scott_kirkland
 date:   2019-04-09
 event-time: 11:00AM - 12:00PM
 event-location: "2005 PES"

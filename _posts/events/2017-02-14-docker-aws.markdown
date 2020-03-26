@@ -2,7 +2,8 @@
 layout: event
 title:  "Docker in AWS ECS"
 description: "David Scott will show how to manage Docker containers in AWS ECS."
-author: "Christopher Thielen"
+author:
+    - david_scott
 date:   2017-02-14
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

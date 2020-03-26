@@ -2,7 +2,8 @@
 layout: event
 title:  "ReactJS w/ ES6"
 description: "We'll be taking about ReactJS w/ live examples in ES6, plus bonus info on linting your code."
-author: "Scott Kirkland"
+author:
+    - scott_kirkland
 date:   2016-08-09
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

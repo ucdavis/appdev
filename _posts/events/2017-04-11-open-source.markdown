@@ -2,7 +2,8 @@
 layout: event
 title:  "Open Source and Copyright at UCD"
 description: "Innovation Access will be discussing copyright issues at UCD and answering questions related to Open Source."
-author: "Christopher Thielen"
+author:
+    - christopher_thielen
 date:   2017-04-11
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

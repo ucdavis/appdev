@@ -2,7 +2,8 @@
 layout: event
 title:  "What is Machine Learning, Really?"
 description: "Scott Kirkland talks about Machine Learning and AI"
-author: "Scott Kirkland"
+author:
+    - scott_kirkland
 date:   2017-12-12
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

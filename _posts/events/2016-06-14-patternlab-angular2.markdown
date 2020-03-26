@@ -2,7 +2,9 @@
 layout: event
 title:  "Pattern Lab, Angular JS 2, Subject Matter Experts"
 description: "The third meeting featured two topics: Pattern Lab (Mark Miller), and Angular JS 2 (Christopher Thielen)."
-author: "Christopher Thielen"
+author:
+    - mark_miller
+    - christopher_thielen
 date:   2016-06-14
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

@@ -2,7 +2,8 @@
 layout: event
 title:  "Survey Results, Sentiment Analysis"
 description: "Results from the 2017 Developer Survey plus Sentiment Analysis using Python and Twitter."
-author: "Christopher Thielen"
+author:
+    - christopher_thielen
 date:   2017-05-09
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

@@ -2,7 +2,8 @@
 layout: event
 title:  "D3JS, Graph Databases"
 description: "John Knoll presents the Javascript visualization library D3JS and Christopher Thielen discusses graph databases and their differences against SQL."
-author: "Christopher Thielen"
+author:
+    - john_knoll
 date:   2018-05-08
 event-time: 11:00AM - 12:00PM
 event-location: "242 Asmundson"

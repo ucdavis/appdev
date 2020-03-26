@@ -2,7 +2,8 @@
 layout: event
 title:  "Duo with CAS"
 description: "Travis Schmidt will be showing the new Duo integration for CAS."
-author: "Christopher Thielen"
+author:
+    - travis_schmidt
 date:   2016-11-08
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

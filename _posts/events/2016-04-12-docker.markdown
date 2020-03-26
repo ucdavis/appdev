@@ -2,7 +2,10 @@
 layout: event
 title:  "Docker, GAAD and Accessibility, Stack Overflow Survey vs. UCD Survey"
 description: "The second meeting featured three topics: Docker (Matthew Favetti), GAAD and Accessibility (Joshua Hori), and a Comparision of the Stack Overflow Survey and UCD Survey (John Knoll)."
-author: "Scott Kirkland, Christopher Thielen"
+author:
+    - matthew_favetti
+    - joshua_hori
+    - john_knoll
 date:   2016-04-12
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"
@@ -39,7 +42,7 @@ Developers are encouraged to join the community at:
 
  - appdev@ucdavis.edu
  - #appdev on [ucdavis.slack.com](https://ucdavis.slack.com)
- 
+
 Introduction to Docker
 -
 Slides: [PPTX]({{ site.baseurl }}/media/meetings/2/Docker Presentation.pptx), [PDF]({{ site.baseurl }}/media/meetings/2/Docker Presentation.pdf)

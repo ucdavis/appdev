@@ -1,10 +1,51 @@
-toby_osbourn:
-    name: Toby Osbourn
-    email: toby@tosbourn.com
-    web: http://www.twitter.com/tosbourn
-elaine_osbourn:
-  name: Elaine Osbourn
-  web: https://www.twitter.com/kittylainey
+adam_getchell:
+  name: Adam Getchell
+  image: /media/authors/adam_getchell.jpg
+travis_schmidt:
+  name: Travis Schmidt
+  image: /media/authors/travis_schmidt.png
 scott_kirkland:
   name: Scott Kirkland
   image: /media/authors/scott_kirkland.png
+christopher_thielen:
+  name: Christopher Thielen
+  image: /media/authors/christopher_thielen.jpg
+mark_miller:
+  name: Mark Miller
+  image: /media/authors/mark_miller.jpg
+carson_black:
+  name: Carson Black
+  image: /media/authors/carson_black.jpg
+john_knoll:
+  name: John Knoll
+  image: /media/authors/john_knoll.jpg
+ken_taylor:
+  name: Ken Taylor
+  image: /media/authors/temp.png
+thomas_pomroy:
+  name: Thomas Pomroy
+  image: /media/authors/temp.png
+everett_wilson:
+  name: Everett Wilson
+  image: /media/authors/temp.png
+shawn_dearmond:
+  name: Shawn DeArmond
+  image: /media/authors/shawn_dearmond.jpg
+dean_bunn:
+  name: Dean Bunn
+  image: /media/authors/dean_bunn.jpg
+eli_richmond:
+  name: Eli Richmond
+  image: /media/authors/eli_richmond.jpg
+david_scott:
+  name: David Scott
+  image: /media/authors/david_scott.jpg
+matthew_favetti:
+  name: matthew_favetti
+  image: /media/authors/matthew_favetti.jpg
+greg_siino:
+  name: Greg Siino
+  image: /media/authors/temp.png
+joshua_hori:
+  name: Joshua Hori
+  image: /media/authors/joshua_hori.jpg

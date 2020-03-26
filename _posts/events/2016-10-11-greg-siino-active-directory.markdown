@@ -2,7 +2,9 @@
 layout: event
 title:  "Vice Chancellor of Business Intelligence Greg Siino, Working with Active Directory"
 description: "Vice Chancellor of Business Intelligence Greg Siino will be introducing himself and discussing campus goals for business intelligence. Dean Bunn will be presenting his work on integrating applications with Active Directory."
-author: "Christopher Thielen"
+author:
+    - greg_siino
+    - dean_bunn
 date:   2016-10-11
 event-time: 11:00AM - 12:00PM
 event-location: "2005 Plant Sciences"

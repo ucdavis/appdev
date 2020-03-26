@@ -2,7 +2,8 @@
 layout: event
 title:  "Understanding Common Authentication Schemes"
 description: "Learn how several critical authentication schemes used throughout the university system work in practice."
-author: "Christopher Thielen"
+author:
+    - christopher_thielen
 date:   2019-10-08
 event-time: 11:00AM - 12:00PM
 event-location: "TBD"
