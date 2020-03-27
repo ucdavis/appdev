@@ -37,3 +37,11 @@
     margin-right:4px;
   }
 }
+.banner {
+  background-color:$primary-color;
+  .banner-contents {
+    background-image: url("/media/tree.svg");
+    background-position: right;
+    background-size: 50%;
+  }
+}
