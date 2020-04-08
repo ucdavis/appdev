@@ -58,3 +58,21 @@
     }
   }
 }
+
+// homegrown section
+.homegrown-button {
+  height:60px;
+  padding:0 16px;
+  background-color: #EFEFEF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $sans-bold;
+  color:$tertiary-font;
+  font-size:2.4rem;
+  margin:8px 0;
+  &:hover {
+    background-color:darken(#efefef,5);
+    color:$tertiary-font;
+  }
+}
