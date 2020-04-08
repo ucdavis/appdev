@@ -74,3 +74,18 @@
   box-shadow: $box-shadow;
   padding:24px !important;
 }
+.secondary-font {
+  color:$secondary-font !Important;
+}
+.section-learn-more {
+  font-weight: bold;
+  a {
+    text-decoration: none;
+  }
+  i {
+    color:$secondary-color;
+  }
+}
+.flex-grow-zero {
+  flex-grow: 0;
+}
