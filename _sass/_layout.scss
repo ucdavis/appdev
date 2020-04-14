@@ -50,9 +50,12 @@ header {
     width:100%;
   }
 }
+.level {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
 footer {
-  margin-top:1.6rem;
-  flex-shrink: 0;
-  margin-bottom:2rem;
-  margin-top:4%;
+  padding: 5rem 0;
 }

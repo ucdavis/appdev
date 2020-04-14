@@ -39,9 +39,8 @@
 .inverse-btn {
   white-space: nowrap;
   display: inline-block;
-  height: 40px;
   line-height: 40px;
-  padding: 0 20px;
+  padding: 1rem 2rem;
   background: #ffffff;
   border-radius: 2px;
   font-size: 1.6rem;
@@ -88,4 +87,9 @@
 }
 .flex-grow-zero {
   flex-grow: 0;
+}
+.video-frame {
+  padding: 1.5rem;
+  box-shadow: 0 0 3px black;
+  margin: 3rem 0;
 }

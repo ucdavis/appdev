@@ -15,9 +15,9 @@
               Guidelines
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="{{site.baseurl}}/orientation">Getting Started</a>
-              <a class="dropdown-item" href="{{site.baseurl}}/experts">Subject Matter Experts</a>
-              <a class="dropdown-item" href="{{site.baseurl}}/opensource">Open Source</a>
+              {% for post in site.guidelines %}
+              <a class="dropdown-item" href="{{post.url}}">{{post.title}}</a>
+              {% endfor %}
             </div>
           </li>
           <li class="nav-item active">

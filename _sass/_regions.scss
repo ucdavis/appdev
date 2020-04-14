@@ -25,18 +25,16 @@
     }
   }
 }
-.authorlist {
-  li {
-    font-family: $sans-bold;
-    font-size:1.8rem;
-  }
-  img {
-    width:40px;
-    height:40px;
-    border-radius: 50%;
-    border:1px solid $primary-font;
-    margin-right:4px;
-  }
+.author-item {
+  font-family: $sans-bold;
+  font-size:1.8rem;
+}
+.author-image {
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+  border:1px solid $primary-font;
+  margin-right: 1.5rem;
 }
 
 //banner

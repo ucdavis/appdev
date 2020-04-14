@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Getting Started
-permalink: /orientation/
 ---
 
 Welcome!

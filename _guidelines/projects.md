@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Projects
-permalink: /projects/
 ---
 
 This is a community-generated list of software projects developed at UC Davis.

@@ -42,19 +42,21 @@ ul, ol {
 
   }
 }
-
+.discreet {
+  font-size:1.4rem;
+  color:$tertiary-font;
+}
+.caption {
+  text-align: center;
+  margin: 5px 10px;
+}
+.uppercase {
+  text-transform: uppercase;
+}
 p {
   font-size:1.6rem;
   font-family: $sans-reg;
   color:$primary-font;
-  &.discreet {
-    font-size:1.4rem;
-    color:$secondary-font;
-  }
-  &.caption {
-    text-align: center;
-    margin: 5px 10px;
-  }
 }
 h1,
 h2,

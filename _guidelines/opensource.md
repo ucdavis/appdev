@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Open Source
-permalink: /opensource/
 ---
 
 As a public university with a research mission and dedication to public service, the philosophies of open source software are natural for campus developers to follow where applicable.
