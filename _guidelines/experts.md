@@ -1,7 +1,6 @@
 ---
 layout: page
 title: Subject Matter Experts
-permalink: /experts/
 ---
 
 Below is a list of App Dev SIG members who have volunteered to be Subject Matter Experts in various technologies. Please feel free to contact them should you need assistance.

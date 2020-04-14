@@ -37,9 +37,9 @@ layout: default
       {% endif %}
 
       <div class="sidebar-section">
-        <h3>Recent events</h3>
+        <h3>Recent Meetings</h3>
         <ul class="no-list-style">
-          {% for post in site.posts limit:3 %}
+          {% for post in site.posts reverse limit:3 %}
           <li>
             <a
               class="documentation-snippet"
