@@ -93,3 +93,32 @@
   box-shadow: 0 0 3px black;
   margin: 3rem 0;
 }
+.guideline-card-wrapper {
+  margin-bottom: 3rem;
+}
+
+.card.guideline-card {
+  margin: 1rem;
+  margin-top: calc(1rem + #{$guideline-icon-size / 2});
+  min-width: 30rem;
+  max-width: 42rem;
+  padding: $card-padding;
+  .card-header {
+    background-color: transparent;
+    border-bottom: none;
+  }
+}
+.guideline-card-icon {
+  width: $guideline-icon-size;
+  height: $guideline-icon-size;
+  border-radius: 100%;
+  margin-top: calc(-#{$guideline-icon-size / 2} - #{$card-padding});
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  background-color: transparentize($primary-color, 0.6);
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: #{$guideline-icon-size / 2};
+}

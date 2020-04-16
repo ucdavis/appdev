@@ -59,3 +59,9 @@ header {
 footer {
   padding: 5rem 0;
 }
+.flex-basis-third {
+  flex-basis: calc(100% / 3);
+}
+.flex-basis-zero {
+  flex-basis: 0;
+}

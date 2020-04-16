@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="container content-wrapper">
+    {% include breadcrumbs.html %}
+    <div class="d-flex justify-content-center flex-wrap guideline-card-wrapper">
+        {% for post in site.guidelines %}
+        <div class="card guideline-card text-center flex-grow-1 flex-basis-zero">
+            <div class="guideline-card-icon align-self-center">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="card-header">
+                <h2 class="card-title">{{post.title}}</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text">{{post.description}}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+      <div class="col-lg-7">
+        {% if page.date %}
+        <p class="event-date">{{ page.date | date_to_long_string }}</p>
+        {% endif %} {% if page.event-location or page.event-time %}
+        <p class="event-location">
+          {% assign location = page.event-location | default: TBD %} {{ location
+          }} • {{ page.event-time }}
+        </p>
+        {% endif %}
+        <h1>{{ page.title }}</h1>
+        <p class="lede">{{ page.description }}</p>
+        <hr />
+        {{ content }}
+      </div>
+    </div>
+  </div>

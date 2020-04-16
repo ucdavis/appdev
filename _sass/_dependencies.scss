@@ -76,6 +76,9 @@ $borders: #C8C7CC; // border color
 $box-shadow: 0 0 0 1px rgba(49,49,93,.03), 0 2px 5px 0 rgba(49,49,93,.1), 0 1px 2px 0 rgba(0,0,0,.08);
 // mixins
 
+$card-padding: 24px;
+$guideline-icon-size: 7.5rem;
+
 @mixin breakpoint($point) {
     @if $point==sm {
         @media (min-width: 576px) {

@@ -1,14 +1,10 @@
 ---
 layout: page
 title: Getting Started
+description: 'Beginner documentation for new developers to get up-to-speed on what they should know working at UC Davis. 
+It is meant to shortcut to the type
+of knowledge one might have had they had been working for the University for a decade or two.'
 ---
-
-Welcome!
-
-The purpose of this document is to help new developers get up-to-speed on what they should know working at
-UC Davis. It is meant to shortcut to the type
-of knowledge one might have had they had been working for the University for
-a decade or two.
 
 This document tries to accomplish this in a few different ways: describing
 the types of developers and "development shops" that exist on campus,

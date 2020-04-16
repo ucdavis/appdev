@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: guidelines
 title: Open Source Commitment
+permalink: /guidelines/index.html
 ---
 
 As a public university with a research mission and dedication to public service, the philosophies of open source software are natural for campus developers to follow where applicable.
