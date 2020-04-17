@@ -1,18 +1,24 @@
+.action-text {
+  line-height: 40px;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: $sans-bold;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
+  transition: transform 0.15s ease;
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
 .btn {
+  @extend .action-text;
   white-space: nowrap;
   display: inline-block;
-  height: 40px;
-  line-height: 40px;
   padding: 0 20px;
   background: $primary-color;
   border-radius: 2px;
-  font-size: 1.6rem;
-  letter-spacing: 0.025em;
   color: #fff !important;
-  text-decoration: none;
-  transition: all 0.15s ease;
   border: none;
-  font-family: $sans-bold;
   box-shadow: $box-shadow;
   &:active,
   &:focus {
@@ -20,44 +26,32 @@
   }
   &:hover {
     color: #fff !important;
-    transform: translateY(-1px);
     background-color: lighten($primary-color, 5);
   }
 }
 .btn-secondary {
   background: $secondary-color;
+  color: #fff !important;
   &:active,
   &:focus {
     background-color: darken($secondary-color, 5);
   }
   &:hover {
     color: #fff !important;
-    transform: translateY(-1px);
     background-color: lighten($secondary-color, 5);
   }
 }
 .inverse-btn {
-  white-space: nowrap;
-  display: inline-block;
-  line-height: 40px;
+  @extend .btn;
   padding: 1rem 2rem;
   background: #ffffff;
-  border-radius: 2px;
-  font-size: 1.6rem;
-  letter-spacing: 0.025em;
   color: $primary-color !important;
-  text-decoration: none;
-  transition: all 0.15s ease;
-  box-shadow: $box-shadow;
-  border: none;
-  font-family: $sans-bold;
   &:active,
   &:focus {
     background-color: darken(#ffffff, 5);
   }
   &:hover {
     color: $primary-color !important;
-    transform: translateY(-1px);
     background-color: lighten(#ffffff, 5);
     text-decoration: none;
   }
@@ -96,7 +90,6 @@
 .guideline-card-wrapper {
   margin-bottom: 3rem;
 }
-
 .card.guideline-card {
   margin: 1rem;
   margin-top: calc(1rem + #{$guideline-icon-size / 2});
@@ -108,17 +101,29 @@
     border-bottom: none;
   }
 }
-.guideline-card-icon {
-  width: $guideline-icon-size;
-  height: $guideline-icon-size;
-  border-radius: 100%;
-  margin-top: calc(-#{$guideline-icon-size / 2} - #{$card-padding});
-  border: 1px solid $primary-color;
-  color: $primary-color;
-  background-color: transparentize($primary-color, 0.6);
-  margin-bottom: 2rem;
-  display: flex;
+
+// ICONS
+.icon-round-border {
+  @extend .circle;
+  @extend .border-1;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+@mixin icon-color($color) {
+  @extend .icon-round-border;
+  border-color: $primary-color;
+  color: $primary-color;
+  background-color: transparentize($primary-color, 0.6);
+}
+.icon-primary {
+  @include icon-color($primary-color);
+}
+.guideline-card-icon {
+  @extend .icon-primary;
+  width: $guideline-icon-size;
+  height: $guideline-icon-size;
+  margin-top: calc(-#{$guideline-icon-size / 2} - #{$card-padding});
+  margin-bottom: 2rem;
   font-size: #{$guideline-icon-size / 2};
 }

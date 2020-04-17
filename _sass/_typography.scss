@@ -50,9 +50,6 @@ ul, ol {
   text-align: center;
   margin: 5px 10px;
 }
-.uppercase {
-  text-transform: uppercase;
-}
 p {
   font-size:1.6rem;
   font-family: $sans-reg;
@@ -89,7 +86,8 @@ h3 {
   color:$secondary-font;
   font-size:1.6rem;
   text-transform: uppercase;
-    font-weight: 100;
+  font-weight: 100;
+  margin-bottom: 2rem;
 }
 .lede {
   color:$secondary-font;
