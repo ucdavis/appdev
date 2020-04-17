@@ -1,17 +1,40 @@
 <header>
   <div class="container d-flex justify-content-between align-items-center">
     <div class="logo_wrapper">
-        <a class="d-flex justify-content-between" href="{{site.baseurl}}/"><img class="logo" src="{{site.baseurl}}/media/ucdavis-white.svg"><img class="logo" style="padding: 0 0.8rem;" src="{{site.baseurl}}/media/developer-squares.svg"><h1>Application Developer's Group</h1></a>
+      <a class="d-flex justify-content-between" href="{{site.baseurl}}/"
+        ><img class="logo" src="{{site.baseurl}}/media/ucdavis-white.svg" /><img
+          class="logo"
+          style="padding: 0 0.8rem;"
+          src="{{site.baseurl}}/media/developer-squares.svg"
+        />
+        <h1>Application Developer's Group</h1></a
+      >
     </div>
     <nav class="navbar navbar-expand-md">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a
+              class="nav-link dropdown-toggle {% if page.url contains '/guidelines' %} active {% endif %}"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
               Guides
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -20,14 +43,26 @@
               {% endfor %}
             </div>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{{site.baseurl}}/events">Meetings</a>
+          <li class="nav-item">
+            <a
+              class="nav-link {% if page.url contains '/events' %} active {% endif %}"
+              href="{{site.baseurl}}/events"
+              >Meetings</a
+            >
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{{site.baseurl}}/projects">Projects</a>
+          <li class="nav-item">
+            <a
+              class="nav-link {% if page.url contains '/projects' %} active {% endif %}"
+              href="{{site.baseurl}}/projects"
+              >Projects</a
+            >
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="{{site.baseurl}}/survey">Surveys</a>
+          <li class="nav-item">
+            <a
+              class="nav-link {% if page.url contains '/survey' %} active {% endif %}"
+              href="{{site.baseurl}}/survey"
+              >Surveys</a
+            >
           </li>
         </ul>
         <!-- <form class="form-inline my-2 my-lg-0">
