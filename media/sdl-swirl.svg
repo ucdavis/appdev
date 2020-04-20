@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="1400px" height="547px" viewBox="0 0 1400 547" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="1389px" height="351px" viewBox="0 0 1389 351" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
-    <title>swirl</title>
+    <title>sdl-swirl</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <linearGradient x1="58.3406765%" y1="5.85862676%" x2="58.3406768%" y2="90.5810057%" id="linearGradient-1">
+        <linearGradient x1="55.2932618%" y1="46.7809039%" x2="45.4584488%" y2="53.1317903%" id="linearGradient-1">
             <stop stop-color="#0078FF" stop-opacity="0" offset="0%"></stop>
-            <stop stop-color="#0078FF" stop-opacity="0.06" offset="68.1297508%"></stop>
-            <stop stop-color="#0078FF" stop-opacity="0.16" offset="100%"></stop>
+            <stop stop-color="#0078FF" stop-opacity="0.03" offset="54.1358742%"></stop>
+            <stop stop-color="#0078FF" stop-opacity="0.08" offset="100%"></stop>
         </linearGradient>
-        <linearGradient x1="55.2932618%" y1="44.3802335%" x2="42.5590649%" y2="53.6470987%" id="linearGradient-2">
-            <stop stop-color="#0078FF" stop-opacity="0.03" offset="0%"></stop>
-            <stop stop-color="#0078FF" stop-opacity="0.06" offset="68.1297508%"></stop>
-            <stop stop-color="#0078FF" stop-opacity="0.16" offset="100%"></stop>
+        <linearGradient x1="64.0795547%" y1="47.901847%" x2="72.1080427%" y2="56.6774931%" id="linearGradient-2">
+            <stop stop-color="#0078FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#0078FF" stop-opacity="0.03" offset="57.347973%"></stop>
+            <stop stop-color="#0078FF" stop-opacity="0.08" offset="100%"></stop>
         </linearGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Home" transform="translate(0.000000, -1067.000000)">
-            <g id="Group-10" transform="translate(0.000000, 1006.000000)">
-                <g id="swirl" transform="translate(0.000000, 29.000000)">
-                    <path d="M1.5904198,21.2602538 C286.549291,-26.9779114 578.243868,6.87092256 876.674149,122.806756 C1175.10443,238.742589 1496.57061,217.800119 1841.07268,59.979346 L1841.07268,442.993002 C1547.97846,554.645537 1292.84259,549.645873 1075.66506,427.994011 C878.945695,317.801775 555.687046,165.364218 329,114.705942 C180.29443,81.4743658 119.720481,85.8678049 0.590419797,76.4644618 C-0.449212091,76.7747769 -0.115878758,58.3733743 1.5904198,21.2602538 Z" id="Path-2" fill="url(#linearGradient-1)"></path>
-                    <path d="M1.37014371,119.727826 C196.226269,101.620293 407.991242,132.480844 636.665063,212.30948 C865.338884,292.138116 1120.47476,271.598489 1402.07268,150.690597 L1402.07268,533.704253 C1121.91666,610.351695 873.249892,587.849485 656.072365,466.197623 C330.306075,283.71983 302.102292,272.647672 1.37014371,248.909855 C0.330511825,249.22017 0.330511825,206.159494 1.37014371,119.727826 Z" id="Path-2-Copy" fill="url(#linearGradient-2)" transform="translate(701.331550, 346.424655) rotate(-180.000000) translate(-701.331550, -346.424655) "></path>
+        <g id="Home" transform="translate(-11.000000, -1089.000000)">
+            <g id="Group-10" transform="translate(-2.000000, 1008.000000)">
+                <g id="sdl-swirl" transform="translate(0.904658, 69.859936)">
+                    <g id="swirl" transform="translate(12.095342, 11.140064)" fill="url(#linearGradient-1)">
+                        <path d="M10.4095802,6.9062774 C198.402426,-14.705021 406.735759,14.4036478 635.40958,94.2322838 C864.083401,174.06092 1118.75007,174.06092 1399.40958,94.2322838 L1399.40958,339.66823 C1127.74291,369.294306 894.40958,336.607344 699.40958,241.607344 C559.718886,173.552903 310.414776,99.9723969 199.40958,94.2322838 C125.406116,90.4055417 58.9362561,101.827725 0,128.498833 L10.4095802,6.9062774 Z" id="Path-2-Copy" transform="translate(699.704790, 175.116142) rotate(-180.000000) translate(-699.704790, -175.116142) "></path>
+                    </g>
+                    <g id="swirl-copy" transform="translate(708.000000, 166.000000) rotate(-180.000000) translate(-708.000000, -166.000000) translate(0.000000, 0.000000)" fill="url(#linearGradient-2)">
+                        <path d="M0.93805977,4.42475922 C169.351107,-7.90086001 700.353138,16.1044467 699.84764,16.7503784 C851.987636,69.8615231 1045.03043,151.089011 1201.44298,143.424759 C1305.71801,138.315258 1372.01957,107.26857 1400.34764,50.2846957 C1415.08209,224.97361 1419.11387,313.020298 1412.44298,314.424759 C1248.3396,348.974396 992.84764,340.159756 700.34764,197.659756 C505.34764,102.659756 272.211113,64.956919 0.93805977,84.5512447 C0.735611765,31.4122335 0.735611765,4.70340505 0.93805977,4.42475922 Z" id="Path-2-Copy" transform="translate(708.173820, 166.142348) rotate(-180.000000) translate(-708.173820, -166.142348) "></path>
+                    </g>
                 </g>
             </g>
         </g>
