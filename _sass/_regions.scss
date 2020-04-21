@@ -93,3 +93,31 @@
     color:$tertiary-font;
   }
 }
+//sdl
+p.practice {
+  font-size:1.4rem;
+  font-family: $sans-bold;
+  color:$secondary-color;
+  text-transform: uppercase;
+}
+ul.sdl-list {
+  span {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size:1.2rem;
+  }
+  li {
+    margin:0;
+    margin-bottom:-1px;
+  }
+  li a {
+    color:$primary-font;
+    font-size:1.6rem;
+    display: block;
+    padding: 16px 8px;
+    border:1px solid $borders;
+    &:hover {
+      background-color:$bg-color;
+    }
+  }
+}

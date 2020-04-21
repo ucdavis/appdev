@@ -15,5 +15,8 @@ future: true #show future content, like upcoming meetings
 
 collections:
   projects:
+  sdl:
+    output: true
+    permalink: /guidelines/SDL/:title
   guidelines:
     output: true

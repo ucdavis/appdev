@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>datasourcemanagement</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SDL-Copy" transform="translate(-538.000000, -461.000000)">
+            <g id="datasourcemanagement" transform="translate(538.000000, 461.000000)">
+                <rect id="Rectangle" stroke="#00C7B1" stroke-width="1.32" fill-opacity="0.0762128497" fill="#00C7B1" transform="translate(19.800000, 19.800000) rotate(-45.000000) translate(-19.800000, -19.800000) " x="5.94" y="5.94" width="27.72" height="27.72" rx="1.32"></rect>
+                <g id="Fill-908-+-Fill-909-+-Fill-910" transform="translate(12.540000, 13.200000)"></g>
+                <g id="Fill-208-+-Fill-209" transform="translate(12.000000, 8.000000)" fill="#00C7B1">
+                    <path d="M14.08,7.04044 L13.2,7.04044 L13.2,8.80044 L14.08,8.80044 L14.08,14.08044 L1.76,14.08044 L1.76,8.80044 L2.64,8.80044 L2.64,7.04044 L1.76,7.04044 C0.78936,7.04044 0,7.8298 0,8.80044 L0,16.72044 C0,17.69108 0.78936,18.48044 1.76,18.48044 L7.04,18.48044 L7.04,19.36044 L4.4,19.36044 L4.4,21.12044 L11.44,21.12044 L11.44,19.36044 L8.8,19.36044 L8.8,18.48044 L14.08,18.48044 C15.05064,18.48044 15.84,17.69108 15.84,16.72044 L15.84,8.80044 C15.84,7.8298 15.05064,7.04044 14.08,7.04044" id="Fill-208"></path>
+                    <polygon id="Fill-209" points="12.06216 6.78216 10.81784 5.53784 8.8 7.55568 8.8 -2.00088834e-13 7.04 -2.00088834e-13 7.04 7.55568 5.02216 5.53784 3.77784 6.78216 7.92 10.9252"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
