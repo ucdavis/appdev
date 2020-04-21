@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>provide-training</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SDL-Copy" transform="translate(-129.000000, -551.000000)">
+            <g id="provide-training" transform="translate(129.000000, 551.000000)">
+                <g id="Group-7-Copy-4">
+                    <rect id="Rectangle" stroke="#00C7B1" stroke-width="1.32" fill-opacity="0.0762128497" fill="#00C7B1" transform="translate(19.800000, 19.800000) rotate(-45.000000) translate(-19.800000, -19.800000) " x="5.94" y="5.94" width="27.72" height="27.72" rx="1.32"></rect>
+                    <g id="Fill-908-+-Fill-909-+-Fill-910" transform="translate(12.540000, 13.200000)"></g>
+                </g>
+                <g id="Fill-93-+-Fill-94-+-Fill-95" transform="translate(12.000000, 11.000000)" fill="#00C7B1">
+                    <path d="M6.17759977,8.49458579 C7.88107291,8.49458579 9.26639966,7.10925904 9.26639966,5.4057859 C9.26639966,3.70231276 7.88107291,2.31698602 6.17759977,2.31698602 C4.47412664,2.31698602 3.08879989,3.70231276 3.08879989,5.4057859 C3.08879989,7.10925904 4.47412664,8.49458579 6.17759977,8.49458579" id="Fill-93"></path>
+                    <path d="M6.17759977,9.26678576 C2.54053791,9.26678576 0,11.1718031 0,13.8999856 L0,14.6721856 L12.3551995,14.6721856 L12.3551995,13.8999856 C12.3551995,11.1718031 9.81466164,9.26678576 6.17759977,9.26678576" id="Fill-94"></path>
+                    <polygon id="Fill-95" points="13.1273995 5.72555391 10.2648542 2.86223642 11.356745 1.77111786 13.1273995 3.54177239 16.442454 0.226717912 17.5343448 1.31783647"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
