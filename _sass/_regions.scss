@@ -13,6 +13,22 @@
 .homepage-meeting {
   background-image: url("/media/programmer-pattern.png");
   background-repeat: repeat;
+  @supports(backdrop-filter: opacity(0.8)) {
+    backdrop-filter: opacity(0.8);
+  }
+  @supports not (backdrop-filter: opacity(0.8)) {
+    filter: opacity(0.8);
+  }
+}
+.homepage-author-container {
+  display: flex;
+  overflow-x: scroll;
+  margin-top: 3rem;
+}
+.card.homepage-author-card {
+  @extend .guideline-card;
+  margin-left: 3rem;
+  margin-right: 3rem;
 }
 .event-bg-wrapper {
   background-image: url("/media/event-bg.svg");

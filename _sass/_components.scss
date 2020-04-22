@@ -120,7 +120,6 @@
   @include icon-color($primary-color);
 }
 .guideline-card-icon {
-  @extend .icon-primary;
   width: $guideline-icon-size;
   height: $guideline-icon-size;
   margin-top: calc(-#{$guideline-icon-size / 2} - #{$card-padding});

@@ -97,23 +97,6 @@ layout: default
 		</div>
 	</div>
 </div>
-<div class="main">
-	<div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em;">
-		<div style="float: left; padding-top: 3.0em; padding-right: 2em;">
-
-		</div>
-		<div style="float: left;">
-			<a href="#">
-				<p>
-					<b>Next Meeting</b><br />
-					<a href="#">TBD</a><br />
-					<small><i>April 14th, 2020</i> (second Tuesday of the month)<br />Location 2005 PES (and on Zoom)</small>
-				</p>
-			</a>
-		</div>
-		<div style="clear: both;"></div>
-	</div>
-</div>
 <div class="homepage-section">
 	<div class="section-contents container homegrown">
 		<div class="row">
@@ -123,14 +106,56 @@ layout: default
 					<p class="section-learn-more"><a class="secondary-font" href="/projects">Find other apps we've built <i class="fas fa-arrow-right"></i></a></p>
 			</div>
 		</div>
-
-
+	</div>
+	<div class="homepage-author-container">
+		{% for item in site.data.authors %}
+		{% assign author = item[1] %}
+		<div class="card homepage-author-card text-center flex-grow-1 flex-basis-zero">
+			<img class="guideline-card-icon icon-round-border align-self-center" src="{{ author.image }}" />
+            <div class="card-header">
+                <h2 class="card-title">{{ author.name }}</h2>
+            </div>
+            <div class="card-body">
+                <p class="card-text"></p>
+            </div>
+        </div>
+		{% endfor %}
 	</div>
 </div>
 <div class="homepage-section homepage-meeting">
 
 	<div class="section-contents container homegrown">
 		<h1 class="text-center">Join us at our next meeting</h1>
+		<div class="row no-gutters">
+			{% for post in site.categories.events limit:1 %}
+			<div class="col card event-main">
+			  <div class="d-flex justify-content-between">
+				<div class="col-8">
+				  <p class="event-date">{{ post.date | date_to_long_string }}</p>
+				  <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
+				  <h1>{{ post.title }}</h1>
+				  <p class="lede">{{ post.description }}</p>
+					<div class="event-more-link level">
+					  <div class="mr-2">
+						{% for a in post.author %}
+						  {% assign author = site.data.authors[a] %}
+						  <img class="author-image" src="{{ author.image }}" alt="">
+						{% endfor %}
+					  </div>
+					  <a href="{{ post.url }}" class="ml-auto flex-shrink-0">Learn More <i class="fas fa-arrow-right"></i></a>
+					</div>
+				</div>
+				<div class="col-3 event-cta d-flex justify-content-center align-items-center">
+				  <a href="" class="text-center d-flex flex-column action-text">
+					<i class="fas fa-calendar-plus fa-3x mb-4"></i> 
+					<span>Add to calendar</span>
+				  </a>
+				</div>
+			  </div>
+	  
+			</div>
+			{% endfor %}
+		  </div>
 
 	</div>
 </div>
