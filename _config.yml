@@ -13,6 +13,9 @@ future: true #show future content, like upcoming meetings
 # Build settings
 #markdown: kramdown
 
+plugins:
+  - jekyll-redirect-from
+
 collections:
   projects:
   sdl:

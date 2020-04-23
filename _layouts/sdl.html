@@ -2,25 +2,34 @@
 layout: default
 ---
 
+<div class="SDL-hero">
+  <div class="container">
+    <h1>Security Development Lifecycle</h1>
+  </div>
+</div>
 <div class="container content-wrapper">
   {% include breadcrumbs.html %}
-  <div class="row">
-    <col>
-    <ul class="sdl-list no-list-style">
+  <div class="row sdl-container">
+    <ul class="sdl-list col-4 no-list-style">
       {% for post in site.sdl %}
-      <li><a href="{{post.url}}">
-        <span class="tertiary-font">
-          practice #{{ post.practice }}
-        </span> <br>
-        {{post.title}}
-      </a></li>
-        {% endfor %}
+      <li>
+        <a href="{{post.url}}" class="{%- if page.url == post.url -%}active{%- endif -%}">
+          <span class="tertiary-font">
+            practice #{{ post.practice }}
+          </span>
+          <br />
+          {{post.title}}
+        </a>
+      </li>
+      {% endfor %}
     </ul>
 
-
-
-    <div class="col">
-      <img src="/media/icons/{{ page.icon }}.svg" alt="{{ page.title }} {{ page.icon }}">
+    <div class="col-8 mt-5">
+      <img
+        style="min-height:40px"
+        src="/media/icons/{{ page.icon }}.svg"
+        alt="{{ page.title }} {{ page.icon }}"
+      />
       <p class="practice">
         Practice #{{ page.practice }}
       </p>
@@ -28,6 +37,5 @@ layout: default
       <p class="lede">{{ page.description }}</p>
       {{ content }}
     </div>
-
   </div>
 </div>

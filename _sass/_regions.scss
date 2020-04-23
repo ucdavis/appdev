@@ -47,6 +47,7 @@
 }
 .expired-event {
     margin:8px;
+    width: 100%;
 }
 .event-more-link {
   align-self: stretch;
@@ -110,11 +111,24 @@
   }
 }
 //sdl
+.SDL-hero {
+  color: white;
+  background-color: #002A3A;
+  padding-top: 15rem;
+  padding-bottom: 2rem;
+
+  h1, h2, h3, h4, h5, p, span, div {
+    color: inherit;
+  }
+}
 p.practice {
   font-size:1.4rem;
   font-family: $sans-bold;
   color:$secondary-color;
   text-transform: uppercase;
+}
+.sdl-container {
+  border-top: 1px solid $borders;
 }
 ul.sdl-list {
   span {
@@ -132,7 +146,10 @@ ul.sdl-list {
     display: block;
     padding: 16px 8px;
     border:1px solid $borders;
-    &:hover {
+    &:first-child {
+      border-top: none;
+    }
+    &:hover, &.active {
       background-color:$bg-color;
     }
   }

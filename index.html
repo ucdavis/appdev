@@ -66,7 +66,7 @@ layout: default
 <div class="homepage-section homepage-sdl">
 	<div class="section-contents container homepage-sdl">
 		<div class="row">
-			<div class="col">
+			<div class="col-md">
 					<img src="/media/icons/sdl.svg" alt="DNA icon">
 					<h1>SDL practices</h1>
 					<p class="section-learn-more"><a class="secondary-font" href="/guides/sdl">Learn about all of our SDL practices <i class="fas fa-arrow-right"></i></a></p>
@@ -88,11 +88,11 @@ layout: default
 						</li>
 					</ul>
 			</div>
-			<div class="col sdl-card">
+			<div class="col-md sdl-card">
 				<img src="/media/icons/cybersecurity.svg" alt="security camera icon">
 				<h2><b>Data Source Management</b></h2>
 				<p>This learning task will help you practice your ability to read clearly and accurately. Read the story out loud for 30 seconds. Once 30 seconds has past, you’ll be redirected to your results page, where you can listen to your reading sample. As the year goes on, you’ll be able to hear yourself grow as a reader.v</p>
-				<p class="section-learn-more"><a class="secondary-font" href="/guides/sdl">Learn more <i class="fas fa-arrow-right"></i></a></p>
+				<p class="section-learn-more"><a class="secondary-font" href="/guidelines/sdl">Learn more <i class="fas fa-arrow-right"></i></a></p>
 			</div>
 		</div>
 	</div>
@@ -126,11 +126,11 @@ layout: default
 
 	<div class="section-contents container homegrown">
 		<h1 class="text-center">Join us at our next meeting</h1>
-		<div class="row no-gutters">
+		<div>
 			{% for post in site.categories.events limit:1 %}
-			<div class="col card event-main">
-			  <div class="d-flex justify-content-between">
-				<div class="col-8">
+			<div class="card event-main">
+			  <div class="row justify-content-between">
+				<div class="col-md-8">
 				  <p class="event-date">{{ post.date | date_to_long_string }}</p>
 				  <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
 				  <h1>{{ post.title }}</h1>
@@ -145,7 +145,7 @@ layout: default
 					  <a href="{{ post.url }}" class="ml-auto flex-shrink-0">Learn More <i class="fas fa-arrow-right"></i></a>
 					</div>
 				</div>
-				<div class="col-3 event-cta d-flex justify-content-center align-items-center">
+				<div class="col-md-3 event-cta d-flex justify-content-center align-items-center">
 				  <a href="" class="text-center d-flex flex-column action-text">
 					<i class="fas fa-calendar-plus fa-3x mb-4"></i> 
 					<span>Add to calendar</span>
