@@ -1,7 +1,7 @@
 .navbar {
   padding:0;
   margin-top:8px;
-  margin-left:-16px;
+  margin-left:-12px;
   @include breakpoint (smmax) {
     justify-content: center;
   }
