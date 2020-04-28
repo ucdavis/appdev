@@ -12,13 +12,16 @@ layout: default
   <div class="row sdl-container">
     <ul class="sdl-list col-4 no-list-style">
       {% for post in site.sdl %}
-      <li>
-        <a href="{{post.url}}" class="{%- if page.url == post.url -%}active{%- endif -%}">
-          <span class="tertiary-font">
-            practice #{{ post.practice }}
-          </span>
-          <br />
-          {{post.title}}
+      <li class="{%- if page.url == post.url -%}active{%- endif -%}">
+        <a href="{{post.url}}" class="d-flex">
+          <img src="/media/icons/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
+          <div>
+            <span class="tertiary-font">
+              practice #{{ post.practice }}
+            </span>
+            <br />
+            {{post.title}}
+          </div>
         </a>
       </li>
       {% endfor %}

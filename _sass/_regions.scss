@@ -122,10 +122,11 @@
   }
 }
 p.practice {
-  font-size:1.4rem;
+  font-size:1.5rem;
   font-family: $sans-bold;
-  color:$secondary-color;
+  color:$primary-color;
   text-transform: uppercase;
+  margin-top:12px;
 }
 .sdl-container {
   border-top: 1px solid $borders;
@@ -139,18 +140,36 @@ ul.sdl-list {
   li {
     margin:0;
     margin-bottom:-1px;
+    img {
+      opacity:.25;
+    }
+    &.active {
+      a {
+        color:$primary-color
+      }
+      span {
+        color:$primary-color !important;
+      }
+      img {
+        opacity:1;
+      }
+    }
+    &:hover {
+      background-color:transparentize($primary-color,0.95);
+    }
   }
   li a {
     color:$primary-font;
     font-size:1.6rem;
     display: block;
     padding: 16px 8px;
-    border:1px solid $borders;
+    border-bottom:1px solid $borders;
+    border-right:1px solid $borders;
+    div {
+      margin-left: 16px;
+    }
     &:first-child {
       border-top: none;
-    }
-    &:hover, &.active {
-      background-color:$bg-color;
     }
   }
 }

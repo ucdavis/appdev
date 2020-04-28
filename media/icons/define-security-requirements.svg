@@ -4,10 +4,10 @@
     <title>define-security-requirements</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="SDL-Copy" transform="translate(-124.000000, -906.000000)" fill="#00C7B1">
+        <g id="SDL-Copy" transform="translate(-124.000000, -906.000000)" fill="#0078FF">
             <g id="define-security-requirements" transform="translate(124.000000, 906.000000)">
                 <g id="Group-7-Copy-3">
-                    <rect id="Rectangle" stroke="#00C7B1" stroke-width="1.32" fill-opacity="0.0762128497" transform="translate(19.800000, 19.800000) rotate(-45.000000) translate(-19.800000, -19.800000) " x="5.94" y="5.94" width="27.72" height="27.72" rx="1.32"></rect>
+                    <rect id="Rectangle" stroke="#0078FF" stroke-width="1.32" fill-opacity="0.0969187063" transform="translate(19.800000, 19.800000) rotate(-45.000000) translate(-19.800000, -19.800000) " x="5.94" y="5.94" width="27.72" height="27.72" rx="1.32"></rect>
                     <g id="Group" transform="translate(12.000000, 12.000000)">
                         <polygon id="Fill-710" points="9.81700239 3.90078016 7.34284229 3.90078016 1.10284204 10.1407804 1.55992206 10.1407804 1.55992206 15.6007806 3.11992212 15.6007806 3.11992212 10.1407804 3.57700214 10.1407804"></polygon>
                         <path d="M13.2600005,3.90078016 L13.2600005,2.90550012 C13.7241005,2.6356201 14.0400006,2.13876008 14.0400006,1.56078006 C14.0400006,0.699660028 13.3419005,0.000780000031 12.4800005,0.000780000031 C11.6181005,0.000780000031 10.9200004,0.699660028 10.9200004,1.56078006 C10.9200004,2.13876008 11.2359004,2.6356201 11.7000005,2.90550012 L11.7000005,4.22370017 L5.78292023,10.1407804 L8.25708033,10.1407804 L14.4970806,3.90078016 L13.2600005,3.90078016 Z" id="Fill-711"></path>

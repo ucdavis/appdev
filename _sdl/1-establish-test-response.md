@@ -4,7 +4,7 @@ title: "Establish and Test Response Processes"
 practice: "1"
 description: 'Preparing an Incident Response Plan is crucial for helping to address new threats that can
 emerge over time.'
-icon: "establish-test-response"
+icon: "establish-and-test-response-processes"
 ---
 
 An Incident Response Plan should be created in coordination with your organization’s dedicated

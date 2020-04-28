@@ -3,6 +3,7 @@ layout: sdl
 practice: "2"
 title: Provide Training
 description: Security is everyone’s job.
+icon: provide-training
 ---
 Developers, service engineers, and product managers must
 understand security basics and know how to build security into software and services to
@@ -148,35 +149,35 @@ development teams.
 Here’s a partial example for a small-to-medium team. A given development team may use
 different technology or have other needs. This partial example is just a starting point:
 1. All staff on the development team will:
-   
+
     a. Read/re-read the OWASP Top 10 at least once every 2 years.
 
 2. Application developers will:
-   
+
     a. Read/re-read the OWASP Top 10 every year.
-   
+
     b. Review the OWASP Java Programming guidance every year
-    
+
     c. Attend the UC Cybersecurity Summit or the UC Information Security
 Symposium every two years
 3. Server administers will:
-   
+
     a. Read/re-read the OWASP Top 10 every year.
-   
+
     b. Review the Apache Tomcat hardening guide every year
-   
+
     c. Review the AWS Security Guidelines every year
 
     d. Attend the UC Cybersecurity Summit or the UC Information Security
 Symposium every two years
 4. The lead developer will:
-    
+
     a. Monitor the OWASP Blog for news of important changes or alerts in the
 OWASP information.
-    
+
     b. Monitor the AWS Security Blog for news of important changes or alerts
-    
+
     c. Attend the UC Cybersecurity Summit or the UC Information Security
 Symposium once a year
-    
+
     d. Ensure the effective and ongoing security training of the development team. For example, meeting regularly and discussing a specific topic (e.g. cross-site scripting, encryption).
