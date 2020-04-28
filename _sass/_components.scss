@@ -102,7 +102,12 @@
     border-bottom: none;
   }
 }
-
+.circle {
+    border-radius: 50%;
+}
+.border-1 {
+    border: 2px solid $primary-color;
+}
 // ICONS
 .icon-round-border {
   @extend .circle;
@@ -113,9 +118,9 @@
 }
 @mixin icon-color($color) {
   @extend .icon-round-border;
-  border-color: $primary-color;
-  color: $primary-color;
-  background-color: transparentize($primary-color, 0.6);
+  border-color: $color;
+  color: $color;
+  background-color: transparentize($color, 0.6);
 }
 .icon-primary {
   @include icon-color($primary-color);
