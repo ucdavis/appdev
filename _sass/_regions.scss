@@ -77,20 +77,14 @@
 
 .banner {
   background-color:$primary-color;
-  // background-image: url("/media/tree.svg");
-  // background-position-x: right;
-  // background-position-y: bottom;
-  // background-repeat: no-repeat;
-  // background-size: 50%;
-  .banner-contents {
-    padding:80px 0;
+  padding:5% 0;
     h1 {
-      color:#fff;
+      color:$primary-white;
+      font-family: $sans-bold;
     }
     p {
-       color:#fff;
+       color:$secondary-white;
     }
-  }
 }
 
 // homegrown section
@@ -117,9 +111,6 @@ p.practice {
   color:$primary-color;
   text-transform: uppercase;
   margin-top:12px;
-}
-.sdl-container {
-  border-top: 1px solid $borders;
 }
 ul.sdl-list {
   span {
