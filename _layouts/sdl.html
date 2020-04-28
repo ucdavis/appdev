@@ -12,7 +12,7 @@ layout: default
         {% for post in posts %}
           <li class="{%- if page.url == post.url -%}active{%- endif -%}">
           <a href="{{post.url}}" class="d-flex align-items-center">
-            <img src="/media/icons/sdl/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
+            <img class="flex-shrink-0" src="/media/icons/sdl/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
             <div>
               <span class="tertiary-font">
                 practice #{{ post.practice }}

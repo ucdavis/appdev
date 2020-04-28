@@ -2,7 +2,7 @@
 layout: "sdl"
 title: "Implement a code review process"
 practice: "12"
-icon: "code-review"
+icon: "implement-a-code-review-process"
 ---
 Documentation, policies, and controls are most effective if they are consistently
 implemented and reviewed. As code and configurations change it is understandable that

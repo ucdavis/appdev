@@ -2,7 +2,7 @@
 layout: "sdl"
 title: "Manage the Security Risk of Using Third-Party Components"
 practice: "11"
-icon: "third-party-components"
+icon: "manage-the-security-risk-of-third-party-components"
 ---
 
 Today, the vast majority of software projects are built using third-party components (both

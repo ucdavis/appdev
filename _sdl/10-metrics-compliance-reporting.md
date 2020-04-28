@@ -2,7 +2,7 @@
 layout: "sdl"
 title: "Define Metrics and Compliance Reporting"
 practice: "10"
-icon: "metrics-compliance-reporting"
+icon: "define-metrics-and-compliance-reporting"
 ---
 It is essential to define the minimum acceptable levels of security quality and to hold
 engineering teams accountable to meeting that criteria. Defining these early helps a team
