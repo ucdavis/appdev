@@ -10,4 +10,4 @@ Encryption is typically used to achieve this. Making an incorrect choice in the 
 
 See Section 4.7 of the UCOP Secure Software Guidelines, which covers encryption standards for Web Applications.
 
-[https://security.ucop.edu/policies/secure-software-development.html](https://security.ucop.edu/policies/secure-software-development.html)
+<https://security.ucop.edu/policies/secure-software-development.html>
