@@ -1,6 +1,6 @@
 ---
 layout: sdl
-practice: "2"
+practice: "02"
 title: Provide Training
 description: Security is everyone’s job.
 icon: provide-training

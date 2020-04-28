@@ -1,7 +1,7 @@
 ---
 layout: "sdl"
 title: "Data Source Management"
-practice: "4"
+practice: "04"
 description: "Application data may be consumed from and published to many data sources including dedicated on-premises databases, third-party cloud-hosted web services, and more."
 icon: "data-source-management"
 ---

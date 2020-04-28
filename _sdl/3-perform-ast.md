@@ -1,6 +1,6 @@
 ---
 layout: sdl
-practice: "3"
+practice: "03"
 title: Perform Application Security Testing
 description: Application Security Testing (AST) encompases a broad range of scanning methodologies for finding vulnerabilities within applications.
 icon: perform-application-security-testing

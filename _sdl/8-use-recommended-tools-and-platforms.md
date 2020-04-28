@@ -1,7 +1,7 @@
 ---
 layout: "sdl"
 title: "Use Recommended Tools and Platforms"
-practice: "8"
+practice: "08"
 icon: "use-recommended-tools-and-platforms"
 ---
 

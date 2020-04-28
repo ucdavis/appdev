@@ -1,7 +1,7 @@
 ---
 layout: "sdl"
 title: "Perform Threat Modeling"
-practice: "5"
+practice: "05"
 description: "Threat modeling can be used to identify areas where applications need to be protected."
 icon: "perform-threat-modeling"
 ---

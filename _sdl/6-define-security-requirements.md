@@ -1,7 +1,7 @@
 ---
 layout: "sdl"
 title: "Define Security Requirements"
-practice: "6"
+practice: "06"
 description: "The SDL is typically thought of as assurance activities that help engineers implement “secure features”, in that the features are well engineered with respect to security."
 icon: "define-security-requirements"
 ---

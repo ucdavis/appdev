@@ -2,7 +2,7 @@
 layout: "sdl"
 title: "Define and Use Cryptography Standards"
 description: "With the rise of mobile and cloud computing, it’s critically important to ensure all data, including security-sensitive information and management and control data, is protected from unintended disclosure or alteration when it’s being transmitted or stored."
-practice: "7"
+practice: "07"
 icon: "define-and-use-cryptography-standards"
 ---
 

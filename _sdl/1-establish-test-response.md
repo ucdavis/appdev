@@ -1,7 +1,7 @@
 ---
 layout: "sdl"
 title: "Establish and Test Response Processes"
-practice: "1"
+practice: "01"
 description: 'Preparing an Incident Response Plan is crucial for helping to address new threats that can
 emerge over time.'
 icon: "establish-and-test-response-processes"
