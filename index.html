@@ -8,7 +8,7 @@ layout: default
 			<div class="col-md-6 d-flex flex-column">
 				<h1><i class="fas fa-terminal"></i> Welcome Developers</h1>
 				<p class="lede">If you write code for UC Davis full-time, part-time, on-contract, or even as an unofficial part of your job, this website may be of help to you.</p>
-				<p class="mt-auto"><a class="btn btn-secondary" href="">
+				<p class="mt-auto"><a class="btn btn-secondary" href="/guidelines/orientation">
 					Get started now
 				</a></p>
 			</div>
@@ -81,21 +81,11 @@ layout: default
 					<h1>SDL practices</h1>
 					<p class="section-learn-more"><a class="secondary-font" href="/guides/sdl">Learn about all of our SDL practices <i class="fas fa-arrow-right"></i></a></p>
 					<ul class="no-list-style">
+						{% for post in site.sdl limit: 5 %}
 						<li>
-							<a href="#">Data Source Management</a>
+							<a href="{{post.url}}">{{post.title}}</a>
 						</li>
-						<li>
-							<a href="#">Threat Modeling</a>
-						</li>
-						<li>
-							<a href="#">Define Security Requirements</a>
-						</li>
-						<li>
-							<a href="#">Use Cryptography Standards</a>
-						</li>
-						<li>
-							<a href="#">Implement a code review process</a>
-						</li>
+						{% endfor %}
 					</ul>
 			</div>
 			<div class="col-md sdl-card">
