@@ -5,35 +5,31 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-html {
-  height:100%;
-}
-body {
-  display: flex;
+.brand-wrapper {
+  @extend .level;
   flex-direction: column;
-  height:100%;
-}
-.page-wrap {
-  flex: 1 0 auto;
+
+  @media screen and (max-width: 768px) {
+    .ucdlogo {
+      order: 1;
+      margin-bottom: 16px;
+    }
+    .applogo {
+      order: 2;
+    }
+  }
+
+  @include breakpoint(md) {
+    flex-direction: row;
+  }
 }
 header {
   background-color: $primary-color;
   padding-top:2.4rem;
   padding-bottom:0;
 
-  .ucdlogo {
-    text-align: right;
-  }
   @include breakpoint (smmax){
     text-align: center;
-    .ucdlogo {
-      margin-bottom:16px;
-      text-align: center;
-    }
-    .brand-wrapper {
-    flex-direction: column-reverse;
-    }
   }
   h1 {
     color:#fff;

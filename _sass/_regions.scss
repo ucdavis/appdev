@@ -42,7 +42,15 @@
   background-size: cover;
 }
 .event-cta {
-  border-left:1px solid $borders;
+  border-top:1px solid $borders;
+  margin-top: 1.5rem;
+  padding-top: 2rem;
+  @include breakpoint(md) {
+    border-top: none;
+    margin-top: 0;
+    padding-top: 0;
+    border-left:1px solid $borders;
+  }
   align-items: center;
 }
 .expired-event {
@@ -71,6 +79,8 @@
   width:40px;
   height:40px;
   margin-right: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 //banner
@@ -143,14 +153,16 @@ ul.sdl-list {
     color:$primary-font;
     font-size:1.6rem;
     display: block;
-    padding: 24px 8px;
     border-bottom:1px solid $borders;
-    border-right:1px solid $borders;
+    padding: 0.5rem;
+
+    @include breakpoint(md) {
+      border-right:1px solid $borders;
+      padding: 24px 8px;
+    }
+
     div {
       margin-left: 16px;
-    }
-    &:first-child {
-      border-top: none;
     }
   }
 }

@@ -6,8 +6,8 @@ layout: default
 <div class="container content-wrapper">
   <h1>Security Development Lifecycle</h1>
   {% include breadcrumbs.html %}
-  <div class="row bt-1">
-      <ul class="col-4 sdl-list no-list-style">
+  <div class="row bt-1 no-gutters">
+      <ul class="col-md-4 sdl-list no-list-style">
         {% assign posts = site.sdl | sort: "practice" %}
         {% for post in posts %}
           <li class="{%- if page.url == post.url -%}active{%- endif -%}">
@@ -24,7 +24,7 @@ layout: default
         </li>
         {% endfor %}
       </ul>
-    <div class="col-8 mt-5">
+    <div class="pl-md-5 col-md-8 mt-5">
       <img
         style="min-height:40px"
         src="/media/icons/sdl/{{ page.icon }}.svg"
