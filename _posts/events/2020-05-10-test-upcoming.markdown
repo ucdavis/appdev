@@ -6,6 +6,8 @@ author:
     - scott_kirkland
     - adam_getchell
 date:   2020-05-10
+event-start: 2020-05-10T11:00:00-07:00Z
+event-end: 2020-05-10T12:00:00-07:00Z
 event-time: 11:00AM - 12:00PM
 event-location: "2005 PES"
 slides: /27/intro_slides.pdf
