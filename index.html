@@ -73,6 +73,7 @@ layout: default
 
 	</div>
 </div>
+{% assign sdl-posts = site.sdl | sort: "practice" %}
 <div class="homepage-section homepage-sdl">
 	<div class="section-contents container">
 		<div class="row">
@@ -80,7 +81,7 @@ layout: default
 					<img src="/media/icons/homegrown.svg" alt="DNA icon">
 					<h1>SDL practices</h1>
 					<ul id="sdl-selector" class="no-list-style">
-						{% for post in site.sdl limit: 5 %}
+						{% for post in sdl-posts limit: 5 %}
 						<li data-target="{{ post.url }}">
 							<a href="javascript:void(0)">{{post.title}}</a>
 						</li>
@@ -97,7 +98,7 @@ layout: default
 		</div>
 		<script type="application/json" id="sdl-data">
 		[
-			{% for post in site.sdl limit: 5 %}
+			{% for post in sdl-posts limit: 5 %}
 			{
 				"title": "{{ post.title }}",
 				"description": "{{ post.description }}",
