@@ -42,19 +42,30 @@ layout: default
         <div class="row no-gutters">
             {% for post in site.categories.events offset:1 %}
                 <div class="col-md-4 d-flex align-items-stretch">
-                    <div class="card d-flex flex-column expired-event">
+                    <div vocab="http://schema.org" typeof="Event" class="card d-flex flex-column expired-event">
+                      {% if post.event-start %}
+                      <meta property="startDate" content="{{ post.event-start | date: '%Y%m%dT%H%M%S' }}" />
+                      {% else %}
+                      <meta property="startDate" content="{{ post.date | date: '%Y%m%dT%H%M%S' }}" />
+                      {% endif %}
+                      {% if post.event-end %}
+                      <meta property="endDate" content="{{ post.event-end | date: '%Y%m%dT%H%M%S' }}" />
+                      {% endif %}
                       <p class="event-date">{{ post.date | date_to_long_string }}</p>
-                      <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
-                      <h2>{{ post.title }}</h2>
-                      <p>{{ post.description }}</p>
+                      <p class="event-location" property="location" typeof="Place"><span property="address">{{ post.event-location }}</span> • {{ post.event-time }}</p>
+                      <h2 property="name">{{ post.title }}</h2>
+                      <p property="description">{{ post.description }}</p>
                       <div class="event-more-link level">
                         <div class="mr-2">
                           {% for a in post.author %}
                             {% assign author = site.data.authors[a] %}
-                            <img class="author-image" src="{{ author.image }}" alt="">
+                            <span property="performer" typeof="Person">
+                              <meta property="name" content="{{ author.name }}" />
+                              <img property="image" class="author-image" src="{{ author.image }}" alt="{{ author.name }}" />
+                            </span>
                           {% endfor %}
                         </div>
-                        <a href="{{ post.url }}" class="ml-auto flex-shrink-0">Learn More <i class="fas fa-arrow-right"></i></a>
+                        <a property="url" href="{{ post.url }}" class="ml-auto flex-shrink-0">Learn More <i class="fas fa-arrow-right"></i></a>
                       </div>            
                     </div>
                   </div>
