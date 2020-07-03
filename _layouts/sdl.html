@@ -7,23 +7,51 @@ layout: default
   <h1>Security Development Lifecycle</h1>
   {% include breadcrumbs.html %}
   <div class="row bt-1 no-gutters">
-      <ul class="col-md-4 sdl-list no-list-style">
-        {% assign posts = site.sdl | sort: "practice" %}
-        {% for post in posts %}
-          <li class="{%- if page.url == post.url -%}active{%- endif -%}">
-          <a href="{{post.url}}" class="d-flex align-items-center">
-            <img class="flex-shrink-0" src="/media/icons/sdl/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
-            <div>
-              <span class="tertiary-font">
-                practice #{{ post.practice }}
-              </span>
-              <br />
-              {{post.title}}
-            </div>
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
+    <script>
+      function toggleSDLList() {
+        const toDisplay = document.querySelector('.sdl-hidden').style.display == "block" ? "none" : "block"
+        document.querySelectorAll('.sdl-hidden').forEach(el => el.style.display = toDisplay)
+        document.getElementById('sdl-arrow').classList.toggle('up')
+      }
+    </script>
+    <style>
+      #sdl-arrow {
+        padding: 1rem 2rem;
+        transition: transform 0.25s ease-in-out;
+        transform: rotate(0);
+      }
+      #sdl-arrow.up {
+        transform: rotate(180deg);
+      }
+      #sdl-arrow:focus {
+        outline: none;
+      }
+    </style>
+    <ul class="col-md-4 sdl-list no-list-style">
+      {% assign posts = site.sdl | sort: "practice" %}
+      {% for post in posts %}
+      {% if forloop.first %}
+      <li class="{%- if page.url == post.url -%}active{% endif %} d-flex">
+      {% else %}
+      <li class="{%- if page.url == post.url -%}active{% endif %} sdl-hidden">
+      {% endif %}
+        <a href="{{post.url}}" class="d-flex align-items-center">
+          <img class="flex-shrink-0" src="/media/icons/sdl/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
+          <div>
+            <span class="tertiary-font">
+              practice #{{ post.practice }}
+            </span>
+            <br />
+            {{post.title}}
+          </div>
+        </a>
+      {% if forloop.first %}
+      <button id="sdl-arrow" class="reset d-md-none bb-1" onclick="toggleSDLList()"><i class="fas fa-lg fa-arrow-down"></i></button>
+      {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    </div>
     <div class="pl-md-5 col-md-8 mt-5">
       <img
         style="min-height:40px"

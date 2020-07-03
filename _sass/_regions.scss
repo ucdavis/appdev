@@ -124,6 +124,15 @@ p.practice {
   margin-top:12px;
 }
 ul.sdl-list {
+  margin-bottom: 0;
+  .sdl-hidden {
+    display: none;
+  }
+  @include breakpoint(md) {
+    .sdl-hidden {
+      display: block;
+    }
+  }
   span {
     text-transform: uppercase;
     font-weight: bold;
@@ -131,7 +140,7 @@ ul.sdl-list {
   }
   li {
     margin:0;
-    margin-bottom:-1px;
+    border-bottom:1px solid $borders;
     img {
       opacity:.25;
     }
@@ -146,15 +155,12 @@ ul.sdl-list {
         opacity:1;
       }
     }
-    &:hover {
-      background-color:transparentize($primary-color,0.95);
-    }
   }
   li a {
+    flex-grow: 1;
     color:$primary-font;
     font-size:1.6rem;
     display: block;
-    border-bottom:1px solid $borders;
     padding: 0.5rem;
 
     @include breakpoint(md) {
@@ -164,6 +170,10 @@ ul.sdl-list {
 
     div {
       margin-left: 16px;
+    }
+    
+    &:hover {
+      background-color:transparentize($primary-color,0.95);
     }
   }
 }
