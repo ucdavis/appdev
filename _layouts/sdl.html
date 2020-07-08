@@ -36,7 +36,7 @@ layout: default
       <li class="{%- if page.url == post.url -%}active{% endif %} sdl-hidden">
       {% endif %}
         <a href="{{post.url}}" class="d-flex align-items-center">
-          <img class="flex-shrink-0" src="/media/icons/sdl/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
+          <img class="sdl-img" src="/media/icons/sdl/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
           <div>
             <span class="tertiary-font">
               practice #{{ post.practice }}
@@ -53,7 +53,7 @@ layout: default
     </ul>
     <div class="pl-md-5 col-md-8 mt-5">
       <img
-        style="min-height:40px"
+        class="sdl-img"
         src="/media/icons/sdl/{{ page.icon }}.svg"
         alt="{{ page.title }} {{ page.icon }}"
       />

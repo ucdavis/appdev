@@ -90,10 +90,11 @@ layout: default
 					<p class="section-learn-more"><a class="secondary-font" href="/guidelines/SDL">Learn about all of our SDL practices <i class="fas fa-arrow-right"></i></a></p>
 			</div>
 			<div class="col-md sdl-card">
-				<img id="sdl-img" src="/media/icons/sdl/data-source-management.svg" alt="security camera icon">
-				<h2><b id="sdl-title">Data Source Management</b></h2>
-				<p id="sdl-description">This learning task will help you practice your ability to read clearly and accurately. Read the story out loud for 30 seconds. Once 30 seconds has past, you’ll be redirected to your results page, where you can listen to your reading sample. As the year goes on, you’ll be able to hear yourself grow as a reader.v</p>
-				<p class="section-learn-more"><a id="sdl-link" class="secondary-font" href="/guidelines/SDL/4-data-source-management">Learn more <i class="fas fa-arrow-right"></i></a></p>
+				{% assign post = site.sdl | first %}
+				<img id="sdl-img" class="sdl-img" src="/media/icons/sdl/{{ post.icon }}.svg" alt="security camera icon">
+				<h2><b id="sdl-title">{{ post.title }}</b></h2>
+				<p id="sdl-description">{{ post.description }}</p>
+				<p class="section-learn-more"><a id="sdl-link" class="secondary-font" href="{{ post.url }}">Learn more <i class="fas fa-arrow-right"></i></a></p>
 			</div>
 		</div>
 		<script type="application/json" id="sdl-data">
@@ -116,17 +117,25 @@ layout: default
 				const description = document.getElementById('sdl-description')
 				const link = document.getElementById('sdl-link')
 				const data = JSON.parse(document.getElementById('sdl-data').innerHTML)
-
+				const removeActive = () => {
+					for(let child of selector.children) {
+						child.classList.remove('active')
+					}
+				}
 				for(let child of selector.children) {
 					const target = child.dataset.target
 					const dataElement = data.find(el => el.link == target)
 					child.addEventListener('click', () => {
+						removeActive()
+						child.classList.add('active')
 						title.textContent = dataElement.title
 						description.textContent = dataElement.description
 						image.setAttribute('src', dataElement.image)
 						link.setAttribute('href', dataElement.link)
 					})
 				}
+
+				selector.children[0].classList.add('active')
 			})
 		</script>
 	</div>
@@ -190,24 +199,5 @@ layout: default
 			</div>
 			{% endfor %}
 		  </div>
-
-	</div>
-</div>
-
-<div class="main">
-	<div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em;">
-		<h1>Welcome Developers</h1>
-		<p>
-			<b>If you write code for UC Davis</b> full-time, part-time, on-contract, or even as an unofficial part of your job, this website may be of help to you.
-		</p>
-		<p>
-			This is the site of the UCD Application Developer’s SIG (Special Interest Group), a self-organized community group of UCD staff aiming to share knowledge and build community.
-		</p>
-		<p>
-			We have a publicly available <a href="{{site.baseurl}}/orientation">Getting Started guide</a> which contains useful information for developing at UC Davis. We also <a href="{{site.baseurl}}/experts">maintain a list of Subject Matter Experts</a> in various technologies. Please feel free to contact them should you need assistance.
-		</p>
-		<p>
-			We hold open, public meetings on the second Tuesday of every month where volunteers present new technologies, explain campus technology changes, and more. Please attend if it sounds interesting to you. <a href="{{site.baseurl}}/events">The notes from each meeting</a> are available here as well.
-		</p>
 	</div>
 </div>

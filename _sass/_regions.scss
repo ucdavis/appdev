@@ -7,8 +7,17 @@
   background-color: #fff;
   border-radius: 4px;
   box-shadow: $box-shadow;
-  padding:48px;
+  padding: 48px;
   animation: float 6s ease-in-out infinite;
+  margin-top: $float-animation-y;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+}
+.sdl-img {
+  min-height: 40px;
 }
 // Event Landing
 .homepage-meeting {

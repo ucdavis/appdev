@@ -84,6 +84,7 @@ $box-shadow: 0 0 0 1px rgba(49,49,93,.03), 0 2px 5px 0 rgba(49,49,93,.1), 0 1px 
 
 $card-padding: 24px;
 $guideline-icon-size: 7.5rem;
+$float-animation-y: 20px;
 
 @mixin breakpoint($point) {
     @if $point==sm {
@@ -155,7 +156,7 @@ $guideline-icon-size: 7.5rem;
 		transform: translatey(0px);
 	}
 	50% {
-		transform: translatey(-20px);
+		transform: translatey(-#{$float-animation-y});
 	}
 	100% {
 		transform: translatey(0px);
