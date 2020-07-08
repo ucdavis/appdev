@@ -24,7 +24,7 @@ layout: default
     <h1>Past Meetings</h1>
         <div class="row no-gutters">
             {% for post in site.categories.events offset:1 %}
-                <div class="col-md-4 d-flex align-items-stretch">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
                     <div vocab="http://schema.org" typeof="Event" class="card d-flex flex-column expired-event">
                       {% if post.event-start %}
                       <meta property="startDate" content="{{ post.event-start | date: '%Y%m%dT%H%M%S' }}" />
