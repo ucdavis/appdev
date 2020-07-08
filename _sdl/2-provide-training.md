@@ -2,7 +2,7 @@
 layout: sdl
 practice: "02"
 title: Provide Training
-description: Security is everyone’s job.
+description: Security is everyone’s job. Developers, service engineers, and product managers must understand security basics.
 icon: provide-training
 ---
 Developers, service engineers, and product managers must
