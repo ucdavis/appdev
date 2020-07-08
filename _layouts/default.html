@@ -41,7 +41,18 @@
     {{ content }}
     {% include footer.html %}
   </body>
-  
+    <!-- animation script -->
+    <script>
+      let visibleDetector = new IntersectionObserver(entries =>
+        entries.forEach(e => {
+          if(e.isIntersecting) {
+            e.target.classList.add('animated')
+            visibleDetector.unobserve(e.target)
+          }
+        }))
+      window.addEventListener('DOMContentLoaded', () =>
+        document.querySelectorAll('.has-animation').forEach(e => visibleDetector.observe(e)))
+    </script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" async></script>
     <script src="/js/cssbrowserselector.js" async></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>

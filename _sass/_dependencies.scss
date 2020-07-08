@@ -152,13 +152,13 @@ $float-animation-y: 20px;
 }
 
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
+    from {
+        transform: translateZ(-10);
+    }
 	50% {
 		transform: translatey(-#{$float-animation-y});
 	}
-	100% {
-		transform: translatey(0px);
-	}
+    to {
+        transform: translateZ(0);
+    }
 }

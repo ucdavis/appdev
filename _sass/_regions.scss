@@ -65,6 +65,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.meeting-title {
+  &.animated {
+    animation: pop-in 0.5s cubic-bezier(0, 0.9, 0.3, 1.2);
+  }
+}
 .event-cta {
   border-top:1px solid $borders;
   margin-top: 1.5rem;
