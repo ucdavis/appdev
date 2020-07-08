@@ -171,32 +171,15 @@ layout: default
 		<h1 class="text-center">Join us at our next meeting</h1>
 		<div>
 			{% for post in site.categories.events limit:1 %}
-			<div class="card event-main">
-			  <div class="row justify-content-between">
-				<div class="col-md-8">
-				  <p class="event-date">{{ post.date | date_to_long_string }}</p>
-				  <p class="event-location">{{ post.event-location }} • {{ post.event-time }}</p>
-				  <h1>{{ post.title }}</h1>
-				  <p class="lede">{{ post.description }}</p>
-					<div class="event-more-link level">
-					  <div class="mr-2">
-						{% for a in post.author %}
-						  {% assign author = site.data.authors[a] %}
-						  <img class="author-image" src="{{ author.image }}" alt="">
-						{% endfor %}
-					  </div>
-					  <a href="{{ post.url }}" class="ml-auto flex-shrink-0">Learn More <i class="fas fa-arrow-right"></i></a>
-					</div>
-				</div>
-				<div class="col-md-3 event-cta d-flex justify-content-center align-items-center">
-				  <a target="_blank" href="/calendar/latest.ics" download class="text-center d-flex flex-column action-text">
-					<i class="fas fa-calendar-plus fa-3x mb-4"></i>
-					<span>Add to calendar</span>
-				  </a>
-				</div>
-			  </div>
-
-			</div>
+			{% include event_main.html 
+				date=post.date 
+				event-location=post.event-location
+				title=post.title
+				description=post.description
+				author=post.author
+				event-start=post.event-start
+				event-end=post.event-end
+				event-time=post.event-time %}
 			{% endfor %}
 		  </div>
 	</div>
