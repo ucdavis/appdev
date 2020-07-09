@@ -153,10 +153,10 @@ layout: default
 	<div class="homepage-author-container">
 		{% for item in site.data.authors %}
 		{% assign author = item[1] %}
-		<div class="card homepage-author-card text-center flex-grow-1 flex-basis-zero">
-			<img class="guideline-card-icon icon-round-border align-self-center" src="{{ author.image }}" />
+		<div vocab="http://schema.org" typeof="Person" class="card homepage-author-card text-center flex-grow-1 flex-basis-zero">
+			<img property="image" class="guideline-card-icon icon-round-border align-self-center" src="{{ author.image }}" />
             <div class="card-header">
-                <h2 class="card-title">{{ author.name }}</h2>
+                <h2 property="name" class="card-title">{{ author.name }}</h2>
             </div>
             <div class="card-body">
                 <p class="card-text"></p>
@@ -178,7 +178,8 @@ layout: default
 				author=post.author
 				event-start=post.event-start
 				event-end=post.event-end
-				event-time=post.event-time %}
+				event-time=post.event-time
+				url=post.url %}
 			{% endfor %}
 		  </div>
 	</div>
