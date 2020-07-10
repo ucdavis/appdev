@@ -9,16 +9,16 @@
     {% endif %}
     <h1 class="event-title" property="name"><a href="{{include.url}}">{{ include.title }}<i class="ml-2 fas fa-link"></i></a></h1>
     <p class="lede event-description" property="description">{{ include.description }}</p>
-    <div class="event-detail d-flex">
-        <a target="_blank" href="/calendar/latest.ics" download class="event-cta d-flex text-center justify-content-center flex-column action-text">
-            <i class="fas fa-calendar-plus fa-3x mb-3"></i> 
-            <span class="event-cta-text">Add to calendar</span>
-        </a>
-        <div class="ml-4">
+    <div class="event-detail">
+        <div class="event-detail-text">
             <p class="event-date">{{ include.date | date_to_long_string }}</p>
             <p>{{ include.event-time }}</p>
             <p class="event-location" property="location" typeof="Place"><span property="address">{{ include.event-location }}</span></p>
         </div>
+        <a target="_blank" href="/calendar/latest.ics" download class="event-cta text-center action-text">
+            <i class="event-cta-icon fas fa-calendar-plus fa-3x"></i> 
+            <span class="event-cta-text">Add to calendar</span>
+        </a>
     </div>
     <div class="event-author">
         {% for a in include.author %}
