@@ -7,16 +7,7 @@ layout: default
     <h1>Upcoming Meetings</h1>
     <div>
       {% for post in site.categories.events limit:1 %}
-      {% include event_main.html 
-          date=post.date 
-          event-location=post.event-location
-          title=post.title
-          description=post.description
-          author=post.author
-          event-start=post.event-start
-          event-end=post.event-end
-          event-time=post.event-time
-          url=post.url %}
+      {% include event_main.html %}
       {% endfor %}
     </div>
     </div>

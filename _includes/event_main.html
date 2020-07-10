@@ -7,21 +7,15 @@
     {% if post.event-end %}
     <meta property="endDate" content="{{ post.event-end | date: '%Y%m%dT%H%M%S' }}" />
     {% endif %}
-    <h1 class="event-title" property="name"><a href="{{include.url}}">{{ include.title }}<i class="ml-2 fas fa-link"></i></a></h1>
-    <p class="lede event-description" property="description">{{ include.description }}</p>
-    <div class="event-detail">
-        <div class="event-detail-text">
-            <p class="event-date">{{ include.date | date_to_long_string }}</p>
-            <p>{{ include.event-time }}</p>
-            <p class="event-location" property="location" typeof="Place"><span property="address">{{ include.event-location }}</span></p>
-        </div>
-        <a target="_blank" href="/calendar/latest.ics" download class="event-cta text-center action-text">
-            <i class="event-cta-icon fas fa-calendar-plus fa-3x"></i> 
-            <span class="event-cta-text">Add to calendar</span>
-        </a>
+    <div class="event-content">
+        <p class="event-date">{{ post.date | date_to_long_string }}</p>
+        <h1 property="name">{{ post.title }}</h1>
+        <p class="event-location" property="location" typeof="Place"><span property="address">{{ post.event-location }}</span> • {{ post.event-time }}</p>
+        <p class="lede" property="description">{{ post.description }}</p>
     </div>
+    <p class="section-learn-more"><a property="url" class="secondary-font" href="{{ post.url }}">Event Details <i class="fas fa-arrow-right"></i></a></p>
     <div class="event-author">
-        {% for a in include.author %}
+        {% for a in post.author %}
         {% assign author = site.data.authors[a] %}
         <div property="performer" typeof="Person" class="author-item">
             <img property="image" class="author-image" src="{{ author.image }}" alt="{{ author.name }}" />
