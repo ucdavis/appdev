@@ -8,6 +8,7 @@
   transition: transform 0.15s ease;
   &:hover {
     transform: translateY(-1px);
+    text-decoration: none;
   }
 }
 .btn {
@@ -17,27 +18,29 @@
   padding: 0 20px;
   background: $primary-color;
   border-radius: 2px;
-  color: #fff !important;
+  color: #fff;
   border: none;
   box-shadow: $box-shadow;
+  &:hover {
+    color: #fff;
+  }
+}
+.btn-primary {
   &:active,
   &:focus {
     background-color: darken($primary-color, 5);
   }
   &:hover {
-    color: #fff !important;
     background-color: lighten($primary-color, 5);
   }
 }
 .btn-secondary {
   background: $secondary-color;
-  color: #fff !important;
   &:active,
   &:focus {
     background-color: darken($secondary-color, 5);
   }
   &:hover {
-    color: #fff !important;
     background-color: lighten($secondary-color, 5);
   }
 }
@@ -45,15 +48,17 @@
   @extend .btn;
   padding: 1rem 2rem;
   background: #ffffff;
-  color: $primary-color !important;
+}
+.inverse-btn-secondary {
+  @extend .inverse-btn;
+  color: $secondary-color;
   &:active,
   &:focus {
     background-color: darken(#ffffff, 5);
   }
   &:hover {
-    color: $primary-color !important;
+    color: $secondary-color;
     background-color: lighten(#ffffff, 5);
-    text-decoration: none;
   }
 }
 .primary-color {

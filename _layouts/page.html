@@ -24,12 +24,19 @@ layout: default
       {% if page.slides %}
       <div class="sidebar-section">
         <p>
-          <a class="inverse-btn" href="/media/meetings{{page.slides}}">
-            <i class="fas fa-download mr-2"></i>Download slides
+          <a class="inverse-btn-secondary" href="/media/meetings{{page.slides}}">
+            <i class="btn-icon fas fa-download"></i>Download slides
           </a>
         </p>
       </div>
-      {% endif %} {% if page.author %}
+      {% endif %}
+      <div class="sidebar-section">
+        <a target="_blank" href="/calendar/latest.ics" download class="inverse-btn-secondary">
+          <i class="btn-icon fas fa-calendar-plus"></i> 
+          Add to calendar
+        </a>
+      </div>
+      {% if page.author %}
       <div class="sidebar-section">
         <h3>Presenters</h3>
         {% include author.html %}
