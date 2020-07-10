@@ -162,3 +162,26 @@ $float-animation-y: 20px;
         transform: translateZ(0);
     }
 }
+
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+$pop-in-anim: pop-in 0.5s cubic-bezier(0, 0.9, 0.3, 1.2);
+
+@keyframes wipe-reveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+$wipe-reveal-anim: wipe-reveal 0.5s cubic-bezier(0.33, 1, 0.68, 1);

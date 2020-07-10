@@ -65,19 +65,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-@keyframes pop-in {
-  from {
-    opacity: 0;
-    transform: scale(0.5);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
 .meeting-title {
+  padding: 1rem 2rem;
+  color: $primary-white;
+  background-color: $delta;
+  margin-bottom: 1.5rem;
+  &.has-animation {
+    visibility: hidden;
+  }
   &.animated {
-    animation: pop-in 0.5s cubic-bezier(0, 0.9, 0.3, 1.2);
+    visibility: visible;
+    animation: $wipe-reveal-anim;
   }
 }
 .event-detail {
