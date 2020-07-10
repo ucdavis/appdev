@@ -1,36 +1,32 @@
-<div class="card event-main">
-    <div class="row justify-content-between">
-        <div vocab="http://schema.org" typeof="Event" class="col-md-8">
-        {% if post.event-start %}
-        <meta property="startDate" content="{{ post.event-start | date: '%Y%m%dT%H%M%S' }}" />
-        {% else %}
-        <meta property="startDate" content="{{ post.date | date: '%Y%m%dT%H%M%S' }}" />
-        {% endif %}
-        {% if post.event-end %}
-        <meta property="endDate" content="{{ post.event-end | date: '%Y%m%dT%H%M%S' }}" />
-        {% endif %}
-        <p class="event-date">{{ include.date | date_to_long_string }}</p>
-        <p class="event-location" property="location" typeof="Place"><span property="address">{{ include.event-location }}</span> • {{ include.event-time }}</p>
-        <h1 property="name">{{ include.title }}</h1>
-        <p class="lede" property="description">{{ include.description }}</p>
-        <div class="event-more-link level">
-            <div class="mr-2">
-                {% for a in include.author %}
-                {% assign author = site.data.authors[a] %}
-                <span property="performer" typeof="Person">
-                    <meta property="name" content="{{ author.name }}" />
-                    <img property="image" class="author-image" src="{{ author.image }}" alt="{{ author.name }}" />
-                </span> 
-                {% endfor %}
-            </div>
-            <a property="url" href="{{ include.url }}" class="ml-auto flex-shrink-0">Learn More <i class="fas fa-arrow-right"></i></a>
-        </div>
-        </div>
-        <div class="col-md-3 event-cta d-flex justify-content-center align-items-center">
-        <a target="_blank" href="/calendar/latest.ics" download class="text-center d-flex flex-column action-text">
-            <i class="fas fa-calendar-plus fa-3x mb-4"></i> 
-            <span>Add to calendar</span>
+<div vocab="http://schema.org" typeof="Event" class="card event-main">
+    {% if post.event-start %}
+    <meta property="startDate" content="{{ post.event-start | date: '%Y%m%dT%H%M%S' }}" />
+    {% else %}
+    <meta property="startDate" content="{{ post.date | date: '%Y%m%dT%H%M%S' }}" />
+    {% endif %}
+    {% if post.event-end %}
+    <meta property="endDate" content="{{ post.event-end | date: '%Y%m%dT%H%M%S' }}" />
+    {% endif %}
+    <h1 class="event-title" property="name"><a href="{{include.url}}">{{ include.title }}<i class="ml-2 fas fa-link"></i></a></h1>
+    <p class="lede event-description" property="description">{{ include.description }}</p>
+    <div class="event-detail d-flex">
+        <a target="_blank" href="/calendar/latest.ics" download class="event-cta d-flex text-center justify-content-center flex-column action-text">
+            <i class="fas fa-calendar-plus fa-3x mb-3"></i> 
+            <span class="event-cta-text">Add to calendar</span>
         </a>
+        <div class="ml-4">
+            <p class="event-date">{{ include.date | date_to_long_string }}</p>
+            <p>{{ include.event-time }}</p>
+            <p class="event-location" property="location" typeof="Place"><span property="address">{{ include.event-location }}</span></p>
         </div>
+    </div>
+    <div class="event-author">
+        {% for a in include.author %}
+        {% assign author = site.data.authors[a] %}
+        <div property="performer" typeof="Person" class="author-item">
+            <img property="image" class="author-image" src="{{ author.image }}" alt="{{ author.name }}" />
+            <span class="author-name" class="ml-2" property="name">{{ author.name }}</span>
+        </div> 
+        {% endfor %}
     </div>
 </div>
