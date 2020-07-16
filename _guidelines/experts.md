@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_nosidebar
 title: Subject Matter Experts
 description: Our list of App Dev SIG members who have volunteered to be Subject Matter Experts in various technologies. Please feel free to contact them should you need assistance.
 ---

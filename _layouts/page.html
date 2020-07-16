@@ -30,12 +30,14 @@ layout: default
         </p>
       </div>
       {% endif %}
+      {% if page.categories contains "events" %}
       <div class="sidebar-section">
         <a target="_blank" href="/calendar/latest.ics" download class="inverse-btn-secondary">
           <i class="btn-icon fas fa-calendar-plus"></i> 
           Add to calendar
         </a>
       </div>
+      {% endif %}
       {% if page.author %}
       <div class="sidebar-section">
         <h3>Presenters</h3>

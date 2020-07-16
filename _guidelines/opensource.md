@@ -1,10 +1,8 @@
 ---
-layout: guidelines
+layout: page
 title: Open Source Commitment
-permalink: /guidelines/index.html
+description: 'As a public university with a research mission and dedication to public service, the philosophies of open source software are natural for campus developers to follow where applicable.'
 ---
-
-As a public university with a research mission and dedication to public service, the philosophies of open source software are natural for campus developers to follow where applicable.
 
 ## Software is Special
 *Please note: The following text was copied from [http://research.ucdavis.edu/industry/ia/researchers/copyright/distributing-work/#special](http://research.ucdavis.edu/industry/ia/researchers/copyright/distributing-work/#special) on January 30, 2017.*

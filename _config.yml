@@ -17,6 +17,9 @@ plugins:
   - jekyll-redirect-from
 
 collections:
+  orientation:
+    output: true
+    permalink: /orientation/:title
   projects:
   sdl:
     output: true
