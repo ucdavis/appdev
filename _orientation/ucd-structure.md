@@ -26,4 +26,4 @@ community instruments which allow like-minded staff and
 faculty to come together and share ideas and develop collaborations.
 
 The UCD Developers' SIG is one such group. You can find more about it on our
-About page.
+[About](/about) page.
