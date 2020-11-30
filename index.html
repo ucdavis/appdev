@@ -4,55 +4,81 @@ layout: default
 
 <div class="main">
   <div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em">
-    <div style="float: left; padding-top: 3em; padding-right: 2em">
-      <img src="{{site.baseurl}}/media/account.svg" />
-    </div>
-    <div style="float: left">
-      <a href="#">
-        <p>
-          <b>Next Meeting</b><br />
-          <a href="{{site.baseurl}}/events/2020/12/08/cicd-with-jenkins/">Continuous Integration & Deployment with Jenkins</a><br />
-          <small
-            ><i>December 8th, 2020</i> (second Tuesday of the month)<br />Location:
-            Zoom</small
-          >
-        </p>
-      </a>
-    </div>
-    <div style="clear: both"></div>
-  </div>
-</div>
+    <aside style="padding-top: 1em;">
+      <h3>Next Meeting</h3>
+      <p>
+        <i>When:</i> December 8th, 2020<br />
+        <i>Where:</i> Zoom<br />
+        <i>Topic:</i><br /><b><a href="{{site.baseurl}}/events/2020/12/08/cicd-with-jenkins/">Continuous Integration & Deployment with Jenkins</a></b><br />
+        <br />
+        <small>Meetings are held the second Tuesday of the month. Anyone who writes code at or for UC Davis is welcome to join.</small>
+      </p>
+    </aside>
+    <article>
 
-<div class="main">
-  <div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em">
-    <h1>Welcome Developers</h1>
-    <p>
-      <b>If you write code for UC Davis</b> full-time, part-time, on-contract,
-      or even as an unofficial part of your job, this website may be of help to
-      you.
-    </p>
-    <p>
-      This is the site of the UCD Application Developer’s SIG (Special Interest
-      Group), a self-organized community group of UCD staff aiming to share
-      knowledge and build community.
-    </p>
-    <p>
-      We have a publicly available
-      <a href="{{site.baseurl}}/orientation">Getting Started guide</a> which
-      contains useful information for developing at UC Davis. We also
-      <a href="{{site.baseurl}}/experts"
-        >maintain a list of Subject Matter Experts</a
-      >
-      in various technologies. Please feel free to contact them should you need
-      assistance.
-    </p>
-    <p>
-      We hold open, public meetings on the second Tuesday of every month where
-      volunteers present new technologies, explain campus technology changes,
-      and more. Please attend if it sounds interesting to you.
-      <a href="{{site.baseurl}}/events">The notes from each meeting</a> are
-      available here as well.
-    </p>
+      <h1>Welcome Developers</h1>
+      <p>
+        <b>If you write code for UC Davis</b> full-time, part-time, on-contract,
+        or even as an unofficial part of your job, this website may be of help to
+        you.
+      </p>
+      <p>
+        This is the site of the UCD Application Developer’s SIG (Special Interest
+        Group), a self-organized community group of UCD staff aiming to share
+        knowledge and build community.
+      </p>
+      <p>
+        We have a publicly available
+        <a href="{{site.baseurl}}/orientation">Getting Started guide</a> which
+        contains useful information for developing at UC Davis. We also
+        <a href="{{site.baseurl}}/experts"
+          >maintain a list of Subject Matter Experts</a
+        >
+        in various technologies. Please feel free to contact them should you need
+        assistance.
+      </p>
+      <p>
+        We hold open, public meetings on the second Tuesday of every month where
+        volunteers present new technologies, explain campus technology changes,
+        and more. Please attend if it sounds interesting to you.
+        <a href="{{site.baseurl}}/events">The notes from each meeting</a> are
+        available here as well.
+      </p>
+
+      
+      <h1>Latest Blog Posts</h1>
+
+      <ul class="feed-list event-list-main">
+          {% for post in site.categories.blog %}
+          <li>
+          <div class="event-date">
+          <div class="event-date-wrapper">
+              <a href="{{ post.url | prepend: site.baseurl }}">
+                  <span class="event-month">{{ post.date | date: '%B' }}</span>
+                  <span class="event-day">
+                    {% assign d = post.date | date: "%-d" %}
+                    {% case d %}
+                      {% when '1' or '21' or '31' %}{{ d }}st
+                      {% when '2' or '22' %}{{ d }}nd
+                      {% when '3' or '23' %}{{ d }}rd
+                      {% else %}{{ d }}th
+                      {% endcase %}
+                  </span>
+              </a>
+          </div>
+          </div>
+          <div class="event-main">
+              <h2 class="feed-title">
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+              </h2>
+              <p class="feed-description">{{ post.description }}</p>
+          </div>
+
+          </li>
+          {% endfor %}
+      </ul>
+
+    </article>
   </div>
 </div>
 
