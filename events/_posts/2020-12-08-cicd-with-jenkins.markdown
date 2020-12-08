@@ -2,7 +2,9 @@
 layout: event
 title: "Continuous Integration & Deployment with Jenkins"
 description: "Christopher Thielen and Evan Katsuranis present continuous integration and deployment with Jenkins."
-author: "Christopher Thielen"
+author:
+  - christopher_thielen
+  - evan_katsuranis
 date: 2020-12-08
 event-time: 11:00AM - 12:00PM
 event-location: "Zoom"

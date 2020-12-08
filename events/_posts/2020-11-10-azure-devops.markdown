@@ -2,7 +2,8 @@
 layout: event
 title: "Continuous Integration & Deployment with Azure"
 description: "Scott Kirkland presents continuous integration and deployment with Azure DevOps."
-author: "Christopher Thielen"
+author:
+  - scott_kirkland
 date: 2020-11-10
 event-time: 11:00AM - 12:00PM
 event-location: "Zoom"
