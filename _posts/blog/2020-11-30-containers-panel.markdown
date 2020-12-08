@@ -1,8 +1,9 @@
 ---
-layout: blog
+layout: page
 title: "Container Panel Discussion"
 description: "Four UC Davis software engineers help illustrate software containers and discuss their real-world use."
-author: "Christopher Thielen"
+author:
+  - christopher_thielen
 date: 2020-11-30 09:56:00
 category: "blog"
 #image: /media/placeholder3.jpg

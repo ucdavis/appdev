@@ -1,7 +1,7 @@
 // homepage-section
 .homepage-section {
-  padding:5% 0;
-  margin:36px 0;
+  padding: 5% 0;
+  margin: 36px 0;
 }
 #sdl-selector {
   margin-bottom: $float-animation-y;
@@ -37,7 +37,7 @@
 .homepage-meeting {
   background-image: url("/media/programmer-pattern.png");
   background-repeat: repeat;
-  @supports(backdrop-filter: opacity(0.8)) {
+  @supports (backdrop-filter: opacity(0.8)) {
     backdrop-filter: opacity(0.8);
   }
   @supports not (backdrop-filter: opacity(0.8)) {
@@ -58,7 +58,7 @@
   background-image: url("/media/event-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top:48px;
+  margin-top: 48px;
 }
 .homepage-sdl {
   background-image: url("/media/sdl-bg.png");
@@ -68,7 +68,7 @@
 .meeting-title {
   padding: 1rem 2rem;
   color: $primary-white;
-  background-color: $delta;
+  background-color: $primary-color;
   margin-bottom: 1.5rem;
   &.has-animation {
     visibility: hidden;
@@ -79,21 +79,22 @@
   }
 }
 .event-detail {
-  span, p {
+  span,
+  p {
     white-space: nowrap;
   }
 }
 .expired-event {
-    margin:8px;
-    width: 100%;
+  margin: 8px;
+  width: 100%;
 }
 .event-more-link {
   align-self: stretch;
-  margin-top:auto;
-  margin-bottom:0px;
+  margin-top: auto;
+  margin-bottom: 0px;
   font-size: 1.6rem;
   a {
-    color:$secondary-color;
+    color: $secondary-color;
     text-decoration: none;
     &:hover {
       text-decoration: underline;
@@ -102,12 +103,12 @@
 }
 .author-item {
   font-family: $sans-bold;
-  font-size:1.8rem;
+  font-size: 1.8rem;
 }
 .author-image {
   @extend .icon-round-border;
-  width:40px;
-  height:40px;
+  width: 40px;
+  height: 40px;
   margin-right: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -116,41 +117,41 @@
 //banner
 
 .banner {
-  background-color:$primary-color;
-  padding:5% 0;
-    h1 {
-      color:$primary-white;
-      font-family: $sans-bold;
-    }
-    p {
-       color:$secondary-white;
-    }
+  background-color: $primary-color;
+  padding: 5% 0;
+  h1 {
+    color: $primary-white;
+    font-family: $sans-bold;
+  }
+  p {
+    color: $secondary-white;
+  }
 }
 
 // homegrown section
 .homegrown-button {
-  height:60px;
-  padding:0 16px;
-  background-color: #EFEFEF;
+  height: 60px;
+  padding: 0 16px;
+  background-color: #efefef;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: $sans-bold;
-  color:$tertiary-font;
-  font-size:2.4rem;
-  margin:8px 0;
+  color: $tertiary-font;
+  font-size: 2.4rem;
+  margin: 8px 0;
   &:hover {
-    background-color:darken(#efefef,5);
-    color:$tertiary-font;
+    background-color: darken(#efefef, 5);
+    color: $tertiary-font;
   }
 }
 //sdl
 p.practice {
-  font-size:1.5rem;
+  font-size: 1.5rem;
   font-family: $sans-bold;
-  color:$primary-color;
+  color: $primary-color;
   text-transform: uppercase;
-  margin-top:12px;
+  margin-top: 12px;
 }
 ul.sdl-list {
   margin-bottom: 0;
@@ -165,44 +166,44 @@ ul.sdl-list {
   span {
     text-transform: uppercase;
     font-weight: bold;
-    font-size:1.2rem;
+    font-size: 1.2rem;
   }
   li {
-    margin:0;
-    border-bottom:1px solid $borders;
+    margin: 0;
+    border-bottom: 1px solid $borders;
     img {
-      opacity:.25;
+      opacity: 0.25;
     }
     &.active {
       a {
-        color:$primary-color
+        color: $primary-color;
       }
       span {
-        color:$primary-color !important;
+        color: $primary-color !important;
       }
       img {
-        opacity:1;
+        opacity: 1;
       }
     }
   }
   li a {
     flex-grow: 1;
-    color:$primary-font;
-    font-size:1.6rem;
+    color: $primary-font;
+    font-size: 1.6rem;
     display: block;
     padding: 0.5rem;
 
     @include breakpoint(md) {
-      border-right:1px solid $borders;
+      border-right: 1px solid $borders;
       padding: 24px 8px;
     }
 
     div {
       margin-left: 16px;
     }
-    
+
     &:hover {
-      background-color:transparentize($primary-color,0.95);
+      background-color: transparentize($primary-color, 0.95);
     }
   }
 }

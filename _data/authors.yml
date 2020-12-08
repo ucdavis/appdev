@@ -24,7 +24,7 @@ ken_taylor:
   image: /media/authors/temp.png
 thomas_pomroy:
   name: Thomas Pomroy
-  image: /media/authors/temp.png
+  image: /media/authors/thomas_pomroy.jpg
 everett_wilson:
   name: Everett Wilson
   image: /media/authors/temp.png
@@ -49,3 +49,9 @@ greg_siino:
 joshua_hori:
   name: Joshua Hori
   image: /media/authors/joshua_hori.jpg
+evan_katsuranis:
+  name: Evan Katsuranis
+  image: /media/authors/temp.png
+kevin_murakoshi:
+  name: Kevin Murakoshi
+  image: /media/authors/temp.png
