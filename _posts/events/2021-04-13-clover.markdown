@@ -14,9 +14,13 @@ category: "events"
 
 Sam Irungu presents the CloverDX data integration tool.
 
+Slides: [PDF]({{ site.baseurl }}/media/meetings/31/CloverDXDemo.pdf)
+
 ## Apache Airflow
 
 Andrew Holguin presents on Apache Airflow.
+
+Slides: [PDF]({{ site.baseurl }}/media/meetings/31/airflow_app_dev_sig_20210413.pdf)
 
 Video:
 
