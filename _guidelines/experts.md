@@ -12,16 +12,15 @@ It is recommended one use [org.ucdavis.edu](http://org.ucdavis.edu) to determine
 
 ## Javascript
 
-- John Knoll
 - Obada Kadri (Angular JS)
 
 ## C\#
 
-- John Knoll
+-
 
 ## Java
 
-- Christopher Thielen
+-
 
 ## PHP
 
@@ -29,7 +28,7 @@ It is recommended one use [org.ucdavis.edu](http://org.ucdavis.edu) to determine
 
 ## Ruby
 
-- Christopher Thielen
+-
 
 # Topics
 
@@ -44,3 +43,7 @@ It is recommended one use [org.ucdavis.edu](http://org.ucdavis.edu) to determine
 ## Unit Testing
 
 - Jason Sylvestre
+
+## Github
+
+- Adam Getchell
