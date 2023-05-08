@@ -1,18 +1,18 @@
 // baseline typography
 html {
-    font-size: 10px;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
-    line-height: 1.5;
+  font-size: 10px;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  line-height: 1.5;
 }
 body {
-    font-family: $sans-reg;
-    font-size: 1.2rem;
+  font-family: $sans-reg;
+  font-size: 1.2rem;
 }
 a {
-  color:$a-link;
+  color: $a-link;
   &:hover {
-    color:darken($a-link,0.5);
+    color: darken($a-link, 0.5);
   }
   p & {
     font-weight: 700;
@@ -28,33 +28,36 @@ a.no-underline {
 a:hover {
   text-decoration: none;
 }
-ul, ol {
+ul,
+ol {
   &.no-list-style {
     list-style-type: none;
-    padding-left:0px;
+    padding-left: 0px;
     li {
-      margin:4px 0px;
+      margin: 4px 0px;
       font-family: $sans-reg;
-      color:$primary-font;
+      color: $primary-font;
     }
   }
   li {
-    font-size:1.6rem;
-
+    font-size: 1.6rem;
+    a {
+      text-decoration: none;
+    }
   }
 }
 .discreet {
-  font-size:1.4rem;
-  color:$tertiary-font;
+  font-size: 1.4rem;
+  color: $tertiary-font;
 }
 .caption {
   text-align: center;
   margin: 5px 10px;
 }
 p {
-  font-size:1.6rem;
+  font-size: 1.6rem;
   font-family: $sans-reg;
-  color:$primary-font;
+  color: $primary-font;
   line-height: 1.6;
 }
 h1,
@@ -63,13 +66,13 @@ h3,
 h4,
 h5,
 h6 {
-    color: $primary-font;
-    font-family:$sans-reg;
-    // margin: 1.6rem 0rem 1rem 0rem;
+  color: $primary-font;
+  font-family: $sans-bold;
+  // margin: 1.6rem 0rem 1rem 0rem;
 }
 h1 {
-  font-size:3.4rem;
-  margin-bottom:1.6rem;
+  font-size: 3.4rem;
+  margin-bottom: 1.6rem;
 }
 h2 {
   font-size: 2.2rem;
@@ -78,23 +81,23 @@ h3 {
   font-size: 2rem;
 }
 .event-date {
-  color:$primary-color;
-  font-size:1.6rem;
+  color: $primary-color;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-family: $sans-bold;
-  margin-bottom:4px;
+  margin-bottom: 4px;
 }
 .event-location {
-  color:$secondary-font;
-  font-size:1.6rem;
+  color: $secondary-font;
+  font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 100;
   margin-bottom: 2rem;
 }
 .lede {
-  color:$secondary-font;
+  color: $secondary-font;
   font-weight: 100;
-  font-size:2rem;
+  font-size: 2rem;
   line-height: 3rem;
 }
 .project-name {

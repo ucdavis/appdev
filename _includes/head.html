@@ -1,33 +1,84 @@
 <!-- le Meta -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="image_src" href="{{site.baseurl}}/media/thumbnail.png" />
-<meta property="og:image" content="{{site.baseurl}}/media/thumbnail.png">
-<link rel="shortcut icon" href="{{site.baseurl}}/media/favicon.ico">
+<meta property="og:image" content="{{site.baseurl}}/media/thumbnail.png" />
+<link rel="shortcut icon" href="{{site.baseurl}}/media/favicon.ico" />
 
-
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+<title>
+  {% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}
+</title>
+<meta
+  name="description"
+  content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
+/>
 
 <!-- preload fonts for speed -->
-<link rel="preload" href="/media/fonts/proximanova-regular-webfont.woff" as="font" type="font/woff" crossorigin>
+<link
+  rel="preload"
+  href="/media/fonts/proximanova-regular-webfont.woff"
+  as="font"
+  type="font/woff"
+  crossorigin
+/>
 
-<link rel="preload" href="/media/fonts/proximanova-regularit-webfont.woff" as="font" type="font/woff" crossorigin>
+<link
+  rel="preload"
+  href="/media/fonts/proximanova-regularit-webfont.woff"
+  as="font"
+  type="font/woff"
+  crossorigin
+/>
 
-<link rel="preload" href="/media/fonts/proximanova-bold-webfont.woff" as="font" type="font/woff" crossorigin>
-
+<link
+  rel="preload"
+  href="/media/fonts/proximanova-bold-webfont.woff"
+  as="font"
+  type="font/woff"
+  crossorigin
+/>
 
 <!-- le Apple -->
-<link rel="apple-touch-icon" href="{{site.baseurl}}/media/thumbnail.png">
-<link rel="apple-touch-icon" sizes="76x76" href="{{site.baseurl}}/media/76-icon.jpg">
-<link rel="apple-touch-icon" sizes="120x120" href="{{site.baseurl}}/media/120-icon.jpg">
-<link rel="apple-touch-icon" sizes="152x152" href="{{site.baseurl}}/media/156-icon.jpg">
+<link rel="apple-touch-icon" href="{{site.baseurl}}/media/thumbnail.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="76x76"
+  href="{{site.baseurl}}/media/76-icon.jpg"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="120x120"
+  href="{{site.baseurl}}/media/120-icon.jpg"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="152x152"
+  href="{{site.baseurl}}/media/156-icon.jpg"
+/>
 <!-- le CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+<link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+  crossorigin="anonymous"
+/>
 
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.8.0/css/all.css"
+  integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+<link
+  rel="canonical"
+  href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+/>
+
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}"
+href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />

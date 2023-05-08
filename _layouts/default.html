@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    {% include head.html %}
-    {% if page.categories contains "events" %}
+    {% include head.html %} {% if page.categories contains "events" %}
     <script type="application/json+ld">
       {
         "@context": "http://schema.org/",
@@ -37,26 +36,49 @@
     {% endif %}
   </head>
   <body>
-    {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+    {% include header.html %} {{ content }} {% include footer.html %}
   </body>
-    <!-- animation script -->
-    <script>
-      let visibleDetector = new IntersectionObserver(entries =>
-        entries.forEach(e => {
-          if(e.isIntersecting) {
-            e.target.classList.add('animated')
-            visibleDetector.unobserve(e.target)
-          }
-        }))
-      window.addEventListener('DOMContentLoaded', () =>
-        document.querySelectorAll('.has-animation').forEach(e => visibleDetector.observe(e)))
-    </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js" async></script>
-    <script src="/js/cssbrowserselector.js" async></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js" async></script>
+  <!-- animation script -->
+  <script>
+    let visibleDetector = new IntersectionObserver((entries) =>
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add("animated");
+          visibleDetector.unobserve(e.target);
+        }
+      })
+    );
+    window.addEventListener("DOMContentLoaded", () =>
+      document
+        .querySelectorAll(".has-animation")
+        .forEach((e) => visibleDetector.observe(e))
+    );
+  </script>
+  <script
+    src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"
+    async
+  ></script>
+  <script src="/js/cssbrowserselector.js" async></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+    defer
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"
+    async
+  ></script>
 </html>

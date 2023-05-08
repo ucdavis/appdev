@@ -25,6 +25,17 @@
     color: #fff;
   }
 }
+.btn-link {
+  color: $secondary-color;
+  background: none;
+  box-shadow: none;
+  &:hover {
+    color: $secondary-color;
+  }
+  font-family: $sans-bold;
+  font-size: 1.4rem;
+  padding: 0 8px;
+}
 .btn-primary {
   &:active,
   &:focus {
@@ -62,18 +73,18 @@
   }
 }
 .primary-color {
-  color:$primary-color;
+  color: $primary-color;
 }
 .secondary-color {
-  color:$secondary-color;
+  color: $secondary-color;
 }
 .card {
-  border:none;
+  border: none;
   box-shadow: $box-shadow;
-  padding:24px !important;
+  padding: 24px !important;
 }
 .secondary-font {
-  color:$secondary-font !Important;
+  color: $secondary-font !important;
 }
 .section-learn-more {
   font-weight: bold;
@@ -82,7 +93,7 @@
     text-decoration: none;
   }
   i {
-    color:$secondary-color;
+    color: $secondary-color;
   }
 }
 .flex-grow-zero {
@@ -108,10 +119,10 @@
   }
 }
 .circle {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .border-1 {
-    border: 2px solid $primary-color;
+  border: 2px solid $primary-color;
 }
 // ICONS
 .icon-round-border {
@@ -138,10 +149,10 @@
   font-size: #{$guideline-icon-size / 2};
 }
 .tertiary-font {
-  color:$tertiary-font;
+  color: $tertiary-font;
 }
 .bt-1 {
-  border-top:1px solid $borders !important;
+  border-top: 1px solid $borders !important;
 }
 button.reset {
   border: none;
@@ -158,8 +169,8 @@ button.reset {
   -webkit-appearance: none;
 
   &::-moz-focus-inner {
-      border: 0;
-      padding: 0;
+    border: 0;
+    padding: 0;
   }
 }
 

@@ -39,6 +39,24 @@
             {% endfor %}
           </div>
         </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle {% if page.url contains '/orientation' %} active {% endif %}"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Orientation
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for post in site.orientation %}
+            <a class="dropdown-item" href="{{post.url}}">{{post.title}}</a>
+            {% endfor %}
+          </div>
+        </li>
         <li class="nav-item">
           <a
             class="nav-link {% if page.url contains '/events' %} active {% endif %}"
@@ -53,13 +71,13 @@
             >Projects</a
           >
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a
             class="nav-link {% if page.url contains '/blog' %} active {% endif %}"
             href="{{site.baseurl}}/blog"
             >Blog</a
           >
-        </li>
+        </li> -->
         <li class="nav-item">
           <a
             class="nav-link {% if page.url contains '/survey' %} active {% endif %}"
