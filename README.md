@@ -23,4 +23,4 @@ Any changes made will be re-compiled on-the-fly.
 Submit pull requests for any website changes.
 
 # Help
-Please contact Christopher Thielen or Scott Kirkland for help.
+Please contact Scott Kirkland or Cal Doval for help.
