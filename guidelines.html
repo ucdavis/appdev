@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="container content-wrapper">
+    {% include breadcrumbs.html %}
+    <div class="d-flex justify-content-center flex-wrap guideline-card-wrapper">
+        {% for post in site.guidelines %}
+        <div class="card guideline-card text-center flex-grow-1 flex-basis-zero">
+            <div class="guideline-card-icon icon-primary align-self-center">
+                <i class="fa fa-times"></i>
+            </div>
+            <div class="card-header">
+                <h2 class="card-title">{{post.title}}</h2>
+            </div>
+            <div class="card-body d-flex flex-column">
+                <p class="card-text">{{post.description}}</p>
+                <p class="section-learn-more"><a class="secondary-font" href="{{post.url}}">Learn more <i class="fas fa-arrow-right"></i></a></p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>

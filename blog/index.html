@@ -1,45 +1,25 @@
 ---
-layout: default
+layout: page
+title: Blog Posts
 ---
-<div class="main">
-    <div class="main_contents">
-        <aside>
-            <h3>Blog Posts</h3>
-            <p class="page_description">Read about interesting topics in the application development world.</p>
-        </aside>
-        <article>
 
-            <h1>Blog Posts</h1>
-
-            <ul class="feed-list event-list-main">
-                {% for post in site.categories.blog %}
-                <li>
-                <div class="event-date">
-                <div class="event-date-wrapper">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                         <span class="event-month">{{ post.date | date: '%B' }}</span>
-                        <span class="event-day">
-                          {% assign d = post.date | date: "%-d" %}
-                          {% case d %}
-                            {% when '1' or '21' or '31' %}{{ d }}st
-                            {% when '2' or '22' %}{{ d }}nd
-                            {% when '3' or '23' %}{{ d }}rd
-                            {% else %}{{ d }}th
-                            {% endcase %}
-                        </span>
-                    </a>
-                </div>
-                </div>
-                <div class="event-main">
-                    <h2 class="feed-title">
-                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                    <p class="feed-description">{{ post.description }}</p>
-                </div>
-
-                </li>
-                {% endfor %}
-            </ul>
-        </article>
-    </div>
-</div>
+<ul class="no-list-style">
+  {% for post in site.categories.blog %}
+  <li>
+    <h2 class="feed-title">
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"
+        >{{ post.title }}</a
+      >
+    </h2>
+    <h4>
+      <span class="event-month">{{ post.date | date: '%B' }}</span>
+      <span class="event-day">
+        {% assign d = post.date | date: "%-d" %} {% case d %} {% when '1' or
+        '21' or '31' %}{{ d }}st {% when '2' or '22' %}{{ d }}nd {% when '3' or
+        '23' %}{{ d }}rd {% else %}{{ d }}th {% endcase %}
+      </span>
+    </h4>
+    <p class="feed-description">{{ post.description }}</p>
+  </li>
+  {% endfor %}
+</ul>

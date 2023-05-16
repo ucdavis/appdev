@@ -1,0 +1,28 @@
+---
+layout: event
+title:  "ReactJS w/ ES6"
+description: "We'll be taking about ReactJS w/ live examples in ES6, plus bonus info on linting your code."
+author:
+    - scott_kirkland
+date:   2016-08-09
+event-time: 11:00AM - 12:00PM
+event-location: "2005 Plant Sciences"
+tags: "React, ReactJS, ES6, Linting"
+category: "events"
+---
+
+Below are compiled notes of the meeting:
+
+Announcements
+-
+- Remember to join #appdev on slack.ucdavis.edu.
+- Tentative next meeting: AD Sync, Meet & Greet with new Vice Chancellor of BI Greg Siino.
+- Programming Challenges may be a fun idea to post for each meeting. Earn brownie points. Accepting ideas.
+
+ReactJS & ES6
+-
+Slides: [PDF]({{ site.baseurl }}/media/meetings/4/ReactJS-appdev.pdf)
+
+Repository: [github.com/srkirkland/reactjs-training](https://github.com/srkirkland/reactjs-training)
+
+Scott Kirkland gave a presentation on ReactJS, ES6, and JS linting.

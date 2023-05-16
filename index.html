@@ -2,95 +2,208 @@
 layout: default
 ---
 
-<div class="main">
-  <div class="main_contents" style="padding-top: 0; padding-bottom: 1.5em">
-    <aside style="padding-top: 1em;">
-      <h3>Next Meeting</h3>
-      <p>
-        <i>When:</i> TBD<br />
-        <i>Where:</i> Zoom<br />
-        <i>Topic:</i><br /><a href="#"><b>TBD</b></a><br />
-        <br />
-        <small>Meetings are held the second Tuesday of the month. Anyone who writes code at or for UC Davis is welcome to join.</small>
-      </p>
-    </aside>
-    <article>
-
-      <h1>Welcome Developers</h1>
-      <p>
-        <b>If you write code for UC Davis</b> full-time, part-time, on-contract,
-        or even as an unofficial part of your job, this website may be of help to
-        you. <a href="{{site.baseurl}}/about">Learn more.</a>
-      </p>
-      
-      <h1>Latest Recordings</h1>
-
-      <ul class="feed-list event-list-main">
-          {% for post in site.categories.events limit: 5 %}
-          <li>
-          <div class="event-date">
-          <div class="event-date-wrapper">
-              <a href="{{ post.url | prepend: site.baseurl }}">
-                  <span class="event-month">{{ post.date | date: '%B' }}</span>
-                  <span class="event-day">
-                    {% assign d = post.date | date: "%-d" %}
-                    {% case d %}
-                      {% when '1' or '21' or '31' %}{{ d }}st
-                      {% when '2' or '22' %}{{ d }}nd
-                      {% when '3' or '23' %}{{ d }}rd
-                      {% else %}{{ d }}th
-                      {% endcase %}
-                  </span>
-              </a>
-          </div>
-          </div>
-          <div class="event-main">
-              <h2 class="feed-title">
-                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-              </h2>
-              <p class="feed-description">{{ post.description }}</p>
-          </div>
-
-          </li>
-          {% endfor %}
-      </ul>
-
-      <h1>Latest Blog Posts</h1>
-
-      <ul class="feed-list event-list-main">
-        {% for post in site.categories.blog limit: 5 %}
-        <li>
-        <div class="event-date">
-        <div class="event-date-wrapper">
-            <a href="{{ post.url | prepend: site.baseurl }}">
-                <span class="event-month">{{ post.date | date: '%B' }}</span>
-                <span class="event-day">
-                  {% assign d = post.date | date: "%-d" %}
-                  {% case d %}
-                    {% when '1' or '21' or '31' %}{{ d }}st
-                    {% when '2' or '22' %}{{ d }}nd
-                    {% when '3' or '23' %}{{ d }}rd
-                    {% else %}{{ d }}th
-                    {% endcase %}
-                </span>
-            </a>
-        </div>
-        </div>
-        <div class="event-main">
-            <h2 class="feed-title">
-              <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-            </h2>
-            <p class="feed-description">{{ post.description }}</p>
-        </div>
-
-        </li>
-        {% endfor %}
-    </ul>
-
-    </article>
+<div class="banner">
+  <div class="banner-contents container">
+    <div class="row justify-content-between">
+      <div class="col-md-6 d-flex flex-column">
+        <h1><i class="fas fa-terminal"></i> Welcome Developers</h1>
+        <p class="lede">
+          If you write code for UC Davis full-time, part-time, on-contract, or
+          even as an unofficial part of your job, this website may be of help to
+          you.
+        </p>
+        <p class="mt-auto">
+          <a class="btn btn-secondary" href="/orientation"> Get started now </a>
+        </p>
+      </div>
+      <div class="col-md-6 text-center d-flex justify-content-end">
+        <img src="/media/mrakhead.svg" alt="mrak head sketch" />
+      </div>
+    </div>
   </div>
 </div>
+<div class="homepage-section">
+  <div class="section-contents container homegrown">
+    <div class="row">
+      <div class="col">
+        <img src="/media/icons/homegrown.svg" alt="flower pot icon" />
+        <h1>Home grown apps</h1>
+        <p class="section-learn-more">
+          <a class="secondary-font" href="/projects"
+            >Find other apps we've built <i class="fas fa-arrow-right"></i
+          ></a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href="">
+          <img src="/media/projects/give.svg" alt="commencement icon" />
+        </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href="">
+          <img
+            src="/media/projects/prepurchasing.svg"
+            alt="prepurchasing icon"
+          />
+        </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href="">
+          <img src="/media/projects/ace.svg" alt="ace icon" />
+        </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href=""> Chekov </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href=""> Commencement </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href="">
+          <img src="/media/projects/peaks.svg" alt="peaks icon" />
+        </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href=""> Wayfinding </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href="">
+          <img src="/media/projects/tacos.svg" alt="tacos icon" />
+        </a>
+      </div>
+      <div class="col flex-grow-zero">
+        <a class="homegrown-button" href=""> DevBoard </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% assign sdl-posts = site.sdl | sort: "practice" %}
+<div class="homepage-section homepage-sdl">
+  <div class="section-contents container">
+    <div class="row">
+      <div class="col-md sdl-selector">
+        <img src="/media/icons/dna.svg" alt="DNA icon" />
+        <h1>SDL practices</h1>
+        <ul id="sdl-selector" class="no-list-style">
+          {% for post in sdl-posts limit: 5 %}
+          <li data-target="{{ post.url }}">
+            <a href="javascript:void(0)">{{post.title}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+        <p class="section-learn-more">
+          <a class="secondary-font" href="/guidelines/SDL"
+            >Learn about all of our SDL practices
+            <i class="fas fa-arrow-right"></i
+          ></a>
+        </p>
+      </div>
+      <div class="col-md sdl-card">
+        {% assign post = site.sdl | first %}
+        <img
+          id="sdl-img"
+          class="sdl-img"
+          src="/media/icons/sdl/{{ post.icon }}.svg"
+          alt="security camera icon"
+        />
+        <h2><b id="sdl-title">{{ post.title }}</b></h2>
+        <p id="sdl-description">{{ post.description }}</p>
+        <p class="section-learn-more">
+          <a id="sdl-link" class="secondary-font" href="{{ post.url }}"
+            >Learn more <i class="fas fa-arrow-right"></i
+          ></a>
+        </p>
+      </div>
+    </div>
+    <script type="application/json" id="sdl-data">
+      [
+      	{% for post in sdl-posts limit: 5 %}
+      	{
+      		"title": "{{ post.title }}",
+      		"description": "{{ post.description }}",
+      		"image": "/media/icons/sdl/{{ post.icon }}.svg",
+      		"link": "{{ post.url }}"
+      	}{%- unless forloop.last -%},{%- endunless -%}
+      	{% endfor %}
+      ]
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const selector = document.getElementById("sdl-selector");
+        const image = document.getElementById("sdl-img");
+        const title = document.getElementById("sdl-title");
+        const description = document.getElementById("sdl-description");
+        const link = document.getElementById("sdl-link");
+        const data = JSON.parse(document.getElementById("sdl-data").innerHTML);
+        const removeActive = () => {
+          for (let child of selector.children) {
+            child.classList.remove("active");
+          }
+        };
+        for (let child of selector.children) {
+          const target = child.dataset.target;
+          const dataElement = data.find((el) => el.link == target);
+          child.addEventListener("click", () => {
+            removeActive();
+            child.classList.add("active");
+            title.textContent = dataElement.title;
+            description.textContent = dataElement.description;
+            image.setAttribute("src", dataElement.image);
+            link.setAttribute("href", dataElement.link);
+          });
+        }
 
-<div class="banner">
-  <div class="banner_wrapper"></div>
+        selector.children[0].classList.add("active");
+      });
+    </script>
+  </div>
+</div>
+<!-- <div class="homepage-section">
+  <div class="section-contents container">
+    <div class="row">
+      <div class="col">
+        <img src="/media/icons/pencil.svg" alt="pencil icon" />
+        <h1>Meet your colleagues</h1>
+        <p class="section-learn-more">
+          <a class="secondary-font" href="/guidelines/experts"
+            >Find a subject matter expert <i class="fas fa-arrow-right"></i
+          ></a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="homepage-author-container">
+    {% for item in site.data.authors %} {% assign author = item[1] %}
+    <div
+      vocab="http://schema.org"
+      typeof="Person"
+      class="card homepage-author-card text-center flex-grow-1 flex-basis-zero"
+    >
+      <img
+        property="image"
+        class="guideline-card-icon icon-round-border align-self-center"
+        src="{{ author.image }}"
+      />
+      <div class="card-header">
+        <h2 property="name" class="card-title">{{ author.name }}</h2>
+      </div>
+      <div class="card-body">
+        <p class="card-text"></p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div> -->
+<div class="homepage-section homepage-meeting">
+  <div
+    class="section-contents container homegrown d-flex flex-column align-items-center"
+  >
+    <h2 class="text-center meeting-title has-animation">
+      We are not holding new meetings at the moment
+    </h2>
+    {% for post in site.categories.events limit:1 %} {% include event_main.html
+    %} {% endfor %}
+  </div>
 </div>

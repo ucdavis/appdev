@@ -1,263 +1,187 @@
-
 // fonts
-//$sans-serif: "proxima-nova", arial, sans-serif; // light 300, reg 400, medium 500, semibold 600
-//$serif: "proxima-nova", Georgia, serif; // light 300, book 400, regular 500
+@font-face {
+    font-family: 'proxima-nova-r';
+    src: url('../media/fonts/proximanova-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'proxima-nova-i';
+    src: url('../media/fonts/proximanova-regularit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'proxima-nova-b';
+    src: url('../media/fonts/proximanova-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'ryman';
+    src: url('../media/fonts/ryman-eco-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
 
-$sans-serif: "Roboto", helvetica, arial, sans-serif; // light 300, reg 400, medium 500, semibold 600
-$serif: "proxima-nova", Georgia, serif; // light 300, book 400, regular 500
+$sans-italic:   "proxima-nova-i",sans-serif;
+$sans-bold:     "proxima-nova-b",sans-serif;
+$sans-reg:      "proxima-nova-r",sans-serif;
+$ryman:         "ryman",serif;
 
-// pretty colors 
-$primary-color: #002855;
-$secondary-color: #C99700;
-$primary-font: #444444; // p,li color in main content
-$secondary-font: #999999; // p,li color in portlet/sidebar
-$tertiary-font: #bbbbbb; // summary, discreet
+$recpool:         #74D1EA;
+$tahoe:           #00B5E2;
+$gunrock:         #0078FF;
+$bodega:          #002A3A;
 
-$bg-color: #F9F9F9; // background
+$rain:            #00FBDA;
+$arboretum:       #00C7B1;
+$putahcreek:      #008EAA;
+$delta:           #00534C;
+
+$farmersmakert:   #ADDC91;
+$sage:            #71CC98;
+$quad:            #43B02A;
+$redwood:         #385542;
+
+$goldenstate:     #FFFF5C;
+$sunflower:       #FFC72C;
+$poppy:           #ED8B00;
+$california:      #896C28;
+
+$rose:            #FF808B;
+$strawberry:      #F4364C;
+$doubledecker:    #BA0C2F;
+$merlot:          #76232F;
+
+$thiebauldicing:  #EF95CF;
+$redbud:          #D00070;
+$pinot:           #72246C;
+$cabernet:        #3C1053;
+
+$primary-color:     $gunrock;
+$secondary-color:   $arboretum;
+$tertiary-color:    $sunflower;
+
+$a-link:            $primary-color;
+
+$primary-font: rgba(31,31,31,.99); //
+$secondary-font: rgba(31,31,31,.80); //
+$tertiary-font: rgba(31,31,31,.40); //
+$primary-white: rgba(2545,2545,2545,.95); //
+$secondary-white: rgba(2545,2545,2545,.80); //
+
+$bg-color: transparentize(#002855, .9); // background
 $borders: #C8C7CC; // border color
 
-$nav-active: #fff;
 
-$a-link: #016FC4;
-$a-hover: #DDB307;
-
-$blue: #016FC4;
-$gold: #DDB307;
-
-$mint-green: #028474;
-// UC Davis Colors
-// Supplemental bright color palette for UC Davis
-$unitrans-red: #ba0c2f;
-$western-redbud: #c6007e;
-$california-poppy: #ed8800;
-$golden-lupine: #ffcd00;
-$sunny-grass: #78be20;
-$sky-blue: #00b5e2;
-$recpool-blue: #008eaa;
-$wine-grape: #642667;
-// Supplemental neutral color palette for UC Davis
-$mu-brick: #c26e60;
-$harthall-stucco: #e6a65d;
-$sage-green: #9caf88;
-$evergreen: #00573f;
-$wintersky-gray: #5b7f95;
-$cenwalk-gray: #b1b3b3;
-$cork-oak: #aca39a;
-$shingle-brown: #4f2c1d;
+$box-shadow: 0 0 0 1px rgba(49,49,93,.03), 0 2px 5px 0 rgba(49,49,93,.1), 0 1px 2px 0 rgba(0,0,0,.08);
 // mixins
+
+$card-padding: 24px;
+$guideline-icon-size: 7.5rem;
+$float-animation-y: 20px;
+
 @mixin breakpoint($point) {
-    @if $point==hdres {
-        @media (max-width:1600px){
+    @if $point==sm {
+        @media (min-width: 576px) {
             @content ;
         }
     }
-    @if $point==desktop {
-        @media (max-width: 1250px) {
+    @if $point==md {
+        @media (min-width: 768px) {
             @content ;
         }
     }
-    @else if $point==laptop {
-        @media (max-width: 1000px) {
+    @if $point==lg {
+        @media (min-width: 992px) {
             @content ;
         }
     }
-    @else if $point==rufus {
-        @media (max-width: 850px) {
+    @if $point==xl {
+        @media (min-width: 1200px) {
             @content ;
         }
     }
-    @else if $point==tablet {
-        @media (max-width: 750px) {
+    @if $point==smmax {
+        @media (max-width: 576px) {
             @content ;
         }
     }
-    @else if $point==mobileonly {
-        @media (max-width: 640px) {
+    @if $point==mdmax {
+        @media (max-width: 768px) {
             @content ;
         }
     }
-    @else if $point==smallmobile {
-        @media (max-width: 450px) {
+    @if $point==lgmax {
+        @media (max-width: 992px) {
+            @content ;
+        }
+    }
+    @if $point==xlmax {
+        @media (max-width: 1200px) {
             @content ;
         }
     }
 }
-
-@mixin transitiontime {
-    transition-delay: 0s;
-    transition-duration: 0.75s;
-    transition-property: all;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0s;
-    -webkit-transition-duration: 0.75s;
-    -webkit-transition-property: all;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-delay: 0s;
-    -moz-transition-duration: 0.75s;
-    -moz-transition-property: all;
-    -moz-transition-timing-function: ease;
+.container {
+  width: 95%;
+  max-width:1200px;
+  @include breakpoint (sm) {
+    width: 93%;
+  }
+  @include breakpoint (md) {
+    width: 91%;
+  }
+  @include breakpoint(xl) {
+    width: 85%;
+  }
 }
 
-
-@mixin transition($values: 0.3s ease-in) {
-    transition: $values;
-    -webkit-transition: $values;
-    -webkit-transform: translateZ(0); // Fix animation in Safari
+@mixin fader {
+  -o-transition:.25s;
+  -ms-transition:.25s;
+  -moz-transition:.25s;
+  -webkit-transition:.25s;
+  /* ...and now for the proper property */
+  transition:.25s;
 }
 
-@mixin container {
-    max-width: 1400px;
-    width: 80%;
-    margin: 0 auto;
-    min-width: 300px;
-    @include breakpoint(rufus) {
-      width:85%;
+@keyframes float {
+    from {
+        transform: translateZ(-10);
     }
-    @include breakpoint(mobileonly) {
-        width: 90%;
-    }
-}
-// Custom random function
-// To allow a minimum value
-// ------------------------------------------------------------
-// @param $min: minimum value
-// @param $max: maximum value
-// ------------------------------------------------------------
-// @return random number
-@function rand($min,
-$max) {
-    @return random($max - $min) + $min;
-}
-
-// Private function for custom stops
-// ------------------------------------------------------------
-// @param $colors: list of color + associated stop
-//     ex: (red 10%, blue 50%, green 65%)
-// ------------------------------------------------------------
-// @return list to be used as a gradient
-@function _stripes-custom-stops($colors) {
-    $gradients: ();
-    @for $i from 1 to length($colors) {
-        @if length(nth($colors,
-        $i)) > 1 {
-            $color: nth(nth($colors, $i), 1);
-            $stop: nth(nth($colors, $i), 2);
-            $gradients: append($gradients, $color $stop, comma);
-            @if $i < length($colors) {
-                $gradients: append($gradients, nth(nth($colors, $i + 1), 1) $stop);
-            }
-        }
-        @else {
-            @warn '`#{nth($colors, $i)}` skipped because it is only one item long while it should be 2: (color, color-stop).';
-        }
-    }
-    @return $gradients;
-}
-
-// Private function for random stops
-// ------------------------------------------------------------
-// @param $colors: list of color
-//     ex: (red, blue, green)
-// ------------------------------------------------------------
-// @return two dimensional list
-@function _stripes-random-stops($colors) {
-    @if length(nth($colors,
-    1)) > 1 {
-        @return _stripes-custom-stops($colors);
-    }
-    $n: length($colors);
-    $gradients: ();
-    $variation: 10;
-    $median: 100 / $n;
-    @for $i from 1 to $n {
-        $stop: $median * $i;
-        $random: rand($stop - $variation, $stop + $variation) * 1%;
-        $gradients: append($gradients, nth($colors, $i) $random, comma);
-        @if $i < length($colors) {
-            $gradients: append($gradients, nth(nth($colors, $i + 1), 1) $random);
-        }
-    }
-    @return $gradients;
-}
-
-// Private function for equal stops
-// ------------------------------------------------------------
-// @param $colors: list of color
-//     ex: (red, blue, green)
-// ------------------------------------------------------------
-// @return two dimensional list
-@function _stripes-equal-stops($colors) {
-    $gradients: ();
-    $stops: 100% / length($colors);
-    // Loop through colors
-    @for $i from 1 to length($colors) {
-        $gradients: append($gradients, nth($colors, $i) $i * $stops, comma);
-        @if $i < length($colors) {
-            $gradients: append($gradients, nth($colors, $i + 1) $i * $stops);
-        }
-    }
-    // Return gradient
-    @return $gradients;
-}
-
-// Function turning a list of colors (and if specified stops)
-// into a stripes gradient
-// ------------------------------------------------------------
-// @param $colors: list of color or color + color stop
-//     ex: (red blue green) 
-//     ex: (red 10%, blue 50%, green 65%)
-// @param $direction: gradient direction in keyword or degrees
-// @param $random: should color-stops be randomly generated
-// ------------------------------------------------------------
-// @return gradient
-@function stripes($colors,
-$direction: 90deg,
-$random: false) {
-    // If lonely color
-    @if length($colors)==1 {
-        @return $colors;
-    }
-    // Else
-    $type: if($random,
-    'random',
-    if(length(nth($colors,
-    1)) > 1,
-    'custom',
-    'equal'));
-    @return linear-gradient($direction,
-    call('_stripes-#{$type}-stops',
-    $colors));
-}
-
-html {
-    position: relative;
-    height: 100%;
-    &:before,
-    &:after {
-        position: absolute;
-        content: '';
-        height: 5px;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
-    &:after {
-        top: auto;
-        bottom: 0;
-    }
-    // &:before {
-    //   $equal-stops: #DDB307 #004B85 #016FC4;
-    //   // Equal stops
-    //   // background: stripes($equal-stops, $direction);
-    //   // Random stops
-    //   background: stripes($custom-stops, 90deg, $random: false); 
-    // }
-    &:before {
-        $custom-stops: #DDB307 69%, #004B85 78%, #016FC4 100%;
-        // Custom stops
-        background: stripes($custom-stops, 90deg);
+	50% {
+		transform: translatey(-#{$float-animation-y});
+	}
+    to {
+        transform: translateZ(0);
     }
 }
 
+@keyframes pop-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+$pop-in-anim: pop-in 0.5s cubic-bezier(0, 0.9, 0.3, 1.2);
 
+@keyframes wipe-reveal {
+    from {
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
+}
 
+$wipe-reveal-anim: wipe-reveal 0.5s cubic-bezier(0.33, 1, 0.68, 1);

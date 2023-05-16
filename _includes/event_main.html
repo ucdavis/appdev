@@ -1,0 +1,60 @@
+<div vocab="http://schema.org" typeof="Event" class="card event-main">
+  {% if post.event-start %}
+  <meta
+    property="startDate"
+    content="{{ post.event-start | date: '%Y%m%dT%H%M%S' }}"
+  />
+  {% else %}
+  <meta
+    property="startDate"
+    content="{{ post.date | date: '%Y%m%dT%H%M%S' }}"
+  />
+  {% endif %} {% if post.event-end %}
+  <meta
+    property="endDate"
+    content="{{ post.event-end | date: '%Y%m%dT%H%M%S' }}"
+  />
+  {% endif %}
+  <div class="event-content">
+    <p class="event-date">{{ post.date | date_to_long_string }}</p>
+    <h1 property="name">{{ post.title }}</h1>
+    <p class="event-location" property="location" typeof="Place">
+      <span property="address">{{ post.event-location }}</span> • {{
+      post.event-time }}
+    </p>
+    <p class="lede" property="description">{{ post.description }}</p>
+  </div>
+  <p class="section-learn-more">
+    <a
+      property="url"
+      class="inverse-btn-secondary"
+      style="color: #00c7b1"
+      href="{{ post.url }}"
+      >Event Details <i class="fas fa-arrow-right"></i
+    ></a>
+    <a
+      target="_blank"
+      href="/calendar/latest.ics"
+      download
+      class="inverse-btn-secondary mt-auto"
+    >
+      <i class="btn-icon fas fa-calendar-plus"></i>
+      Add to calendar
+    </a>
+  </p>
+  <div class="event-author">
+    {% for a in post.author %} {% assign author = site.data.authors[a] %}
+    <div property="performer" typeof="Person" class="author-item">
+      <img
+        property="image"
+        class="author-image"
+        src="{{ author.image }}"
+        alt="{{ author.name }}"
+      />
+      <span class="author-name" class="ml-2" property="name"
+        >{{ author.name }}</span
+      >
+    </div>
+    {% endfor %}
+  </div>
+</div>

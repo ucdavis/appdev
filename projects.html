@@ -1,0 +1,45 @@
+---
+layout: page_nosidebar
+title: Projects
+---
+
+<p>
+  This is a community-generated list of software projects developed at UC Davis.
+</p>
+
+<p>
+  Please add your projects to this list
+  <b>regardless of whether the source code is available</b> or the project is
+  open for reuse.
+</p>
+
+<div class="row no-gutters">
+  {% for project in site.projects %}
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+    <div class="card d-flex flex-grow-1 flex-column m-3">
+      <div class="card-body d-flex flex-column">
+        <h2 class="card-title project-name" property="name">
+          {{ project.name }}
+        </h2>
+        <p class="card-subtitle mt-2 mb-2">
+          <b><i class="fa fa-users mr-2"></i> {{ project.team }}</b>
+        </p>
+        <p class="card-text" property="description">
+          {{ project.description }}
+        </p>
+        <p class="card-text">{{ project.contact }}</p>
+        <p class="discreet">{{project.technologies}}</p>
+
+        <div class="mt-auto">
+          <a class="btn btn-link btn-sm" href="{{ project.public_url }}"
+            ><i class="mr-2 fas fa-external-link-alt"></i> Visit Page</a
+          >
+          <a class="btn btn-link btn-sm" href="{{ project.repo_url }}"
+            ><i class="mr-2 fab fa-github"></i> Source</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

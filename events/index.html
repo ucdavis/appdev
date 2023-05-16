@@ -1,46 +1,76 @@
 ---
 layout: default
 ---
-<div class="main">
-    <div class="main_contents">
-        <aside>
-            <h3>Meetings</h3>
-            <p>Meetings are held on Zoom during COVID-19 but are typically held on the UC Davis campus in 2005 PES from 11-noon on the date listed.</p>
-        </aside>
-        <article>
 
-            <h1>AppDev Meetings</h1>
-            <p class="page_description">Stay up to date with our latest meetings</p>
-
-            <ul class="feed-list event-list-main">
-                {% for post in site.categories.events %}
-                <li>
-                <div class="event-date">
-                <div class="event-date-wrapper">
-                    <a href="{{ post.url | prepend: site.baseurl }}">
-                         <span class="event-month">{{ post.date | date: '%B' }}</span>
-                        <span class="event-day">
-                          {% assign d = post.date | date: "%-d" %}
-                          {% case d %}
-                            {% when '1' or '21' or '31' %}{{ d }}st
-                            {% when '2' or '22' %}{{ d }}nd
-                            {% when '3' or '23' %}{{ d }}rd
-                            {% else %}{{ d }}th
-                            {% endcase %}
-                        </span>
-                    </a>
-                </div>
-                </div>
-                <div class="event-main">
-                    <h2 class="feed-title">
-                      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
-                    <p class="feed-description">{{ post.description }}</p>
-                </div>
-
-                </li>
+<div class="content-wrapper">
+  <div class="container">
+    {% include breadcrumbs.html %}
+    <h1>No new meetings until further notice</h1>
+    <!-- <div>
+      {% for post in site.categories.events limit:1 %} {% include
+      event_main.html %} {% endfor %}
+    </div> -->
+  </div>
+  <div class="event-bg-wrapper">
+    <div class="container">
+      <h1>Past Meetings</h1>
+      <div class="row no-gutters">
+        {% for post in site.categories.events %}
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+          <div
+            vocab="http://schema.org"
+            typeof="Event"
+            class="card d-flex flex-column expired-event"
+          >
+            {% if post.event-start %}
+            <meta
+              property="startDate"
+              content="{{ post.event-start | date: '%Y%m%dT%H%M%S' }}"
+            />
+            {% else %}
+            <meta
+              property="startDate"
+              content="{{ post.date | date: '%Y%m%dT%H%M%S' }}"
+            />
+            {% endif %} {% if post.event-end %}
+            <meta
+              property="endDate"
+              content="{{ post.event-end | date: '%Y%m%dT%H%M%S' }}"
+            />
+            {% endif %}
+            <p class="event-date">{{ post.date | date_to_long_string }}</p>
+            <p class="event-location" property="location" typeof="Place">
+              <span property="address">{{ post.event-location }}</span> • {{
+              post.event-time }}
+            </p>
+            <h2 property="name">{{ post.title }}</h2>
+            <p property="description">{{ post.description }}</p>
+            <div class="event-more-link level">
+              <div class="mr-2">
+                {% for a in post.author %} {% assign author =
+                site.data.authors[a] %}
+                <span property="performer" typeof="Person">
+                  <meta property="name" content="{{ author.name }}" />
+                  <img
+                    property="image"
+                    class="author-image"
+                    src="{{ author.image }}"
+                    alt="{{ author.name }}"
+                  />
+                </span>
                 {% endfor %}
-            </ul>
-        </article>
+              </div>
+              <a
+                property="url"
+                href="{{ post.url }}"
+                class="ml-auto flex-shrink-0"
+                >Learn More <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
+  </div>
 </div>

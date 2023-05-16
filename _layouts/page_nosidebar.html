@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="container content-wrapper">
+  {% include breadcrumbs.html %}
+  {% if page.date %}
+  <p class="event-date">{{ page.date | date_to_long_string }}</p>
+  {% endif %} {% if page.event-location or page.event-time %}
+  <p class="event-location">
+    {% assign location = page.event-location | default: TBD %} {{ location
+    }} • {{ page.event-time }}
+  </p>
+  {% endif %}
+  <h1>{{ page.title }}</h1>
+  <p class="lede">{{ page.description }}</p>
+  <hr />
+  {{ content }}
+</div>

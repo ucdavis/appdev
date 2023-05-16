@@ -1,0 +1,40 @@
+---
+layout: event
+title:  "Developing with uConnect, CAS Service Registry"
+description: "Dean Bunn discusses developing with the uConnect Active Directory system. Travis Schmidt discusses upcoming changes to the CAS Service Registry."
+author:
+    - dean_bunn
+    - travis_schmidt
+date:   2017-03-14
+event-time: 11:00AM - 12:00PM
+event-location: "2005 Plant Sciences"
+tags: "uConnect,CAS"
+category: "events"
+---
+
+Announcements
+-
+Slides: [PDF]({{ site.baseurl }}/media/meetings/10/welcome.pdf)
+
+- Remember to join #appdev on slack.ucdavis.edu, appdev@ucdavis.edu mailing list, etc.
+- 2017 App Dev Survey will be distributed shortly. Draft will be made available.
+
+Developing with uConnect
+-
+Slides: [PDF]({{ site.baseurl }}/media/meetings/10/Developing_with_uConnect.pdf) [PPTX]({{ site.baseurl }}/media/meetings/10/Developing_with_uConnect.pptx)
+Source: [ZIP]({{ site.baseurl }}/media/meetings/10/Demo_Code_Python_uConnect.zip)
+
+Dean Bunn gave a presentation on Active Directory topics and information about the uConnect installation specifically.
+
+CAS Service Registry Update
+-
+Travis Schmidt gave an update on the CAS Service Registry. The current plan will allow individuals to claim certain web domains and maintain their part of the registry through a web-based tool.
+
+Miscellaneous
+=
+There were **19 individuals in attendance**.
+
+<div style="margin: auto auto; width: 75%; text-align: center;">
+  <a href="{{ site.baseurl }}/media/meetings/10/photo.jpg"><img src="{{ site.baseurl }}/media/meetings/10/photo_s.jpg" alt="Dean Bunn presenting uConnect development tips." /></a><br />
+  <span style="font-size: 1.2em; font-style: italic; font-family: sans-serif;">Dean Bunn presenting uConnect development tips.</span>
+</div>
