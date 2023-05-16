@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>perform-threat-modeling</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SDL-Copy" transform="translate(-124.000000, -820.000000)">
+            <g id="perform-threat-modeling" transform="translate(124.000000, 820.000000)">
+                <g id="Group-7-Copy-3">
+                    <rect id="Rectangle" stroke="#0078FF" stroke-width="1.32" fill-opacity="0.0969187063" fill="#0078FF" transform="translate(19.800000, 19.800000) rotate(-45.000000) translate(-19.800000, -19.800000) " x="5.94" y="5.94" width="27.72" height="27.72" rx="1.32"></rect>
+                    <g id="Fill-908-+-Fill-909-+-Fill-910" transform="translate(12.540000, 13.200000)"></g>
+                </g>
+                <g id="Fill-700" transform="translate(14.000000, 13.000000)" fill="#0078FF">
+                    <path d="M6.7965,9.40421053 C6.7965,9.40421053 6.06,5.52631579 10.4805,5.52631579 C10.4805,5.52631579 10.8495,9.40421053 6.7965,9.40421053 M5.20425,9.40421053 C1.15125,9.40421053 1.52025,5.52631579 1.52025,5.52631579 C5.94075,5.52631579 5.20425,9.40421053 5.20425,9.40421053 M6,0 C2.6865,0 0,2.82789474 0,6.31578947 C0,12.6315789 6,15 6,15 C6,15 12,12.6315789 12,6.31578947 C12,2.82789474 9.31425,0 6,0"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

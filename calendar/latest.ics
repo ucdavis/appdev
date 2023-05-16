@@ -1,0 +1,27 @@
+---
+layout: none
+---
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CA&ES CRU//NONSGML appdev-jekyll//EN
+METHOD:PUBLISH
+{% for post in site.posts limit:1 %}
+BEGIN:VEVENT
+UID:{{ "now" | date: "%Y%m%dT%H:%M:%S" }}@appdev.ucdavis.edu
+{% if post.author %}
+{% assign author = post.author | first %}
+ORGANIZER;CN={{ site.data.authors[author].name }}:MAILTO:{{ author }}@ucdavis.edu
+{% endif %}
+{% if post.event-location %}
+LOCATION:{{ post.event-location }}
+{% endif %}
+{% if post.description %}
+DESCRIPTION:{{ post.description }}
+{% endif %}
+SUMMARY:{{ post.title }}
+CLASS:PUBLIC
+DTSTART:{{ post.event-start | date: "%Y%m%dT%H%M%S" }}
+DTEND:{{ post.event-end | date: "%Y%m%dT%H%M%S" }}
+DTSTAMP:{{ post.date | date: "%Y%m%dT%H%M%S" }}
+END:VEVENT{% endfor %}
+END:VCALENDAR

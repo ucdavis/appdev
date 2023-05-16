@@ -4,17 +4,12 @@
 @charset "utf-8";
 
 // Import partials from `sass_dir` (defaults to `_sass`)
+
 @import
-        "dependencies",
-        "typography",
-        "base",
-        "layout",
-        "components",
-        "formfields",
-        "navigation",
-        "regions",
-        "responsive",
-        "nivoslider",
-        "vendor",
-        "tables"
+"dependencies",
+"typography",
+"layout",
+"components",
+"navigation",
+"regions"
 ;

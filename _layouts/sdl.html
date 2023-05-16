@@ -1,0 +1,72 @@
+---
+layout: default
+---
+
+
+<div class="container content-wrapper">
+  <div class="alert alert-primary">
+    <i>Please note that these guidelines are not final and still in development</i>
+  </div>
+  <h1>Security Development Lifecycle</h1>
+  {% include breadcrumbs.html %}
+  <div class="row bt-1 no-gutters">
+    <script>
+      function toggleSDLList() {
+        const toDisplay = document.querySelector('.sdl-hidden').style.display == "block" ? "none" : "block"
+        document.querySelectorAll('.sdl-hidden').forEach(el => el.style.display = toDisplay)
+        document.getElementById('sdl-arrow').classList.toggle('up')
+      }
+    </script>
+    <style>
+      #sdl-arrow {
+        padding: 1rem 2rem;
+        transition: transform 0.25s ease-in-out;
+        transform: rotate(0);
+      }
+      #sdl-arrow.up {
+        transform: rotate(180deg);
+      }
+      #sdl-arrow:focus {
+        outline: none;
+      }
+    </style>
+    <ul class="col-md-4 sdl-list no-list-style">
+      {% assign posts = site.sdl | sort: "practice" %}
+      {% for post in posts %}
+      {% if forloop.first %}
+      <li class="{%- if page.url == post.url -%}active{% endif %} d-flex">
+      {% else %}
+      <li class="{%- if page.url == post.url -%}active{% endif %} sdl-hidden">
+      {% endif %}
+        <a href="{{post.url}}" class="d-flex align-items-center">
+          <img class="sdl-img" src="/media/icons/sdl/{{ post.icon }}.svg" alt="icon of {{ post.title }}">
+          <div>
+            <span class="tertiary-font">
+              practice #{{ post.practice }}
+            </span>
+            <br />
+            {{post.title}}
+          </div>
+        </a>
+      {% if forloop.first %}
+      <button id="sdl-arrow" class="reset d-md-none bb-1" onclick="toggleSDLList()"><i class="fas fa-lg fa-arrow-down"></i></button>
+      {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="pl-md-5 col-md-8 mt-5">
+      <img
+        class="sdl-img"
+        src="/media/icons/sdl/{{ page.icon }}.svg"
+        alt="{{ page.title }} {{ page.icon }}"
+      />
+      <p class="practice">
+        Practice #{{ page.practice }}
+      </p>
+      <h1>{{ page.title }}</h1>
+      <p class="lede">{{ page.description }}</p>
+      {{ content }}
+    </div>
+    </div>
+  </div>
+</div>

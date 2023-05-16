@@ -1,45 +1,91 @@
 <header>
-    <div class="header_contents">
-        <div class="logo_wrapper">
-            <a href="{{site.baseurl}}/"><h1><img class="logo" src="{{site.baseurl}}/media/appdev_logo.png" alt="" style="width: 41px; height: 41px;">Application Developer's Group</h1></a>
-        </div>
-        <div class="search_wrapper">
-            <a href="https://www.ucdavis.edu/"><img class="caes_logo" src="{{site.baseurl}}/media/ucd_logo.png" alt=""></a>
-        </div>
+  <div class="container">
+    <div class="brand-wrapper">
+      <div class="applogo">
+        <a href="{{site.baseurl}}/">
+          <h1>Application Developer's Group</h1>
+          <!-- <img
+              class="logo"
+              style="padding: 0 0.8rem; min-width:31px;"
+              src="{{site.baseurl}}/media/developer-squares.svg"
+            /> -->
+        </a>
+      </div>
+      <a class="ucdlogo" href="https://ucdavis.edu">
+        <img
+          class="logo"
+          style="min-width: 125px"
+          src="{{site.baseurl}}/media/ucdavis-white.svg"
+        />
+      </a>
     </div>
-</header>
-<div class="nav_wrapper">
-    <nav id="nav" role="navigation">
-        <a class="nav_open" href="#nav" title="Show navigation"><i class="fa fa-bars"></i></a>
-        <a class="nav_close" href="#" title="Hide navigation"><i class="fa fa-times"></i></a>
-        <ul id="nav_upperlevel">
-            <li>
-                <a href="{{site.baseurl}}/events">Meetings</a>
-            </li>
-            <li>
-                <a href="{{site.baseurl}}/blog">Blog</a>
-            </li>
-            <li>
-                <a href="#" aria-haspopup="true">Guides</a>
-                <ul class="submenu">
-                    <li><a href="{{site.baseurl}}/orientation">Getting&nbsp;Started</a></li>
-                    <li><a href="{{site.baseurl}}/experts">Subject&nbsp;Matter&nbsp;Experts</a></li>
-                    <li><a href="{{site.baseurl}}/opensource">Open&nbsp;Source</a></li>
-                </ul>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}/projects">Projects</a>
-            </li>
-            <li>
-              <a href="{{site.baseurl}}/survey">Survey</a>
-            </li>
-            <li>
-                <a href="#" aria-haspopup="true">About</a>
-                <ul class="submenu">
-                    <li><a href="{{site.baseurl}}/about">About&nbsp;the&nbsp;Group</a></li>
-                    <li><a href="{{site.baseurl}}/contact">Contact</a></li>
-                </ul>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle {% if page.url contains '/guidelines' %} active {% endif %}"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Guidelines
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for post in site.guidelines %}
+            <a class="dropdown-item" href="{{post.url}}">{{post.title}}</a>
+            {% endfor %}
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle {% if page.url contains '/orientation' %} active {% endif %}"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Orientation
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            {% for post in site.orientation %}
+            <a class="dropdown-item" href="{{post.url}}">{{post.title}}</a>
+            {% endfor %}
+          </div>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link {% if page.url contains '/events' %} active {% endif %}"
+            href="{{site.baseurl}}/events"
+            >Events</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link {% if page.url contains '/projects' %} active {% endif %}"
+            href="{{site.baseurl}}/projects"
+            >Projects</a
+          >
+        </li>
+        <!-- <li class="nav-item">
+          <a
+            class="nav-link {% if page.url contains '/blog' %} active {% endif %}"
+            href="{{site.baseurl}}/blog"
+            >Blog</a
+          >
+        </li> -->
+        <li class="nav-item">
+          <a
+            class="nav-link {% if page.url contains '/survey' %} active {% endif %}"
+            href="{{site.baseurl}}/survey"
+            >Survey</a
+          >
+        </li>
+      </ul>
     </nav>
-</div>
+  </div>
+</header>
