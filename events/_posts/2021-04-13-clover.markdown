@@ -2,7 +2,8 @@
 layout: event
 title: "Data Integration with CloverDX and Apache Airflow"
 description: "Sam Irungu presents CloverDX and Andrew Holguin presents Apache Airflow"
-author: "Christopher Thielen"
+author:
+  - christopher_thielen
 date: 2021-04-13
 event-time: 11:00AM - 12:00PM
 event-location: "Zoom"
