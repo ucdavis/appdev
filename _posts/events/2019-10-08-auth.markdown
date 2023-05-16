@@ -1,0 +1,30 @@
+---
+layout: event
+title:  "Understanding Common Authentication Schemes"
+description: "Learn how several critical authentication schemes used throughout the university system work in practice."
+author: "Christopher Thielen"
+date:   2019-10-08
+event-time: 11:00AM - 12:00PM
+event-location: "TBD"
+tags: ""
+category: "events"
+---
+
+## Understanding Common Authentication Schemes
+
+Learn how several critical authentication schemes used throughout the university system work in practice. You'll learn:
+
+* How Shibboleth and SAML work together, and where InCommon fits into the picture.
+* About CAS, Duo, and more.
+* And of course, you'll learn about OAuth/OIDC, the most commonly used scheme in our industry (other than perhaps BASIC username/passwords).
+
+We'll view practical examples of how each work, and discuss their strengths and weaknesses. We'll get into claims and information consent, which is a critical component of complete authentication and authorization systems.
+
+Slides: [PDF]({{ site.baseurl }}/media/meetings/26/common_auth_schemes.pdf)
+
+Video:
+<iframe id="kaltura_player" src="https://cdnapisec.kaltura.com/p/1770401/sp/177040100/embedIframeJs/uiconf_id/29032722/partner_id/1770401?iframeembed=true&playerId=kaltura_player&entry_id=0_venndz0e&flashvars[mediaProtocol]=rtmp&amp;flashvars[streamerType]=rtmp&amp;flashvars[streamerUrl]=rtmp://www.kaltura.com:1935&amp;flashvars[rtmpFlavors]=1&amp;flashvars[localizationCode]=en&amp;flashvars[leadWithHTML5]=true&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=0_f5lnbh18" width="608" height="402" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" sandbox="allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups" frameborder="0" title="Kaltura Player"></iframe>
+
+Miscellaneous
+=
+There were **12 individuals in the room** and an additional **20 individuals attending online** for a total of **32 attendees**.

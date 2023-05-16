@@ -3,7 +3,6 @@
 ---
 @charset "utf-8";
 
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "dependencies",
@@ -16,6 +15,6 @@
         "regions",
         "responsive",
         "nivoslider",
-        "vendor"
-
+        "vendor",
+        "tables"
 ;

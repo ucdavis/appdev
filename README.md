@@ -5,22 +5,22 @@ Repository for the AppDev SIG website.
 The App Dev SIG website is written using the popular static site generator
 "Jekyll", written in Ruby.
 
-First, ensure you have the 'ruby' and 'gem' commands installed. Next,
-ensure you have the popular Ruby package manager 'bundler' installed. If
+## Installation
+ 1. Ensure 'ruby' and 'gem' commands are installed.
+ 2. Ensure the Ruby package manager 'bundler' is installed. If
 you need to install it, try 'gem install bundler'.
+ 3. At the project root: type 'bundle install' to install all the needed dependencies.
 
-Once you have those dependencies, at the project root, type 'bundle install'
-to install all the needed dependencies.
-
-After that, type 'jekyll serve' (or sometimes 'bundle exec jekyll serve')
-to host the site on your local machine.
+## Usage
+ Type 'jekyll serve' (sometimes 'bundle exec jekyll serve')
 
 The command will output a local IP and port to visit in your web browser
 to view the site.
 
 Any changes made will be re-compiled on-the-fly.
 
-Submit pull requests for any website changes.
+## Submitting Updates
+Use GitHub's pull request system for any website changes.
 
 # Help
 Please contact Christopher Thielen or Scott Kirkland for help.

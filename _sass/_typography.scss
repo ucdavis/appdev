@@ -31,30 +31,14 @@ a {
     }
 }
 
-// ol {
-//  padding-left:0px;
-//  li {
-//      font-size:1.5rem;
-//      letter-spacing:.025rem;
-//      font-family:$serif;
-//      color:$primary-font;
-//      a {
-//          // font-size1.5rem;
-//      }
-//  }
-// }
 ul,
 ol {
-    padding-left: 0px;
     li {
         font-size: 1.6rem;
         line-height: 1.8;
         letter-spacing: .025rem;
         font-family: $sans-serif;
         color: $primary-font;
-        a {
-            // font-size1.5rem;
-        }
     }
     &.no-bullet li {
         list-style-type: none;
@@ -83,16 +67,7 @@ article ul li ul {
         list-style: disc;
     }
 }
-// ul.faculty-list {
-//     li {
-//         p {
-            
-//         }
-//         a{
 
-//         }
-//     }
-// }
 ul.event-info {
     li {
         b {
@@ -139,6 +114,7 @@ p {
     letter-spacing: .025rem;
     font-size: 1.6rem;
     font-family: $sans-serif;
+    text-rendering: optimizeLegibility;
     color: $primary-font;
     &.feed-description {
         margin-top:0px;
@@ -194,6 +170,10 @@ h6 {
     color: $primary-font;
 }
 
+h5 {
+  font-size: 1.2em;
+}
+
 h1,
 .h1 {
     font-size: 2.8rem;
@@ -217,7 +197,7 @@ h1,
 
 h2,
 .h2 {
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     font-weight: 600;
     &.feed-title {
         margin-bottom:0px;
@@ -232,7 +212,7 @@ h2,
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight:600;
     .aside_col & {
         font-size:1.4rem;
@@ -254,9 +234,6 @@ h3 {
 h4,
 .h4 {
     font-size: 1.4rem
-}
-
-h5 {
 }
 
 blockquote {

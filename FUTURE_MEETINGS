@@ -1,0 +1,11 @@
+Notes about future meetings can be shared here.
+
+Authentication, what is OAuth, OpenID, claims, SAML, CAS, how do each work with campus apps, mobile apps, embedded apps, etc
+Advanced React with Redux
+
+Mythical Man Month review
+
+• Testing the front-end?  React at least has some cool front-end mocks and test libs we could go through.
+
+Docker (again)
+Semmle (SAST)
